@@ -1,8 +1,7 @@
 <h1 align="center">Simpy - удобный книжный сервис:</h1>
 
 <p align="left">
-Структура сайта:
-[ documents/simpy.html ]
+Структура сайта:<br>[ documents/simpy.html ]
 </p>
 
 <h3 align="left">Стек используемых технологий:</h3>
