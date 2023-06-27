@@ -328,8 +328,8 @@ main .block-start{
     }
 }
 
-.block-form{
-    margin: 100px auto;
+.form{
+    padding: 100px 0;
 }
 
 .block-form h2{
@@ -342,7 +342,7 @@ main .block-start{
     text-align: center;
 }
 
-.block-form form input[type=text], .block-form form input[type=email], textarea{
+.block-form form input[type=text], .block-form form input[type=email], .block-form form textarea{
     width: 75%;
     padding: 10px 15px;
     box-sizing: border-box;
@@ -353,12 +353,12 @@ main .block-start{
     border: 1px solid rgb(85, 85, 85);
 }
 
-.block-form form input[type=text]:hover, .block-form form input[type=email]:hover, textarea:hover, .block-form form input[type=text]:focus, .block-form form input[type=email]:focus, textarea:focus{
+.block-form form input[type=text]:hover, .block-form form input[type=email]:hover, .block-form form textarea:hover, .block-form form input[type=text]:focus, .block-form form input[type=email]:focus, textarea:focus{
     background-color: rgba(0, 0, 0, 0.039);
 }
 
 @media(max-width: 800px){
-    .block-form form input[type=text], .block-form form input[type=email], textarea{
+    .block-form form input[type=text], .block-form form input[type=email], .block-form form textarea{
         width: 100%;
     }
 }
