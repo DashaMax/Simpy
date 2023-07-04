@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="images/icon.ico" />
     <link rel="stylesheet" href="static/style.css">
-    <link rel="stylesheet" href="static/style-login.css">
-    <title>Simpy - регистрация</title>
+    <link rel="stylesheet" href="static/style-book.css">
+    <title>Simpy - название книги</title>
 </head>
 <body>
     <header>
@@ -60,55 +60,40 @@
     </header>
     <main>
         <div class="container">
-            <div class="form-login">
-                <h1>Регистрация</h1>
-                <div class="block-message">
-                    <p class="text-error">
-                        Некорректные данные
-                    </p>
-                    <p class="text-success">
-                        Регистрация прошла успешно
-                    </p>
-                </div>
-                <form action="" method="">
-                    <p class="form-input">
-                        <input type="text" placeholder="Имя">
-                    </p>
-                    <p class="form-input">
-                        <input type="text" placeholder="Фамилия">
-                    </p>
-                    <p class="form-input">
-                        <select>
-                            <option disabled selected>Выберите пол:</option>
-                            <option>Мужской</option>
-                            <option>Женский</option>
-                        </select>
-                    </p>
-                    <p class="form-input">
-                        <input type="date" placeholder="Дата рождения:">
-                    </p>
-                    <p class="form-input">
-                        <input type="file">
-                    </p>
-                    <p class="form-input">
-                        <textarea placeholder="Расскажите о себе"></textarea>
-                    </p>                   
-                    <p class="form-input">
-                        <input type="password" placeholder="Пароль">
-                    </p>
-                    <p class="form-input">
-                        <input type="password" placeholder="Повторите пароль">
-                    </p>
-                    <p class="form-input">
-                        <input type="submit" value="Зарегистрироваться">
-                    </p>
-                    <div class="form-link">
-                        <p>
-                            <a href="login.html">Уже есть аккаунт? Авторизоваться</a>
-                        </p>
-                    </div>
-                </form>
+            <h1>Название книги</h1>
+            <h3>Автор книги</h3>
+            <hr>
+            <div class="nav-book">
+                <ul>
+                    <li>
+                        <a href="book.html" class="active">Книга</a>
+                    </li>
+                    <li>
+                        <a href="readers.html">Читатели</a>
+                    </li>
+                    <li>
+                        <a href="reviews.html">Отзывы</a>
+                    </li>
+                    <li>
+                        <a href="quotes.html">Цитаты</a>
+                    </li>
+                </ul>
+                <a href="#" class="add">+&#160;Добавить</a>
             </div>
+            <hr>
+            <div class="book-block">
+                <img src="images/book-default.png" alt="">
+                <div class="block-info">
+                    <p><span>Издательство:</span> название издательства</p>
+                    <p><span>Переплёт:</span> твёрдый/мягкий</p>
+                    <p><span>Год издания:</span> YYYY</p>
+                    <p><span>Количество страниц:</span> 0000</p>
+                    <p><span>Язык:</span> русский/английский/...</p>
+                </div>
+            </div>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, maxime expedita! Harum assumenda nesciunt labore modi. Odit quam dolore debitis mollitia ullam ipsum sunt recusandae unde provident dolorem, beatae iste?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est harum ipsa, commodi provident laboriosam beatae laudantium quasi quis velit molestiae maiores a natus nulla alias et numquam! Sit, laborum at.
+            </p>
         </div>
     </main>
     <footer>

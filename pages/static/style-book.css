@@ -1,0 +1,273 @@
+main{
+    background-image: url('../images/fon-login.png');
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main .container{
+    padding: 130px 30px;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+}
+
+main h1{
+    color: rgb(39, 39, 39);
+    font-size: 40px;
+    font-weight: 500;
+}
+
+main h3{
+    color: rgb(96, 96, 96);
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+main .nav-book{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+main .nav-book ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+main .nav-book li{
+    margin-right: 20px;
+}
+
+main .nav-book li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(116, 116, 116);
+}
+
+main .nav-book .active{
+    color: rgb(47, 165, 32);
+}
+
+main .nav-book .add{
+    padding: 5px 15px;
+    box-sizing: border-box;
+    background-color: rgb(44, 44, 44);
+    border-radius: 3px;
+    text-decoration: none;
+    color: white;
+}
+
+main .nav-book .add:hover{
+    background-color: rgb(10, 10, 10);
+}
+
+main .nav-book .add-yet{
+    text-decoration: none;
+    color: rgb(47, 165, 32);
+}
+
+main .nav-book .add-yet:hover{
+    cursor: auto;
+}
+
+main .book-block{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main .book-block img{
+    width: 300px;
+}
+
+main .book-block .block-info{
+    margin-left: 30px;
+}
+
+main .book-block .block-info p{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+main .book-block .block-info span{
+    color: rgb(150, 150, 150);
+}
+
+main .description{
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+@media(max-width: 734px){
+    main .book-block{
+        justify-content: center;
+    }
+
+    main .book-block img{
+        width: 100%;
+    }
+
+    main .book-block .block-info{
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+main .readers{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+main .readers .reader{
+    margin-right: 20px;
+    text-align: center;
+}
+
+main .readers .reader img{
+    width: 80px;
+}
+
+main .readers .reader a{
+    text-decoration: none;
+}
+
+main .readers .reader h3{
+    font-size: 20px;
+}
+
+main .reviews{
+    margin-top: 30px;
+}
+
+main .reviews .review{
+    margin-top: 20px;
+    box-shadow: 0 0 7px rgb(197, 197, 197);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+main .reviews .review .block-author{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .reviews .review .block-author .author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .reviews .review .block-author .author img{
+    width: 70px;
+}
+
+main .reviews .review .block-author .author h3{
+    margin-left: 15px;
+}
+
+main .reviews .review .block-author .author a{
+    text-decoration: none;
+    color: rgb(107, 107, 107);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+main .reviews .review .block-author p{
+    padding: 0;
+    color: rgb(145, 145, 145);
+}
+
+main .reviews .review .comment{
+    margin: 30px 0 20px;
+    font-size: 18px;
+}
+
+main .reviews .review .add-comment{
+    color: gray;
+}
+
+@media(max-width: 370px){
+    .add{
+        font-size: 12px;
+    }
+}
+
+main .quotes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main .quotes .quote{
+    position: relative;
+    margin-top: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 400px;
+    box-shadow: 0 0 7px rgb(197, 197, 197);
+}
+
+main .quotes .quote .block-author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .quotes .quote .block-author .author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .quotes .quote .block-author .author img{
+    width: 70px;
+}
+
+main .quotes .quote .block-author .author h3{
+    margin-left: 15px;
+}
+
+main .quotes .quote .block-author .author a{
+    text-decoration: none;
+    color: rgb(107, 107, 107);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+main .quotes .quote .block-author p{
+    color: rgb(107, 107, 107);
+}
+
+main .quotes .quote .quote-p{
+    margin-top: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+
+main .quotes .quote .author-quote{
+    margin-top: 20px;
+    text-align: right;
+    font-weight: 600;
+}
+
+main .quotes .quote .add-comment{
+    display: block;
+    margin-top: 30px;
+    color: gray;
+}
+
+@media(max-width: 360px){
+    main .quotes .quote .block-author p{
+        font-size: 12px;
+    }
+}
