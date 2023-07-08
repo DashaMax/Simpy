@@ -362,7 +362,18 @@ main .block-start{
 }
 
 .form{
-    padding: 100px 0;
+    background-image: url('../images/fon-login.png');
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.form .container{
+    background-color: white;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 70px 50px;
+    box-sizing: border-box;
 }
 
 .block-form h2{
@@ -376,7 +387,7 @@ main .block-start{
 }
 
 .block-form form input[type=text], .block-form form input[type=email], .block-form form textarea{
-    width: 75%;
+    width: 100%;
     padding: 10px 15px;
     box-sizing: border-box;
     font-size: 18px;

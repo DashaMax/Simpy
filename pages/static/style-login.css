@@ -88,7 +88,7 @@ main{
 }
 
 @media(max-width: 600px){
-    .form-login .form-input input[type=text], .form-login .form-input input[type=password], .form-login .form-input input[type=date],.form-login .form-input input[type=file], .form-login .form-input textarea, .form-login .form-input select{
+    .form-login .form-input input[type=text], .form-login .form-input input[type=email], .form-login .form-input input[type=password], .form-login .form-input input[type=date],.form-login .form-input input[type=file], .form-login .form-input textarea, .form-login .form-input select{
         width: 100%;
     }
 }
