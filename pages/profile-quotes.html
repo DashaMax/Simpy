@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="images/icon.ico" />
     <link rel="stylesheet" href="static/style.css">
-    <link rel="stylesheet" href="static/style-login.css">
-    <title>Simpy - авторизация</title>
+    <link rel="stylesheet" href="static/style-profile.css">
+    <title>Simpy - личный кабинет</title>
 </head>
 <body>
     <header>
@@ -50,7 +50,7 @@
 <!--                         <a href="#" class="nav-icon-1">
                             <img src="search.png" alt="">
                         </a> -->
-                        <a href="#" class="nav-icon-2">
+                        <a href="login.html" class="nav-icon-2">
                             <img src="images/profile.png" alt="">
                         </a>
                     </div>
@@ -60,35 +60,59 @@
     </header>
     <main>
         <div class="container">
-            <div class="form-login">
-                <h1>Авторизация</h1>
-                <div class="block-message">
-                    <p class="text-error">
-                        Неправильный логин или пароль
-                    </p>
-                    <p class="text-success">
-                        Регистрация прошла успешно
-                    </p>
-                </div>
-                <form action="" method="">
-                    <p class="form-input">
-                        <input type="text" placeholder="Логин">
-                    </p>
-                    <p class="form-input">
-                        <input type="password" placeholder="Пароль">
-                    </p>
-                    <p class="form-input">
-                        <input type="submit" value="Войти">
-                    </p>
-                    <div class="form-link">
-                        <p>
-                            <a href="#">Забыли пароль?</a>
-                        </p>
-                        <p>
-                            <a href="registration.html">Зарегистрироваться</a>
-                        </p>
+            <h1>Имя пользователя</h1>
+            <hr>
+            <div class="nav-profile">
+                <ul>
+                    <li>
+                        <a href="account.html">Имя</a>
+                    </li>
+                    <li>
+                        <a href="bookshelf.html">Книжная&#160;полка</a>
+                    </li>
+                    <li>
+                        <a href="profile-blog.html">Блог</a>
+                    </li>
+                    <li>
+                        <a href="profile-quotes.html" class="active">Цитаты</a>
+                    </li>
+                </ul>
+                <a href="#" class="change">Добавить&#160;цитату</a>
+            </div>
+            <hr>
+            <div class="quotes">
+                <div class="quote">
+                    <div class="block-author">
+                        <div class="author">
+                            <a href="account.html">
+                                <img src="images/avatar_icon.png" alt="">
+                            </a>
+                            <h3>
+                                <a href="account.html">Имя</a>
+                            </h3>
+                        </div>
+                        <p>dd.mm.YYYY</p>
                     </div>
-                </form>
+                    <p class="quote-p">&#10077; Lorem ipsum dolor sit amet consectetur, adipisicing elit. &#10078;</p>
+                    <p class="author-quote">Автор книги</p>
+                    <a href="#" class="add-comment">Комментировать</a>
+                </div>
+                <div class="quote">
+                    <div class="block-author">
+                        <div class="author">
+                            <a href="account.html">
+                                <img src="images/avatar_icon.png" alt="">
+                            </a>
+                            <h3>
+                                <a href="account.html">Имя</a>
+                            </h3>
+                        </div>
+                        <p>dd.mm.YYYY</p>
+                    </div>
+                    <p class="quote-p">&#10077; Lorem ipsum dolor sit amet consectetur, adipisicing elit. &#10078;</p>
+                    <p class="author-quote">Автор книги</p>
+                    <a href="#" class="add-comment">Комментировать</a>
+                </div>
             </div>
         </div>
     </main>

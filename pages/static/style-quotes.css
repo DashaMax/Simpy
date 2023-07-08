@@ -1,0 +1,108 @@
+main .first-block{
+    padding: 120px 0;
+}
+
+main .first-block .filters{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main .first-block .filters select{
+    outline: none;
+    padding: 2px 5px;
+    color: rgb(37, 37, 37);
+}
+
+main .first-block .second-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main .first-block .second-block a{
+    padding: 5px 15px;
+    box-sizing: border-box;
+    background-color: rgb(44, 44, 44);
+    border-radius: 3px;
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+
+main .first-block .second-block a:hover{
+    background-color: rgb(10, 10, 10);
+}
+
+main .quotes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main .quotes .quote{
+    position: relative;
+    margin-top: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 400px;
+    box-shadow: 0 0 7px rgb(197, 197, 197);
+}
+
+main .quotes .quote .block-author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .quotes .quote .block-author .author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .quotes .quote .block-author .author img{
+    width: 70px;
+}
+
+main .quotes .quote .block-author .author h3{
+    margin-left: 15px;
+}
+
+main .quotes .quote .block-author .author a{
+    text-decoration: none;
+    color: rgb(107, 107, 107);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+main .quotes .quote .block-author p{
+    color: rgb(107, 107, 107);
+}
+
+main .quotes .quote .quote-p{
+    margin-top: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+
+main .quotes .quote .author-quote{
+    margin-top: 20px;
+    text-align: right;
+    font-weight: 600;
+}
+
+main .quotes .quote .add-comment{
+    display: block;
+    margin-top: 30px;
+    color: gray;
+}
+
+@media(max-width: 360px){
+    main .quotes .quote .block-author p{
+        font-size: 12px;
+    }
+}

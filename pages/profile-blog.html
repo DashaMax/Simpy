@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="images/icon.ico" />
     <link rel="stylesheet" href="static/style.css">
-    <link rel="stylesheet" href="static/style-book.css">
-    <title>Simpy - название книги</title>
+    <link rel="stylesheet" href="static/style-profile.css">
+    <title>Simpy - личный кабинет</title>
 </head>
 <body>
     <header>
@@ -60,45 +60,64 @@
     </header>
     <main>
         <div class="container">
-            <h1>Название книги</h1>
-            <h3>Автор книги</h3>
+            <h1>Имя пользователя</h1>
             <hr>
-            <div class="nav-book">
+            <div class="nav-profile">
                 <ul>
                     <li>
-                        <a href="book.html">Книга</a>
+                        <a href="account.html">Имя</a>
                     </li>
                     <li>
-                        <a href="readers.html" class="active">Читатели</a>
+                        <a href="bookshelf.html">Книжная&#160;полка</a>
                     </li>
                     <li>
-                        <a href="reviews.html">Отзывы</a>
+                        <a href="profile-blog.html" class="active">Блог</a>
                     </li>
                     <li>
-                        <a href="quotes.html">Цитаты</a>
+                        <a href="profile-quotes.html">Цитаты</a>
                     </li>
                 </ul>
-<!--                 <a href="#" class="add">+&#160;Добавить</a> -->
+                <a href="#" class="change">Добавить&#160;статью</a>
             </div>
             <hr>
-            <div class="readers">
-                <div class="reader">
-                    <a href="account.html">
-                        <img src="images/avatar_icon.png" alt="">
-                        <h3>Имя</h3>
+            <div class="blogs">
+                <div class="blog">
+                    <h3>
+                        <a href="blog.html">Название статьи</a>
+                    </h3>
+                    <a href="blog.html">
+                        <img src="images/blog-main.jpg" alt="">
                     </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est reprehenderit provident ea consectetur, possimus in doloremque quae placeat nisi vel amet. Libero molestiae nihil dolores, in quaerat magni accusamus officiis.</p>
+                    <div class="block-author">
+                        <div class="author">
+                            <a href="account.html">
+                                <img src="images/avatar_icon.png" alt="">
+                            </a>
+                            <a href="account.html" class="name">Имя</a>
+                        </div>
+                        <p class="date">dd.mm.YYYY</p>
+                    </div>
+                    <a href="#" class="comment">Комментировать</a>
                 </div>
-                <div class="reader">
-                    <a href="account.html">
-                        <img src="images/avatar_icon.png" alt="">
-                        <h3>Имя</h3>
+                <div class="blog">
+                    <h3>
+                        <a href="blog.html">Название статьи</a>
+                    </h3>
+                    <a href="blog.html">
+                        <img src="images/blog-main.jpg" alt="">
                     </a>
-                </div>
-                <div class="reader">
-                    <a href="account.html">
-                        <img src="images/avatar_icon.png" alt="">
-                        <h3>Имя</h3>
-                    </a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est reprehenderit provident ea consectetur, possimus in doloremque quae placeat nisi vel amet. Libero molestiae nihil dolores, in quaerat magni accusamus officiis.</p>
+                    <div class="block-author">
+                        <div class="author">
+                            <a href="account.html">
+                                <img src="images/avatar_icon.png" alt="">
+                            </a>
+                            <a href="account.html" class="name">Имя</a>
+                        </div>
+                        <p class="date">dd.mm.YYYY</p>
+                    </div>
+                    <a href="#" class="comment">Комментировать</a>
                 </div>
             </div>
         </div>
