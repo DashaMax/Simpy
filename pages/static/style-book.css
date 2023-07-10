@@ -258,6 +258,81 @@ main .reviews .review .comment{
     font-size: 18px;
 }
 
+main .comments .block-comment{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+
+main .comments .show{
+    text-align: center;
+    color: green;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+main .comments .back{
+    display: none;
+}
+
+main .comments .block-comment .author{
+    width: 40px;
+    margin-right: 40px;
+    text-align: center;
+}
+
+main .comments .block-comment .author img{
+    width: 100%;
+}
+
+main .comments .block-comment .author h3{
+    font-size: 14px;
+    margin: 0;
+}
+
+main .comments .block-comment .author h3 a{
+    text-decoration: none;
+    color: black;
+}
+
+main .comments .block-comment .author p{
+    font-size: 8px;
+    color: grey;
+}
+
+main .comments .comment{
+    margin: 0;
+}
+
+main form p{
+    width: 100%;
+    margin-top: 20px;
+}
+
+main form input[type=text]{
+    padding: 7px 12px;
+    box-sizing: border-box;
+    font-size: 14px;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid rgb(90, 90, 90);
+    width: 100%;
+}
+
+main form input[type=submit]{
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: rgb(46, 46, 46);
+    color: white;
+}
+
+main form input[type=submit]:hover{
+    background-color: black;
+}
+
+
+
 main .reviews .review .add-comment{
     color: gray;
 }
@@ -266,12 +341,16 @@ main .reviews .review .add-comment{
     .add{
         font-size: 12px;
     }
+
+    .add-form{
+        font-size: 12px;
+    }
 }
 
 main .quotes{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 
@@ -322,7 +401,7 @@ main .quotes .quote .quote-p{
 }
 
 main .quotes .quote .author-quote{
-    margin-top: 20px;
+    margin: 20px 0;
     text-align: right;
     font-weight: 600;
 }

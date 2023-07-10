@@ -177,13 +177,6 @@ main .blogs .blog .block-author .date{
     color: rgb(163, 163, 163);
 }
 
-main .blogs .blog .comment{
-    display: block;
-    margin-top: 30px;
-    font-size: 18px;
-    color: gray;
-}
-
 @media(max-width: 420px){
     main .blogs .blog{
         width: 100%;

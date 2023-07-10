@@ -212,12 +212,93 @@ main .block-start{
     font-size: 40px;
 }
 
-.block-content-2{
+main .blogs{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 100px;
 }
+
+main .blogs .blog{
+    width: 400px;
+    box-shadow: 0 0 7px rgb(197, 197, 197);
+    padding: 20px;
+    box-sizing: border-box;
+    flex-basis: 150px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: all .3s linear;
+    margin-top: 30px;
+}
+
+main .blogs .blog:hover{
+    transform: scale(1.02);
+}
+
+main .blogs .blog h3{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+main .blogs .blog h3 a{
+    text-decoration: none;
+    color: rgb(77, 77, 77);
+}
+
+main .blogs .blog img{
+    margin-top: 20px;
+    width: 300px;
+}
+
+main .blogs .blog p{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+main .blogs .blog .block-author{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main .blogs .blog .block-author .author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .blogs .blog .block-author .author img{
+    width: 70px;
+}
+
+main .blogs .blog .block-author .author .name{
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(32, 32, 32);
+}
+
+main .blogs .blog .block-author .date{
+    margin: 0;
+    color: rgb(163, 163, 163);
+}
+
+@media(max-width: 420px){
+    main .blogs .blog{
+        width: 100%;
+    }
+
+    main .blogs .blog img{
+        width: 200px;
+    }
+}
+
+/*
 
 .block-content-2 .block-2{
     width: 400px;
@@ -292,7 +373,7 @@ main .block-start{
 .block-content-2 .block-2 .author a{
     text-decoration: none;
     color: black;
-}
+} */
 
 
 
@@ -390,7 +471,7 @@ main .block-start{
     width: 100%;
     padding: 10px 15px;
     box-sizing: border-box;
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 5px;
     margin-top: 20px;
     outline: none;
