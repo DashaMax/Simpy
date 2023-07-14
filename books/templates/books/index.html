@@ -1,0 +1,85 @@
+{% extends 'books/base.html' %}
+{% load static %}
+
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'books/css/style-main.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    <main>
+        <div class="block-start">
+            <div class="container">
+                <div class="block-content">
+                    <h1 class="content-h1">Simpy</h1>
+                    <p class="content-p">Простой книжный сервис, где вы сможете найти единомышленников, увлекающихся чтением книг. Вы сможете делиться прочитанным с другими, добавлять понравившиеся книги себе, писать статьи, создавать цитаты. Вдохновляйтесь и вдохновляйте!</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="block-content-1">
+                <div class="content-1">
+                    <img src="{% static 'books/images/book_icon.png' %}" alt="Книга" class="content-img">
+                    <p class="content-p">Читай книги</p>
+                </div>
+                <div class="content-1">
+                    <img src="{% static 'books/images/chat_icon.png' %}" alt="Чат" class="content-img">
+                    <p class="content-p">Общайся о прочитанном</p>
+                </div>
+                <div class="content-1">
+                    <img src="{% static 'books/images/write_icon.png' %}" alt="Карандаш" class="content-img">
+                    <p class="content-p">Пиши статьи</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <h2 class="blog-h2">Блог</h2>
+            <div class="blogs">
+                {% include 'books/one-blog.html' %}
+                {% include 'books/one-blog.html' %}
+            </div>
+        </div>
+        <div class="block-quote">
+            <div class="container">
+                <div class="block-content">
+                    <blockquote class="quote">
+                        <sup>“</sup>Да, человек смертен, но это было бы ещё полбеды. Плохо то, что он иногда внезапно смертен, вот в чем фокус! И вообще не может сказать, что он будет делать в сегодняшний вечер.<sub>”</sub>
+                    </blockquote>
+                    <p class="quote-author">Булгаков М.А.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="block-content-1">
+                <div class="content-1">
+                    <img src="{% static 'books/images/quote_icon.png' %}" alt="Цитата" class="content-img">
+                    <p class="content-p">Цитируй</p>
+                </div>
+                <div class="content-1">
+                    <img src="{% static 'books/images/talk_icon.png' %}" alt="Блокнот" class="content-img">
+                    <p class="content-p">Делись своими мыслями</p>
+                </div>
+                <div class="content-1">
+                    <img src="{% static 'books/images/star_icon.png' %}" alt="Звезда" class="content-img">
+                    <p class="content-p">Вдохновляйся</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="form">
+            <div class="container">
+                <div class="block-form">
+                    <h2 class="form-h2">Форма обратной связи</h2>
+                    <form action="" method="" class="form-feedback">
+                        <input type="text" placeholder="Тема обращения" class="form-input"><br>
+                        <input type="email" placeholder="Ваша почта для связи" class="form-input"><br>
+                        <textarea placeholder="Сообщение" class="form-input form-textarea"></textarea><br>
+                        <input type="submit" value="Отправить" class="form-input form-submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}

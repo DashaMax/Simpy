@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+
+/* HEADER */
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.close-menu{
+    display: none;
+    position: fixed;
+    background-color: rgba(22, 22, 22, 0.964);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.close-menu .close-x{
+    text-align: right;
+    color: rgba(255, 255, 255, 0.829);
+    font-size: 24px;
+    margin: 20px 30px 0;
+    cursor: pointer;
+}
+
+.close-menu .menu-li{
+    margin-bottom: 20px;
+}
+
+.close-menu .menu-link{
+    color: rgba(255, 255, 255, 0.891);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+header nav{
+    background-color: rgba(25, 25, 25, 0.941);
+    padding: 10px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu, .nav-menu-user{
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu .nav-link{
+    margin-left: 50px;
+    font-size: 22px;
+    font-weight: 300;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.nav-icon-1{
+    text-decoration: none;
+}
+
+.nav-icon-1 img{
+    width: 80px;
+}
+
+.nav-icon-2 img{
+    width: 50px;
+    margin-left: 30px;
+}
+
+@media(min-width: 600px){
+    .nav-menu .nav-ul{
+        display: inline-flex;
+        list-style: none;
+    }
+
+    #dot{
+        display: none;
+    }
+
+    .close-menu{
+        display: none!important;
+    }
+}
+
+@media(max-width: 599px){
+    .nav-menu .nav-ul{
+        display: none;
+    }
+
+    #dot{
+        display: inline-flex;
+    }
+}
+
+
+
+/* FOOTER */
+
+footer{
+    background-color: rgba(25, 25, 25, 0.941);
+}
+
+.block-foot{
+    padding: 50px 0;
+}
+
+.block-foot .foot-h2{
+    color: rgb(226, 226, 226);
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.block-foot .foot-ul{
+    list-style: none;
+}
+
+.block-foot .foot-li{
+    margin-top: 10px;
+}
+
+.block-foot .foot-link{
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.block-foot .foot-contacts{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+

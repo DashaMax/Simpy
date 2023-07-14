@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'books/images/icon.ico' %}" />
+    <link rel="stylesheet" href="{% static 'books/css/style.css' %}">
+    {% block style %}{% endblock %}
+    <title>{{ title }}</title>
+</head>
+<body>
+    <header>
+        <div class="close-menu">
+            <h3 class="close-x">x</h3>
+            <ul>
+                <li class="menu-li">
+                    <a href="books.html" class="menu-link">Книги</a>
+                </li>
+                <li class="menu-li">
+                    <a href="blogs.html" class="menu-link">Блог</a>
+                </li>
+                <li class="menu-li">
+                    <a href="quotes-main.html" class="menu-link">Цитаты</a>
+                </li>
+            </ul>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="nav">
+                    <div class="nav-menu">
+                        <a href="{% url 'index' %}" class="nav-icon-1">
+                            <img src="{% static 'books/images/icon_main.png' %}" alt="Simpy" title="На главную">
+                        </a>
+                        <a href="#" class="nav-icon-2" id="dot">
+                            <img src="{% static 'books/images/dot_menu.png' %}" alt="Меню" title="Меню">
+                        </a>
+                        <ul class="nav-ul">
+                            <li>
+                                <a href="books.html" class="nav-link">Книги</a>
+                            </li>
+                            <li>
+                                <a href="blogs.html" class="nav-link">Блог</a>
+                            </li>
+                            <li>
+                                <a href="quotes-main.html" class="nav-link">Цитаты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav-menu-user">
+                        <a href="login.html" class="nav-icon-2">
+                            <img src="{% static 'books/images/profile.png' %}" alt="Профиль" title="Профиль">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <footer>
+        <div class="container">
+            <div class="block-foot">
+                <h2 class="foot-h2">Simpy © 2023</h2>
+                <ul class="foot-ul">
+                    <li class="foot-li">
+                        <a href="{% url 'index' %}" class="foot-link">Главная</a>
+                    </li>
+                    <li class="foot-li">
+                        <a href="books.html" class="foot-link">Книги</a>
+                    </li>
+                    <li class="foot-li">
+                        <a href="blogs.html" class="foot-link">Блог</a>
+                    </li>
+                    <li class="foot-li">
+                        <a href="quotes-main.html" class="foot-link">Цитаты</a>
+                    </li>
+                </ul>
+                <div class="foot-contacts">
+                    <a href="mailto:simpy@yandex.ru" class="foot-link">simpy@yandex.ru</a>
+                    <a href="tel:+79XXXXXXXXX" class="foot-link">+79XXXXXXXXX</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{% static 'books/js/script.js' %}"></script>
+</body>
+</html>
