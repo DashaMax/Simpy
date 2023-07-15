@@ -1,0 +1,5007 @@
+[
+    {
+        "model": "books.authormodel",
+        "pk": 1,
+        "fields": {
+            "name": "Татьяна Гармаш-Роффе"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 2,
+        "fields": {
+            "name": "Вероника Тушнова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 3,
+        "fields": {
+            "name": "Александр Майборода"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 4,
+        "fields": {
+            "name": "Бернар Вербер"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 5,
+        "fields": {
+            "name": "Федор Достоевский"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 6,
+        "fields": {
+            "name": "Эрнест Миллер Хемингуэй"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 7,
+        "fields": {
+            "name": "Татьяна Устинова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 8,
+        "fields": {
+            "name": "Урсула Вайденфельд"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 9,
+        "fields": {
+            "name": "Сергей Литвинов,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 10,
+        "fields": {
+            "name": "Анна Литвинова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 11,
+        "fields": {
+            "name": "Марина Весенняя"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 12,
+        "fields": {
+            "name": "Елена Обухова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 13,
+        "fields": {
+            "name": "Мелинда Ли"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 14,
+        "fields": {
+            "name": "Наталья Солнцева"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 15,
+        "fields": {
+            "name": "Татьяна Луганцева"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 16,
+        "fields": {
+            "name": "Юрий Никитин"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 17,
+        "fields": {
+            "name": "Александра Маринина"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 18,
+        "fields": {
+            "name": "Валентин Пикуль"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 19,
+        "fields": {
+            "name": "Эмили Гунис"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 20,
+        "fields": {
+            "name": "Галина Гончарова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 21,
+        "fields": {
+            "name": "Дэн Симмонс"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 22,
+        "fields": {
+            "name": "Маркус Зусак"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 23,
+        "fields": {
+            "name": "Говард Филлипс Лавкрафт"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 24,
+        "fields": {
+            "name": "Элеонора Гильм"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 25,
+        "fields": {
+            "name": "Александр Дюма (отец)"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 26,
+        "fields": {
+            "name": "Анна и Сергей Литвиновы"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 27,
+        "fields": {
+            "name": "Анна Музафарова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 28,
+        "fields": {
+            "name": "Наталья Александрова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 29,
+        "fields": {
+            "name": "Дарья Донцова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 30,
+        "fields": {
+            "name": "Дарья Калинина"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 31,
+        "fields": {
+            "name": "Анна Князева"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 32,
+        "fields": {
+            "name": "Юлия Климова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 33,
+        "fields": {
+            "name": "Владимир Колычев"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 34,
+        "fields": {
+            "name": "Кеннет Моррис"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 35,
+        "fields": {
+            "name": "Александр Кушнер"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 36,
+        "fields": {
+            "name": "KoDa"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 37,
+        "fields": {
+            "name": "Джерри Айгер,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 38,
+        "fields": {
+            "name": "Уилл Айснер"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 39,
+        "fields": {
+            "name": "Михаэль Байер"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 40,
+        "fields": {
+            "name": "Александр Хуторенко"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 41,
+        "fields": {
+            "name": "Тристан Руло"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 42,
+        "fields": {
+            "name": "Брук Баркер"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 43,
+        "fields": {
+            "name": "Михаил Визель"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 44,
+        "fields": {
+            "name": "Елена Соломонова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 45,
+        "fields": {
+            "name": "Мэтт Фрэкшн"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 46,
+        "fields": {
+            "name": "Алексей Горячев"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 47,
+        "fields": {
+            "name": "Чип Здарски"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 48,
+        "fields": {
+            "name": "Алексей Волков,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 49,
+        "fields": {
+            "name": "Алексей Замский"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 50,
+        "fields": {
+            "name": "Алексей Замский,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 51,
+        "fields": {
+            "name": "Роман Котков"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 52,
+        "fields": {
+            "name": "Алексей Пехов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 53,
+        "fields": {
+            "name": "Марина Клейман"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 54,
+        "fields": {
+            "name": "Катя Наумова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 55,
+        "fields": {
+            "name": "Эндрю Макдональд"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 56,
+        "fields": {
+            "name": "Элизабетта Ньоне"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 57,
+        "fields": {
+            "name": "Грег Пак"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 58,
+        "fields": {
+            "name": "Брайан Бендис"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 59,
+        "fields": {
+            "name": "Гарт Эннис"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 60,
+        "fields": {
+            "name": "Рик Ремендер"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 61,
+        "fields": {
+            "name": "Энди Диггл"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 62,
+        "fields": {
+            "name": "Мэтт Киндт,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 63,
+        "fields": {
+            "name": "Киану Ривз"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 64,
+        "fields": {
+            "name": "Алехандро Ходоровски"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 65,
+        "fields": {
+            "name": "Наталия Девова,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 66,
+        "fields": {
+            "name": "Джамиля Зульпикарова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 67,
+        "fields": {
+            "name": "Евгений Борняков,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 68,
+        "fields": {
+            "name": "Евгений Еронин,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 69,
+        "fields": {
+            "name": "Анастасия Троицкая"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 70,
+        "fields": {
+            "name": "Даниил Ветлужских,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 71,
+        "fields": {
+            "name": "Влад Максименко"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 72,
+        "fields": {
+            "name": "Филипп Жирар"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 73,
+        "fields": {
+            "name": "Юлия Никитина"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 74,
+        "fields": {
+            "name": "Тацуки Фудзимото"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 75,
+        "fields": {
+            "name": "Альфред Ямамото"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 76,
+        "fields": {
+            "name": "Нанаэ Куроно"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 77,
+        "fields": {
+            "name": "Суи Исида"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 78,
+        "fields": {
+            "name": "Дзиро Мацумото"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 79,
+        "fields": {
+            "name": "One"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 80,
+        "fields": {
+            "name": "Кирилл Волошин,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 81,
+        "fields": {
+            "name": "Павел Городецкий"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 82,
+        "fields": {
+            "name": "Мильчха"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 83,
+        "fields": {
+            "name": "Ацуси Окубо"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 84,
+        "fields": {
+            "name": "Тору Фудзисава"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 85,
+        "fields": {
+            "name": "Эйитиро Ода"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 86,
+        "fields": {
+            "name": "Дзюн Мотидзуки"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 87,
+        "fields": {
+            "name": "Хиро Масима"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 88,
+        "fields": {
+            "name": "Пару Итагаки"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 89,
+        "fields": {
+            "name": "Коскэ"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 90,
+        "fields": {
+            "name": "Джессика Чоффи"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 91,
+        "fields": {
+            "name": "Виталий Терлецкий"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 92,
+        "fields": {
+            "name": "Кохэй Хорикоси"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 93,
+        "fields": {
+            "name": "Сая Усато"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 94,
+        "fields": {
+            "name": "Ди Няньмяо"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 95,
+        "fields": {
+            "name": "Хидеши Хино"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 96,
+        "fields": {
+            "name": "Усато Сая"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 97,
+        "fields": {
+            "name": "Тама Мицубоси"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 98,
+        "fields": {
+            "name": "CLAMP"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 99,
+        "fields": {
+            "name": "Косукэ Оно"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 100,
+        "fields": {
+            "name": "Синтаро Каго"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 101,
+        "fields": {
+            "name": "Усамару Фуруя"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 102,
+        "fields": {
+            "name": "Хироаки Самура"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 103,
+        "fields": {
+            "name": "Тони Валенте"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 104,
+        "fields": {
+            "name": "Гэгэ Акутами"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 105,
+        "fields": {
+            "name": "Александр Кондратьев"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 106,
+        "fields": {
+            "name": "Ма Вэй"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 107,
+        "fields": {
+            "name": "Фудзита"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 108,
+        "fields": {
+            "name": "Чхугон"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 109,
+        "fields": {
+            "name": "Гамон Сакураи"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 110,
+        "fields": {
+            "name": "Нихэй Цутому"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 111,
+        "fields": {
+            "name": "Коёхару Готогэ"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 112,
+        "fields": {
+            "name": "Эндо Тацуя"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 113,
+        "fields": {
+            "name": "Джордж Оруэлл"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 114,
+        "fields": {
+            "name": "Kenneth Grahame"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 115,
+        "fields": {
+            "name": "John Ronald Reuel Tolkien"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 116,
+        "fields": {
+            "name": "Джейн Остен"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 117,
+        "fields": {
+            "name": "Стивен Кинг"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 118,
+        "fields": {
+            "name": "Джером Клапка Джером"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 119,
+        "fields": {
+            "name": "Jeff Kinney,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 120,
+        "fields": {
+            "name": "Джефф Кинни"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 121,
+        "fields": {
+            "name": "Сон Вон Пхён"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 122,
+        "fields": {
+            "name": "Колин Гувер"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 123,
+        "fields": {
+            "name": "Hans Andersen"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 124,
+        "fields": {
+            "name": "Agatha Christie"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 125,
+        "fields": {
+            "name": "Paul McCartney"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 126,
+        "fields": {
+            "name": "Vladimir Nabokov"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 127,
+        "fields": {
+            "name": "James Joyce"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 128,
+        "fields": {
+            "name": "Марк Твен"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 129,
+        "fields": {
+            "name": "Jack London"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 130,
+        "fields": {
+            "name": "Эмили Джейн Бронте"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 131,
+        "fields": {
+            "name": "Virginia Woolf"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 132,
+        "fields": {
+            "name": "Даниэль Дефо"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 133,
+        "fields": {
+            "name": "Роберт Льюис Стивенсон"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 134,
+        "fields": {
+            "name": "Люси Кларк"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 135,
+        "fields": {
+            "name": "Joyce Carol Oates"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 136,
+        "fields": {
+            "name": "Нита Проуз"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 137,
+        "fields": {
+            "name": "Кэти Гласс"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 138,
+        "fields": {
+            "name": "Марк Лоуренс"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 139,
+        "fields": {
+            "name": "Жаклин Мейли"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 140,
+        "fields": {
+            "name": "Чезаре Павезе"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 141,
+        "fields": {
+            "name": "Густав Майринк"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 142,
+        "fields": {
+            "name": "Антуан де Сент-Экзюпери"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 143,
+        "fields": {
+            "name": "Жорж Сименон"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 144,
+        "fields": {
+            "name": "Франц Кафка"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 145,
+        "fields": {
+            "name": "Malcolm Gladwell"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 146,
+        "fields": {
+            "name": "Ellen Fein"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 147,
+        "fields": {
+            "name": "Виктор Мари Гюго"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 148,
+        "fields": {
+            "name": "Фридрих Ницше"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 149,
+        "fields": {
+            "name": "Жюль Габриэль Верн"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 150,
+        "fields": {
+            "name": "Honore de Balzac"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 151,
+        "fields": {
+            "name": "Мубина Тагирова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 152,
+        "fields": {
+            "name": "Разина Мухияр"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 153,
+        "fields": {
+            "name": "Бруно Шульц"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 154,
+        "fields": {
+            "name": "Морис Леблан"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 155,
+        "fields": {
+            "name": "Тадеуш Доленга-Мостович"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 156,
+        "fields": {
+            "name": "Avetis Terzibashyan"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 157,
+        "fields": {
+            "name": "Робин Шарма"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 158,
+        "fields": {
+            "name": "Pol Diego"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 159,
+        "fields": {
+            "name": "Якоб и Вильгельм Гримм"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 160,
+        "fields": {
+            "name": "А. Блинова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 161,
+        "fields": {
+            "name": "Карина Грет"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 162,
+        "fields": {
+            "name": "Евгений Анисимов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 163,
+        "fields": {
+            "name": "Эрих Ремарк"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 164,
+        "fields": {
+            "name": "Сергей Матвеев"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 165,
+        "fields": {
+            "name": "Эдгар Берроуз"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 166,
+        "fields": {
+            "name": "М. Несуловская"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 167,
+        "fields": {
+            "name": "Дэниел Эверетт"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 168,
+        "fields": {
+            "name": "Урсула Ле Гуин"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 169,
+        "fields": {
+            "name": "Джером Клапка Джером,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 170,
+        "fields": {
+            "name": "Юрий Лотман"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 171,
+        "fields": {
+            "name": "Владимир Даль"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 172,
+        "fields": {
+            "name": "В. Ганненко"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 173,
+        "fields": {
+            "name": "Элизабет Гилберт"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 174,
+        "fields": {
+            "name": "Джером Сэлинджер"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 175,
+        "fields": {
+            "name": "Фрэнсис Ходжсон Бернетт"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 176,
+        "fields": {
+            "name": "Тимоти Стаут,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 177,
+        "fields": {
+            "name": "К. Хаконэ"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 178,
+        "fields": {
+            "name": "Татьяна Войтенко,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 179,
+        "fields": {
+            "name": "Ирина Дубиковская"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 180,
+        "fields": {
+            "name": "Юлия Арекеева,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 181,
+        "fields": {
+            "name": "Юлия Бедненко,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 182,
+        "fields": {
+            "name": "Ульяна Курт"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 183,
+        "fields": {
+            "name": "Ирина Быковских"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 184,
+        "fields": {
+            "name": "Илья Гутин,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 185,
+        "fields": {
+            "name": "Максара Дондокова,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 186,
+        "fields": {
+            "name": "Ольга Масловец"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 187,
+        "fields": {
+            "name": "Арсений Скворцов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 188,
+        "fields": {
+            "name": "Наталия Бедарева,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 189,
+        "fields": {
+            "name": "Татьяна Гурулева"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 190,
+        "fields": {
+            "name": "Виктор Погадаев"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 191,
+        "fields": {
+            "name": "Екатерина Сенина,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 192,
+        "fields": {
+            "name": "Мария Смолова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 193,
+        "fields": {
+            "name": "Ирина Касаткина,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 194,
+        "fields": {
+            "name": "Чун Ин Сун"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 195,
+        "fields": {
+            "name": "Виктория Державина"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 196,
+        "fields": {
+            "name": "Владимир Мюллер"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 197,
+        "fields": {
+            "name": "Френсис Скотт Фицджеральд,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 198,
+        "fields": {
+            "name": "Илья Франк"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 199,
+        "fields": {
+            "name": "Антоний Погорельский"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 200,
+        "fields": {
+            "name": "Юлия Гурикова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 201,
+        "fields": {
+            "name": "Алексей Алексеев,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 202,
+        "fields": {
+            "name": "Наталья Понырко"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 203,
+        "fields": {
+            "name": "Лиала Хронопуло"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 204,
+        "fields": {
+            "name": "Ирина Орлова,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 205,
+        "fields": {
+            "name": "Анастасия Петрова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 206,
+        "fields": {
+            "name": "Виталий Бианки"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 207,
+        "fields": {
+            "name": "Лариса Маврина"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 208,
+        "fields": {
+            "name": "Роби Г. Харрис"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 209,
+        "fields": {
+            "name": "Джанни Родари"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 210,
+        "fields": {
+            "name": "Алексей Толстой"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 211,
+        "fields": {
+            "name": "Конами Каната"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 212,
+        "fields": {
+            "name": "Станислав Петренко"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 213,
+        "fields": {
+            "name": "Вильгельм Гауф"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 214,
+        "fields": {
+            "name": "Евгений Комаровский"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 215,
+        "fields": {
+            "name": "Наталья Щерба"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 216,
+        "fields": {
+            "name": "Александр Пушкин"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 217,
+        "fields": {
+            "name": "Михаил Самарский"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 218,
+        "fields": {
+            "name": "Татьяна Аптулаева"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 219,
+        "fields": {
+            "name": "Екатерина Матюшкина"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 220,
+        "fields": {
+            "name": "Яков Перельман"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 221,
+        "fields": {
+            "name": "Екатерина Куцина,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 222,
+        "fields": {
+            "name": "Надежда Созонова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 223,
+        "fields": {
+            "name": "Мэтт Хейг"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 224,
+        "fields": {
+            "name": "Тамара Комарова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 225,
+        "fields": {
+            "name": "Петр Ершов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 226,
+        "fields": {
+            "name": "Саймон Фарнаби"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 227,
+        "fields": {
+            "name": "Валентин Катаев"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 228,
+        "fields": {
+            "name": "Светлана Анащенкова,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 229,
+        "fields": {
+            "name": "Надежда Шипилова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 230,
+        "fields": {
+            "name": "Валерий Медведев"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 231,
+        "fields": {
+            "name": "Роберт Кормье"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 232,
+        "fields": {
+            "name": "Гэри Шмидт"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 233,
+        "fields": {
+            "name": "Евгений Гаглоев"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 234,
+        "fields": {
+            "name": "Рик Риордан"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 235,
+        "fields": {
+            "name": "Милисента Чередниченко"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 236,
+        "fields": {
+            "name": "Дмитрий Емец"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 237,
+        "fields": {
+            "name": "Мэделин Ру"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 238,
+        "fields": {
+            "name": "Екатерина Соболь"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 239,
+        "fields": {
+            "name": "Джеймс Паттерсон,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 240,
+        "fields": {
+            "name": "Крис Теббетс"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 241,
+        "fields": {
+            "name": "Жиль Пари"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 242,
+        "fields": {
+            "name": "Кристель Дабо"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 243,
+        "fields": {
+            "name": "Алина Брюс"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 244,
+        "fields": {
+            "name": "Эдгар Силен"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 245,
+        "fields": {
+            "name": "Мари Шартр"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 246,
+        "fields": {
+            "name": "Абриль Замора"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 247,
+        "fields": {
+            "name": "Лариса Романовская"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 248,
+        "fields": {
+            "name": "Александр Грин"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 249,
+        "fields": {
+            "name": "Данияр Сугралинов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 250,
+        "fields": {
+            "name": "Сергей Ильин"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 251,
+        "fields": {
+            "name": "Григорий Белых,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 252,
+        "fields": {
+            "name": "Леонид Пантелеев"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 253,
+        "fields": {
+            "name": "Хельга Воджик"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 254,
+        "fields": {
+            "name": "Оксана Заугольная"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 255,
+        "fields": {
+            "name": "Соня Фернандес-Видаль"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 256,
+        "fields": {
+            "name": "Егор Крымов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 257,
+        "fields": {
+            "name": "Елена Бурак"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 258,
+        "fields": {
+            "name": "Артём Ляхович"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 259,
+        "fields": {
+            "name": "Ольга Назарова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 260,
+        "fields": {
+            "name": "Лада Кутузова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 261,
+        "fields": {
+            "name": "Наталья Барковская"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 262,
+        "fields": {
+            "name": "Генри Э. Дьюдени"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 263,
+        "fields": {
+            "name": "Ирина Текучева"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 264,
+        "fields": {
+            "name": "Александра Анурова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 265,
+        "fields": {
+            "name": "Наталия Пурышева,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 266,
+        "fields": {
+            "name": "Елена Ратбиль,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 267,
+        "fields": {
+            "name": "Нина Слепнева"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 268,
+        "fields": {
+            "name": "Антонина Корощенко,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 269,
+        "fields": {
+            "name": "Анна Купцова,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 270,
+        "fields": {
+            "name": "Елена Савинкина"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 271,
+        "fields": {
+            "name": "Г.Н. Мошенская"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 272,
+        "fields": {
+            "name": "Александр Чесноков"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 273,
+        "fields": {
+            "name": "Дмитрий Соловков"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 274,
+        "fields": {
+            "name": "Лариса Ерганжиева,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 275,
+        "fields": {
+            "name": "Игорь Шарыгин"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 276,
+        "fields": {
+            "name": "Елена Животова,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 277,
+        "fields": {
+            "name": "Вера Уханева"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 278,
+        "fields": {
+            "name": "Евгений Глозман,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 279,
+        "fields": {
+            "name": "Ольга Кожина,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 280,
+        "fields": {
+            "name": "Юрий Хотунцев"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 281,
+        "fields": {
+            "name": "Ольга Васильева,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 282,
+        "fields": {
+            "name": "Олег Корытко,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 283,
+        "fields": {
+            "name": "Алексей Кульберг"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 284,
+        "fields": {
+            "name": "Василий Греков,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 285,
+        "fields": {
+            "name": "Сергей Крючков,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 286,
+        "fields": {
+            "name": "Лев Чешко"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 287,
+        "fields": {
+            "name": "Татьяна Сергеева"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 288,
+        "fields": {
+            "name": "Елена Волкова,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 289,
+        "fields": {
+            "name": "Галина Цитович"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 290,
+        "fields": {
+            "name": "Марина Бойкина,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 291,
+        "fields": {
+            "name": "Инна Бубнова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 292,
+        "fields": {
+            "name": "Юлия Глаголева"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 293,
+        "fields": {
+            "name": "Ольга Перова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 294,
+        "fields": {
+            "name": "Надежда Погорелова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 295,
+        "fields": {
+            "name": "Марта Кузнецова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 296,
+        "fields": {
+            "name": "Светлана Краюшкина"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 297,
+        "fields": {
+            "name": "Елена Барашкова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 298,
+        "fields": {
+            "name": "Наталья Степанова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 299,
+        "fields": {
+            "name": "Юрий Исламов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 300,
+        "fields": {
+            "name": "Омраам Айванхов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 301,
+        "fields": {
+            "name": "Александр Колесников"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 302,
+        "fields": {
+            "name": "Диана Райхель"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 303,
+        "fields": {
+            "name": "Вадим Зеланд"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 304,
+        "fields": {
+            "name": "Аманда Романия"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 305,
+        "fields": {
+            "name": "Андрей Реутов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 306,
+        "fields": {
+            "name": "Уассима Туария"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 307,
+        "fields": {
+            "name": "Арабо Саргсян"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 308,
+        "fields": {
+            "name": "Красный Ястреб"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 309,
+        "fields": {
+            "name": "Джон Ричард Сэк"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 310,
+        "fields": {
+            "name": "Джуди Холл"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 311,
+        "fields": {
+            "name": "Джерри Хикс,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 312,
+        "fields": {
+            "name": "Эстер Хикс"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 313,
+        "fields": {
+            "name": "Кевин Роуэн-Дрюитт"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 314,
+        "fields": {
+            "name": "Майкл Э. Брэдфорд"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 315,
+        "fields": {
+            "name": "Ошо"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 316,
+        "fields": {
+            "name": ","
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 317,
+        "fields": {
+            "name": "Карен Кинни"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 318,
+        "fields": {
+            "name": "Ольга Осипова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 319,
+        "fields": {
+            "name": "Лариса Дмитриева"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 320,
+        "fields": {
+            "name": "Елена Блаватская"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 321,
+        "fields": {
+            "name": "Джин Пэх"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 322,
+        "fields": {
+            "name": "Наталья Правдина"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 323,
+        "fields": {
+            "name": "Садхгуру"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 324,
+        "fields": {
+            "name": "Густавус Миллер"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 325,
+        "fields": {
+            "name": "Лариса Мелик"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 326,
+        "fields": {
+            "name": "Дара Манлер"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 327,
+        "fields": {
+            "name": "Аму Мом"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 328,
+        "fields": {
+            "name": "Аврора Фэйт"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 329,
+        "fields": {
+            "name": "Артур Эдвард Уэйт"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 330,
+        "fields": {
+            "name": "Франц Новак-Петроф"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 331,
+        "fields": {
+            "name": "Ольга Белоконь"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 332,
+        "fields": {
+            "name": "Ольга Огулова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 333,
+        "fields": {
+            "name": "Михаил Шифрин"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 334,
+        "fields": {
+            "name": "Андрей Шляхов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 335,
+        "fields": {
+            "name": "Алексей Мелехин"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 336,
+        "fields": {
+            "name": "Самнер Брукс,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 337,
+        "fields": {
+            "name": "Эми Северсон"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 338,
+        "fields": {
+            "name": "Евгений Божьев"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 339,
+        "fields": {
+            "name": "Юлия Дрибноход"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 340,
+        "fields": {
+            "name": "Лилия Савко"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 341,
+        "fields": {
+            "name": "Александр Мовсесян"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 342,
+        "fields": {
+            "name": "Элеонора Рубан,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 343,
+        "fields": {
+            "name": "Николай Федюкович"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 344,
+        "fields": {
+            "name": "Джон Гиббонс"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 345,
+        "fields": {
+            "name": "Александр Мясников"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 346,
+        "fields": {
+            "name": "Вестон Эндрю Прайс"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 347,
+        "fields": {
+            "name": "Александр Богомолов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 348,
+        "fields": {
+            "name": "Рудольф Самусев"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 349,
+        "fields": {
+            "name": "Анатолий Мартынов,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 350,
+        "fields": {
+            "name": "Галина Нечаева"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 351,
+        "fields": {
+            "name": "Светлана Гаврилова,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 352,
+        "fields": {
+            "name": "Аркадий Эйзлер"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 353,
+        "fields": {
+            "name": "Эндрю Шафер"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 354,
+        "fields": {
+            "name": "Марат Булатов,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 355,
+        "fields": {
+            "name": "Павел Крайнюков,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 356,
+        "fields": {
+            "name": "Руслан Макиев"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 357,
+        "fields": {
+            "name": "Анна Дусаева"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 358,
+        "fields": {
+            "name": "Николай Шабалов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 359,
+        "fields": {
+            "name": "Леонид Персин,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 360,
+        "fields": {
+            "name": "Андрей Порохин,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 361,
+        "fields": {
+            "name": "Светлана Текучева"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 362,
+        "fields": {
+            "name": "Михаил Дамиров"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 363,
+        "fields": {
+            "name": "Юлия Сильванская"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 364,
+        "fields": {
+            "name": "Auguste Racinet"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 365,
+        "fields": {
+            "name": "Петер Линдберг"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 366,
+        "fields": {
+            "name": "Александр Васильев"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 367,
+        "fields": {
+            "name": "Дэниел Джеймс Коул"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 368,
+        "fields": {
+            "name": "Алена Россошинская"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 369,
+        "fields": {
+            "name": "Евгения Баглык"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 370,
+        "fields": {
+            "name": "Маша Ворслав,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 371,
+        "fields": {
+            "name": "Адэль Мифтахова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 372,
+        "fields": {
+            "name": "Джи Мата Сати"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 373,
+        "fields": {
+            "name": "Доминик Рок"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 374,
+        "fields": {
+            "name": "Ольга Колесникова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 375,
+        "fields": {
+            "name": "Ирина Довгалева"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 376,
+        "fields": {
+            "name": "Наталья Калашникова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 377,
+        "fields": {
+            "name": "Элла Васильева"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 378,
+        "fields": {
+            "name": "Макс Бен,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 379,
+        "fields": {
+            "name": "Оскар Фишель"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 380,
+        "fields": {
+            "name": "Яна Таммах"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 381,
+        "fields": {
+            "name": "Дмитрий Демин,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 382,
+        "fields": {
+            "name": "Глеб Мазаев"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 383,
+        "fields": {
+            "name": "Мари Тюффери"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 384,
+        "fields": {
+            "name": "Ладушка Казарина,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 385,
+        "fields": {
+            "name": "Ольга Родичева,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 386,
+        "fields": {
+            "name": "Елена Чернявская"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 387,
+        "fields": {
+            "name": "Белл Паризи"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 388,
+        "fields": {
+            "name": "Лесли Каминофф,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 389,
+        "fields": {
+            "name": "Эндрю Мэтьюз"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 390,
+        "fields": {
+            "name": "Брендан Леонард"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 391,
+        "fields": {
+            "name": "Дэвид Кайл"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 392,
+        "fields": {
+            "name": "Сесиль Герье"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 393,
+        "fields": {
+            "name": "Шри Чинмой"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 394,
+        "fields": {
+            "name": "Мэган Виртанен"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 395,
+        "fields": {
+            "name": "Вильгельм Эбштейн"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 396,
+        "fields": {
+            "name": "Марина Романовская"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 397,
+        "fields": {
+            "name": "Бэлла Шапиро"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 398,
+        "fields": {
+            "name": "Наталья Шульга"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 399,
+        "fields": {
+            "name": "Екатерина Васильева"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 400,
+        "fields": {
+            "name": "Лариса Ренар"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 401,
+        "fields": {
+            "name": "Мария Тафье"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 402,
+        "fields": {
+            "name": "Марии Буше"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 403,
+        "fields": {
+            "name": "Эндрю МакГонигл,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 404,
+        "fields": {
+            "name": "Мэттью Хью"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 405,
+        "fields": {
+            "name": "Елена Хромина"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 406,
+        "fields": {
+            "name": "Светлана Николаева"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 407,
+        "fields": {
+            "name": "Геннадий Караев"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 408,
+        "fields": {
+            "name": "Софья Завистовская"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 409,
+        "fields": {
+            "name": "Дарья Гуторова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 410,
+        "fields": {
+            "name": "Сталик Ханкишиев"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 411,
+        "fields": {
+            "name": "Роберт Тьюсли Андерсон"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 412,
+        "fields": {
+            "name": "С. Мозговая"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 413,
+        "fields": {
+            "name": "Татьяна Плотникова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 414,
+        "fields": {
+            "name": "Юлия Высоцкая"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 415,
+        "fields": {
+            "name": "Дэвид Лейбовиц"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 416,
+        "fields": {
+            "name": "Эддар Ар"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 417,
+        "fields": {
+            "name": "Вильям-Август Похлебкин"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 418,
+        "fields": {
+            "name": "Сюзанна Райан"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 419,
+        "fields": {
+            "name": "Елена Киладзе"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 420,
+        "fields": {
+            "name": "Mama Gala"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 421,
+        "fields": {
+            "name": "Дарья Черненко"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 422,
+        "fields": {
+            "name": "Элга Боровская"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 423,
+        "fields": {
+            "name": "Н.В. Петровская"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 424,
+        "fields": {
+            "name": "Самогон Саныч"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 425,
+        "fields": {
+            "name": "Тома Яндиева"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 426,
+        "fields": {
+            "name": "Александр Белькович"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 427,
+        "fields": {
+            "name": "Дарья Близнюк"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 428,
+        "fields": {
+            "name": "Светлана Морозова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 429,
+        "fields": {
+            "name": "Анна Васюкова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 430,
+        "fields": {
+            "name": "Юлия Евдокимова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 431,
+        "fields": {
+            "name": "Ромуальд Лойко,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 432,
+        "fields": {
+            "name": "Аркадий Руцкий"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 433,
+        "fields": {
+            "name": "Амадеа Морнингстар"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 434,
+        "fields": {
+            "name": "Лиза Стил"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 435,
+        "fields": {
+            "name": "Каролина Гезий"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 436,
+        "fields": {
+            "name": "Марк Курлански"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 437,
+        "fields": {
+            "name": "Андрей Киселёв,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 438,
+        "fields": {
+            "name": "Константин Лукичев"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 439,
+        "fields": {
+            "name": "Иори Танака"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 440,
+        "fields": {
+            "name": "Венера Осепчук"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 441,
+        "fields": {
+            "name": "Владимир Михайлов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 442,
+        "fields": {
+            "name": "Кирстен К. Шоки,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 443,
+        "fields": {
+            "name": "Кристофер Шоки"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 444,
+        "fields": {
+            "name": "Торстен Герке"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 445,
+        "fields": {
+            "name": "Геннадий Громоковский"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 446,
+        "fields": {
+            "name": "Андрей Монамс"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 447,
+        "fields": {
+            "name": "Сергей Иващенко"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 448,
+        "fields": {
+            "name": "Евгений Кульков"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 449,
+        "fields": {
+            "name": "Сергей Аксентьев"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 450,
+        "fields": {
+            "name": "Барбара Хичкок"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 451,
+        "fields": {
+            "name": "Анастасия Корфиати"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 452,
+        "fields": {
+            "name": "Александр Васькин"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 453,
+        "fields": {
+            "name": "Джонатан Хокинс"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 454,
+        "fields": {
+            "name": "Алексей Александров,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 455,
+        "fields": {
+            "name": "Николай Рудаков"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 456,
+        "fields": {
+            "name": "Игорь Артанов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 457,
+        "fields": {
+            "name": "Алена Александрова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 458,
+        "fields": {
+            "name": "Николай Непомнящий"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 459,
+        "fields": {
+            "name": "Алексей Ардашев"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 460,
+        "fields": {
+            "name": "Маргарита Джакоза,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 461,
+        "fields": {
+            "name": "Джанни Морелли,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 462,
+        "fields": {
+            "name": "Роберто Моттаделли"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 463,
+        "fields": {
+            "name": "Светлана Малярик"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 464,
+        "fields": {
+            "name": "Наталья Овчинникова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 465,
+        "fields": {
+            "name": "Джон Доу"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 466,
+        "fields": {
+            "name": "Алина Япаева"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 467,
+        "fields": {
+            "name": "Илья Стогов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 468,
+        "fields": {
+            "name": "Марина Лацис"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 469,
+        "fields": {
+            "name": "Светлана Кирпа,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 470,
+        "fields": {
+            "name": "Марина Коломийчук,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 471,
+        "fields": {
+            "name": "Татьяна Новик"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 472,
+        "fields": {
+            "name": "Александр Соколов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 473,
+        "fields": {
+            "name": "Джозеф Хокинг"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 474,
+        "fields": {
+            "name": "Чарльз Фрэнк Болден,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 475,
+        "fields": {
+            "name": "Джон Мейс Грансфелд,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 476,
+        "fields": {
+            "name": "Эдвардс Оуэн"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 477,
+        "fields": {
+            "name": "H. Walter Lack"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 478,
+        "fields": {
+            "name": "Жан-Батист Марк Буржери"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 479,
+        "fields": {
+            "name": "Чип Хьюен"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 480,
+        "fields": {
+            "name": "Анатолий Постолит"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 481,
+        "fields": {
+            "name": "Павел Добряк"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 482,
+        "fields": {
+            "name": "Иван Жуков"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 483,
+        "fields": {
+            "name": "Николай Прохоренок"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 484,
+        "fields": {
+            "name": "Дэвид Деворкин,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 485,
+        "fields": {
+            "name": "Роберт П. Киршнер,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 486,
+        "fields": {
+            "name": "Рич Смит"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 487,
+        "fields": {
+            "name": "Леонард Апельцин"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 488,
+        "fields": {
+            "name": "Мэтью Макдоналд,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 489,
+        "fields": {
+            "name": "Адам Д. Скатт"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 490,
+        "fields": {
+            "name": "Ронни Митра,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 491,
+        "fields": {
+            "name": "Иракли Надареишвили"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 492,
+        "fields": {
+            "name": "Ренат Шагабутдинов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 493,
+        "fields": {
+            "name": "Владимир Гисин"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 494,
+        "fields": {
+            "name": "Сергей Корчагов,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 495,
+        "fields": {
+            "name": "Роман Щекалев"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 496,
+        "fields": {
+            "name": "Татьяна Фомичева"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 497,
+        "fields": {
+            "name": "Евгений Николаев"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 498,
+        "fields": {
+            "name": "Леонид Леденцов,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 499,
+        "fields": {
+            "name": "Борис Сомов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 500,
+        "fields": {
+            "name": "Владимир Литвиненко"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 501,
+        "fields": {
+            "name": "Ольга Пыркина"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 502,
+        "fields": {
+            "name": "О. Баюк"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 503,
+        "fields": {
+            "name": "Игорь Шандра"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 504,
+        "fields": {
+            "name": "Анатолий Фоменко"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 505,
+        "fields": {
+            "name": "Сергей Гашков,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 506,
+        "fields": {
+            "name": "Сергей Кравцев"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 507,
+        "fields": {
+            "name": "Андрей Девятов,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 508,
+        "fields": {
+            "name": "Александр Зернов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 509,
+        "fields": {
+            "name": "Ксения Митителло"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 510,
+        "fields": {
+            "name": "Томас К. Хейс,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 511,
+        "fields": {
+            "name": "Пол Хоровиц"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 512,
+        "fields": {
+            "name": "М. Ванюшин"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 513,
+        "fields": {
+            "name": "Виктор Петин"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 514,
+        "fields": {
+            "name": "Дмитрий Побединский"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 515,
+        "fields": {
+            "name": "С. Иванов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 516,
+        "fields": {
+            "name": "Брюс Шнайер"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 517,
+        "fields": {
+            "name": "Ронан Декалан"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 518,
+        "fields": {
+            "name": "Павел Флоренский"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 519,
+        "fields": {
+            "name": "Эразм Роттердамский"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 520,
+        "fields": {
+            "name": "Айзек Азимов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 521,
+        "fields": {
+            "name": "Конфуций"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 522,
+        "fields": {
+            "name": "Блез Паскаль"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 523,
+        "fields": {
+            "name": "Бертран Рассел"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 524,
+        "fields": {
+            "name": "Тан Изце"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 525,
+        "fields": {
+            "name": "Александр Дугин"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 526,
+        "fields": {
+            "name": "Ольга Шор"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 527,
+        "fields": {
+            "name": "Артур Шопенгауэр"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 528,
+        "fields": {
+            "name": "Евгений Поселянин"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 529,
+        "fields": {
+            "name": "Священник Георгий Орлов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 530,
+        "fields": {
+            "name": "Иван Ильин"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 531,
+        "fields": {
+            "name": "Дэвид Кишик"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 532,
+        "fields": {
+            "name": "Патрик Кинг"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 533,
+        "fields": {
+            "name": "Альберт Штекль"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 534,
+        "fields": {
+            "name": "Рене Декарт"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 535,
+        "fields": {
+            "name": "Ильшат Насыров"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 536,
+        "fields": {
+            "name": "Эрих Фромм"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 537,
+        "fields": {
+            "name": "Александр Мень"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 538,
+        "fields": {
+            "name": "Никколо Макиавелли"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 539,
+        "fields": {
+            "name": "Цзы Лао-Цзы"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 540,
+        "fields": {
+            "name": "Сельма Оттилия Лувиса Лагерлёф"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 541,
+        "fields": {
+            "name": "Филип Зимбардо"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 542,
+        "fields": {
+            "name": "Харвилл Хендрикс"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 543,
+        "fields": {
+            "name": "Джон Стрелеки"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 544,
+        "fields": {
+            "name": "Наталья Бехтерева"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 545,
+        "fields": {
+            "name": "Кэрол Дуэк"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 546,
+        "fields": {
+            "name": "Дейл Карнеги"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 547,
+        "fields": {
+            "name": "Джон Кехо"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 548,
+        "fields": {
+            "name": "Валентина Паевская"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 549,
+        "fields": {
+            "name": "Анатолий Некрасов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 550,
+        "fields": {
+            "name": "Саша Галицкий"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 551,
+        "fields": {
+            "name": "Тит Нат Хан"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 552,
+        "fields": {
+            "name": "Сергей Горин"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 553,
+        "fields": {
+            "name": "Александр Петров"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 554,
+        "fields": {
+            "name": "Стивен Р. Кови"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 555,
+        "fields": {
+            "name": "Доминик Барро"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 556,
+        "fields": {
+            "name": "Хулио Бевионе"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 557,
+        "fields": {
+            "name": "Джилл Вебер"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 558,
+        "fields": {
+            "name": "Джереми В. Петтит,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 559,
+        "fields": {
+            "name": "Райан М. Хилл"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 560,
+        "fields": {
+            "name": "А. Муньос"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 561,
+        "fields": {
+            "name": "Мартин Н. Сейф,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 562,
+        "fields": {
+            "name": "Салли Уинстон"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 563,
+        "fields": {
+            "name": "Юлия Чалова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 564,
+        "fields": {
+            "name": "Ник Даввель,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 565,
+        "fields": {
+            "name": "Хелена Левендаль"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 566,
+        "fields": {
+            "name": "Анастасия Долганова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 567,
+        "fields": {
+            "name": "Патриция Рокмэн,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 568,
+        "fields": {
+            "name": "М.Ли Фридман"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 569,
+        "fields": {
+            "name": "Эми Л. Ева"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 570,
+        "fields": {
+            "name": "Рик Хансон"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 571,
+        "fields": {
+            "name": "Варвара Веденеева"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 572,
+        "fields": {
+            "name": "Кристофер Харт"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 573,
+        "fields": {
+            "name": "Федор Нечитайло,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 574,
+        "fields": {
+            "name": "Ваня Тейл,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 575,
+        "fields": {
+            "name": "Сергей Федоров"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 576,
+        "fields": {
+            "name": "Владимир Зуйков"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 577,
+        "fields": {
+            "name": "Дарья Кирпич"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 578,
+        "fields": {
+            "name": "Лидия Укадерова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 579,
+        "fields": {
+            "name": "Джон Круз"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 580,
+        "fields": {
+            "name": "Анна Мария Буссе Бергер"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 581,
+        "fields": {
+            "name": "Susan Pack"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 582,
+        "fields": {
+            "name": "Элеанор Нэирн"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 583,
+        "fields": {
+            "name": "Gilles Neret"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 584,
+        "fields": {
+            "name": "Auguste Racinet,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 585,
+        "fields": {
+            "name": "Августа Дюпон-Обервилль"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 586,
+        "fields": {
+            "name": "Charlotte Fiell,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 587,
+        "fields": {
+            "name": "Peter Fiell"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 588,
+        "fields": {
+            "name": "Frank Zollner"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 589,
+        "fields": {
+            "name": "Daniel Wildenstein"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 590,
+        "fields": {
+            "name": "Daniel Kothenschulte"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 591,
+        "fields": {
+            "name": "Rolf G. Renner"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 592,
+        "fields": {
+            "name": "Masao Furuyama"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 593,
+        "fields": {
+            "name": "Филип Джодидио"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 594,
+        "fields": {
+            "name": "Rainer Willmann"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 595,
+        "fields": {
+            "name": "Klaus Honnef"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 596,
+        "fields": {
+            "name": "Thomas Schauerte,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 597,
+        "fields": {
+            "name": "Юрген Мюллер"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 598,
+        "fields": {
+            "name": "Hajo Düchting"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 599,
+        "fields": {
+            "name": "Magdalena Droste"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 600,
+        "fields": {
+            "name": "Paul Duncan"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 601,
+        "fields": {
+            "name": "Егор Апполонов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 602,
+        "fields": {
+            "name": "Michael Rohlmann,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 603,
+        "fields": {
+            "name": "Frank Zollner,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 604,
+        "fields": {
+            "name": "Rudolf Hiller von Gaertringen"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 605,
+        "fields": {
+            "name": "Rainer Metzger,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 606,
+        "fields": {
+            "name": "I. Walther"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 607,
+        "fields": {
+            "name": "David Gerstein,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 608,
+        "fields": {
+            "name": "J. Kaufman"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 609,
+        "fields": {
+            "name": "Райнер Цербст"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 610,
+        "fields": {
+            "name": "Джорж Сэмюэль Клейсон"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 611,
+        "fields": {
+            "name": "Радислав Гандапас"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 612,
+        "fields": {
+            "name": "Валентин Катасонов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 613,
+        "fields": {
+            "name": "Александр Соколовский"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 614,
+        "fields": {
+            "name": "Алексей Чурин"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 615,
+        "fields": {
+            "name": "Андрей Ващенко,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 616,
+        "fields": {
+            "name": "Евгений Колотилов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 617,
+        "fields": {
+            "name": "Стивен Брег"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 618,
+        "fields": {
+            "name": "Вера Богаченко"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 619,
+        "fields": {
+            "name": "Павел Безручко"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 620,
+        "fields": {
+            "name": "Мария Дорошенко"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 621,
+        "fields": {
+            "name": "Михаил Рогожин"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 622,
+        "fields": {
+            "name": "Крис Смит"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 623,
+        "fields": {
+            "name": "Наполеон Хилл"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 624,
+        "fields": {
+            "name": "Карл Маркс"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 625,
+        "fields": {
+            "name": "Юлия Лях"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 626,
+        "fields": {
+            "name": "Кирилл Жуковский,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 627,
+        "fields": {
+            "name": "Роман Назарчук,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 628,
+        "fields": {
+            "name": "Николай Соболев"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 629,
+        "fields": {
+            "name": "Алексей Иванов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 630,
+        "fields": {
+            "name": "Виктор Пигулевский"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 631,
+        "fields": {
+            "name": "Джон Рокфеллер"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 632,
+        "fields": {
+            "name": "Дэвид Аллен"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 633,
+        "fields": {
+            "name": "Владимир Земсков,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 634,
+        "fields": {
+            "name": "Валерий Прасолов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 635,
+        "fields": {
+            "name": "Николай Жахов,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 636,
+        "fields": {
+            "name": "Роман Парма,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 637,
+        "fields": {
+            "name": "Михаил Шатохин"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 638,
+        "fields": {
+            "name": "Сергей Александров"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 639,
+        "fields": {
+            "name": "Тамара Белоусова,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 640,
+        "fields": {
+            "name": "Надежда Кириллова,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 641,
+        "fields": {
+            "name": "Александр Цыганов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 642,
+        "fields": {
+            "name": "Александр Быков,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 643,
+        "fields": {
+            "name": "Николай Малышев"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 644,
+        "fields": {
+            "name": "И. Ванькович,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 645,
+        "fields": {
+            "name": "В. Волкова,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 646,
+        "fields": {
+            "name": "Д. Горохова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 647,
+        "fields": {
+            "name": "Борис Акунин"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 648,
+        "fields": {
+            "name": "Марк Солонин"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 649,
+        "fields": {
+            "name": "Дмитрий Хазанов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 650,
+        "fields": {
+            "name": "Арон Шнеер"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 651,
+        "fields": {
+            "name": "Михаил Хазин,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 652,
+        "fields": {
+            "name": "Сергей Щеглов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 653,
+        "fields": {
+            "name": "Николай Карамзин"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 654,
+        "fields": {
+            "name": "Оксана Баринова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 655,
+        "fields": {
+            "name": "Андрей Константинов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 656,
+        "fields": {
+            "name": "Светлана Алексиевич"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 657,
+        "fields": {
+            "name": "Лев Гумилев"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 658,
+        "fields": {
+            "name": "Эдвард Сноуден"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 659,
+        "fields": {
+            "name": "Лестер Брукс"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 660,
+        "fields": {
+            "name": "Мартин Эбон"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 661,
+        "fields": {
+            "name": "Кейт Феррацци"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 662,
+        "fields": {
+            "name": "Пьер Незелоф"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 663,
+        "fields": {
+            "name": "Джон Кимхи"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 664,
+        "fields": {
+            "name": "Аллен Даллес"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 665,
+        "fields": {
+            "name": "Джереми Браун"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 666,
+        "fields": {
+            "name": "Абдурахман Авторханов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 667,
+        "fields": {
+            "name": "Виталий Сундаков"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 668,
+        "fields": {
+            "name": "Рахман Али"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 669,
+        "fields": {
+            "name": "Виктор Земсков"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 670,
+        "fields": {
+            "name": "Владимир Мединский"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 671,
+        "fields": {
+            "name": "Вильгельм II Гогенцоллерн"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 672,
+        "fields": {
+            "name": "Юрий Апальков"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 673,
+        "fields": {
+            "name": "Виктор Гладких"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 674,
+        "fields": {
+            "name": "Владимир Кожевников,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 675,
+        "fields": {
+            "name": "Виктор Коженевский,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 676,
+        "fields": {
+            "name": "Владимир Рыбаков"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 677,
+        "fields": {
+            "name": "Геннадий Загорский,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 678,
+        "fields": {
+            "name": "Константин Попов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 679,
+        "fields": {
+            "name": "Петр Ильичев"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 680,
+        "fields": {
+            "name": "Лидия Туманова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 681,
+        "fields": {
+            "name": "Гарольд Шехтер,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 682,
+        "fields": {
+            "name": "Дэвид Эверит"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 683,
+        "fields": {
+            "name": "Владимир Давыдов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 684,
+        "fields": {
+            "name": "Максим Кислов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 685,
+        "fields": {
+            "name": "Галина Золотенкова,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 686,
+        "fields": {
+            "name": "Юрий Пиголкин,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 687,
+        "fields": {
+            "name": "Мария Полетаева"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 688,
+        "fields": {
+            "name": "П. Сергеич"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 689,
+        "fields": {
+            "name": "А. Матвиенко"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 690,
+        "fields": {
+            "name": "Владимир Клевно,"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 691,
+        "fields": {
+            "name": "Александр Максимов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 692,
+        "fields": {
+            "name": "Александр Шаталов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 693,
+        "fields": {
+            "name": "Константин Скловский"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 694,
+        "fields": {
+            "name": "Евгений Суворов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 695,
+        "fields": {
+            "name": "Кронид Малышев"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 696,
+        "fields": {
+            "name": "Александр Борисов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 697,
+        "fields": {
+            "name": "Е. Пустовалов"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 698,
+        "fields": {
+            "name": "Дмитрий Гриц"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 699,
+        "fields": {
+            "name": "Мария Свешникова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 700,
+        "fields": {
+            "name": "Дмитрий Лященко"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 701,
+        "fields": {
+            "name": "Анастасия Томилова"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 702,
+        "fields": {
+            "name": "Ева Меркачева"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 703,
+        "fields": {
+            "name": "Никита Непряхин"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 704,
+        "fields": {
+            "name": "Саша Сулим"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 705,
+        "fields": {
+            "name": "Иван Тургенев"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 706,
+        "fields": {
+            "name": "Никлас Натт-о-Даг"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 707,
+        "fields": {
+            "name": "Джамбулат Умаров"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 708,
+        "fields": {
+            "name": "Ирада Берг"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 709,
+        "fields": {
+            "name": "Сергей Чунаев"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 710,
+        "fields": {
+            "name": "М. Рэй"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 711,
+        "fields": {
+            "name": "Олег Рой"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 712,
+        "fields": {
+            "name": "Маша Трауб"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 713,
+        "fields": {
+            "name": "Анна Матвеева"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 714,
+        "fields": {
+            "name": "Ника Веймар"
+        }
+    },
+    {
+        "model": "books.authormodel",
+        "pk": 715,
+        "fields": {
+            "name": "Сергей Бубновский"
+        }
+    }
+]

@@ -120,7 +120,28 @@ USE_TZ = False
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'static'
 
+MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# CONST
+
+SOLID = 'solid'
+SOFT = 'soft'
+TYPE_OF_BIND = (
+    (None, 'Выберите тип обложки:'),
+    (SOLID, 'твёрдая'),
+    (SOFT, 'мягкая'),
+)
+RU = 'ru'
+EN = 'en'
+LANGUAGE = (
+    (None, 'Выберите язык:'),
+    (RU, 'русский'),
+    (EN, 'английский'),
+)

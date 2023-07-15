@@ -1,0 +1,56 @@
+.block{
+    padding: 120px 0;
+}
+
+/* ФИЛЬТРЫ */
+
+.block .filters{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block .form-select{
+    outline: none;
+    padding: 2px 5px;
+    color: rgb(37, 37, 37);
+}
+
+.books-block{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* КАТЕГОРИИ */
+
+.books-block .category-h3{
+    margin: 20px 0;
+    font-weight: 500;
+}
+
+.books-block .category-ul{
+    list-style: none;
+}
+
+.books-block .category-li{
+    margin-top: 10px;
+}
+
+.books-block .category-link{
+    text-decoration: none;
+    color: rgb(101, 101, 101);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.category .active{
+    color: green;
+}
+
+@media(max-width: 550px){
+    .books-block .category{
+        display: none;
+    } 
+}
+
+

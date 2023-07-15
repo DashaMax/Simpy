@@ -1,0 +1,178 @@
+[
+    {
+        "model": "books.categorymodel",
+        "pk": 1,
+        "fields": {
+            "title": "Художественная литература",
+            "slug": "hudozhestvennaya-literatura"
+        }
+    },
+    {
+        "model": "books.categorymodel",
+        "pk": 2,
+        "fields": {
+            "title": "Комиксы",
+            "slug": "komiksy"
+        }
+    },
+    {
+        "model": "books.categorymodel",
+        "pk": 3,
+        "fields": {
+            "title": "Манга",
+            "slug": "manga"
+        }
+    },
+    {
+        "model": "books.categorymodel",
+        "pk": 4,
+        "fields": {
+            "title": "Книги на английском языке",
+            "slug": "knigi-na-anglijskom-yazyke"
+        }
+    },
+    {
+        "model": "books.categorymodel",
+        "pk": 5,
+        "fields": {
+            "title": "Книги на иностранных языках",
+            "slug": "knigi-na-inostrannyh-yazykah"
+        }
+    },
+    {
+        "model": "books.categorymodel",
+        "pk": 6,
+        "fields": {
+            "title": "Филология",
+            "slug": "filologiya"
+        }
+    },
+    {
+        "model": "books.categorymodel",
+        "pk": 7,
+        "fields": {
+            "title": "Детские книги",
+            "slug": "detskie-knigi"
+        }
+    },
+    {
+        "model": "books.categorymodel",
+        "pk": 8,
+        "fields": {
+            "title": "Книги для подростков",
+            "slug": "knigi-dlya-podrostkov"
+        }
+    },
+    {
+        "model": "books.categorymodel",
+        "pk": 9,
+        "fields": {
+            "title": "Образование",
+            "slug": "obrazovanie"
+        }
+    },
+    {
+        "model": "books.categorymodel",
+        "pk": 10,
+        "fields": {
+            "title": "Эзотерика",
+            "slug": "ehzoterika"
+        }
+    },
+    {
+        "model": "books.categorymodel",
+        "pk": 11,
+        "fields": {
+            "title": "Медицина и здоровье",
+            "slug": "medicina-i-zdorove"
+        }
+    },
+    {
+        "model": "books.categorymodel",
+        "pk": 12,
+        "fields": {
+            "title": "Красота. Мода. Этикет",
+            "slug": "krasota-moda-ehtiket"
+        }
+    },
+    {
+        "model": "books.categorymodel",
+        "pk": 13,
+        "fields": {
+            "title": "Кулинария",
+            "slug": "kulinariya"
+        }
+    },
+    {
+        "model": "books.categorymodel",
+        "pk": 14,
+        "fields": {
+            "title": "Дом и хобби",
+            "slug": "dom-i-hobbi"
+        }
+    },
+    {
+        "model": "books.categorymodel",
+        "pk": 15,
+        "fields": {
+            "title": "Наука. Техника. IT",
+            "slug": "nauka-tekhnika-it"
+        }
+    },
+    {
+        "model": "books.categorymodel",
+        "pk": 16,
+        "fields": {
+            "title": "Религия и философия",
+            "slug": "religiya-i-filosofiya"
+        }
+    },
+    {
+        "model": "books.categorymodel",
+        "pk": 17,
+        "fields": {
+            "title": "Психология",
+            "slug": "psihologiya"
+        }
+    },
+    {
+        "model": "books.categorymodel",
+        "pk": 18,
+        "fields": {
+            "title": "Искусство",
+            "slug": "iskusstvo"
+        }
+    },
+    {
+        "model": "books.categorymodel",
+        "pk": 19,
+        "fields": {
+            "title": "Экономика. Менеджмент. Маркетинг",
+            "slug": "ehkonomika-menedzhment-marketing"
+        }
+    },
+    {
+        "model": "books.categorymodel",
+        "pk": 20,
+        "fields": {
+            "title": "История. Общество",
+            "slug": "istoriya-obshchestvo"
+        }
+    },
+    {
+        "model": "books.categorymodel",
+        "pk": 21,
+        "fields": {
+            "title": "Право",
+            "slug": "pravo"
+        }
+    },
+    {
+        "model": "books.categorymodel",
+        "pk": 22,
+        "fields": {
+            "title": "Книги с автографами",
+            "slug": "knigi-s-avtografami"
+        }
+    }
+]

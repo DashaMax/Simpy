@@ -1,0 +1,12 @@
+<div class="book" title="{{ book.title }}">
+    <a href="#">
+        <img src="{{ book.image.url }}" alt="" class="book-img">
+    </a>
+    <a href="#" class="book-link">{{ book.title|truncatechars:20 }}</a>
+    <p class="book-author">
+        {% for author in book.author.all %}
+            <span>{{ author.name|truncatechars:15 }}</span>
+        {% endfor %}
+    </p>
+    <a href="#" class="book-add">+ Добавить</a>
+</div>

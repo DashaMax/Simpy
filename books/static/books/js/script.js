@@ -15,22 +15,25 @@ closeMenuH3.onclick = function(){
 };
 
 
+/* Добавить книгу к себе */
+
+let bookAdd = document.querySelectorAll('.book-add');
+
+for(let i=0; i<bookAdd.length; i++){
+    bookAdd[i].onclick = function(){
+        bookAdd[i].innerHTML = 'Добавлена';
+        bookAdd[i].classList.remove('book-add');
+        bookAdd[i].classList.add('book-add-yet');
+    }
+};
+
+
 
 let butAdd = document.querySelector('.add-form');
 let addForm = document.querySelector('.block-back');
 let blockH2 = document.querySelector('.block-back h2');
 
 let showComments = document.querySelectorAll('main .comments .show');
-
-let bookAdd = document.querySelectorAll('.add');
-
-for(let i=0; i<bookAdd.length; i++){
-    bookAdd[i].onclick = function(){
-        bookAdd[i].innerHTML = 'Добавлена';
-        bookAdd[i].classList.remove('add');
-        bookAdd[i].classList.add('add-yet');
-    }
-};
 
 if(butAdd){
     butAdd.onclick = function(){

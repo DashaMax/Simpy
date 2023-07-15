@@ -1,0 +1,60 @@
+{% extends 'books/base.html' %}
+{% load static %}
+
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'books/css/style-books.css' %}">
+    <link rel="stylesheet" href="{% static 'books/css/style-one-book.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    <main>
+        <div class="container">
+            <div class="block">
+                <div class="filters">
+                    <h1>Книги</h1>
+                    <form action="" method="get">
+                        <select class="form-select">
+                            <option selected disabled>Сортировать:</option>
+                            <option>последние</option>
+                            <option>по популярности</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="books-block">                
+                    <div class="category">                    
+                        <h3 class="category-h3">Категории</h3>
+                        <ul class="category-ul">
+                            {% if not active %}
+                                <li class="category-li">
+                                    <a href="{% url 'books' %}" class="category-link active">Все категории</a>
+                                </li>
+                            {% else %}
+                                <li class="category-li">
+                                    <a href="{% url 'books' %}" class="category-link">Все категории</a>
+                                </li>
+                            {% endif %}
+                            {% for category in categories %}
+                                {% if category.slug == active.slug %}
+                                    <li class="category-li">
+                                        <a href="{% url 'books_category' category.slug %}" class="category-link active">{{ category.title }}</a>
+                                    </li>
+                                {% else %}
+                                    <li class="category-li">
+                                        <a href="{% url 'books_category' category.slug %}" class="category-link">{{ category.title }}</a>
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="books">
+                        {% for book in books %}
+                            {% include 'books/one-book.html' %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}
