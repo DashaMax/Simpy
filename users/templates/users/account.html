@@ -1,0 +1,83 @@
+{% extends 'books/base.html' %}
+{% load static %}
+
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'users/css/style-profile.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    <main>
+        <div class="container">
+            <p class="p-change">
+                <a href="edit.html" class="change">🖉&#160;&#160;Редактировать</a>
+                {% if user.is_staff %}
+                    <a href="/admin" class="exit">Админка</a>
+                {% endif %}
+            </p>
+            <hr>
+            <div class="nav-profile">
+                <ul class="nav-ul">
+                    <li class="nav-li">
+                        <a href="{% url 'user' %}" class="nav-link active">{{ user.username }}</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="bookshelf.html" class="nav-link">Книжная&#160;полка</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="profile-blog.html" class="nav-link">Блог</a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="profile-quotes.html" class="nav-link">Цитаты</a>
+                    </li>
+                </ul>
+                <a href="{% url 'logout' %}" class="exit">Выйти</a>
+            </div>
+            <hr>
+            <div class="profile-block">
+                <div>
+                    <img src="{{ user.image.url }}" alt="Фото" class="profile-img">
+                    <p class="status">Статус:
+                        <span class="inweb">в сети</span>
+                    </p>
+                </div>
+                <div class="block-info">
+                    <h2>Анкета</h2>
+                    {% if user.first_name %}
+                        <p class="info-p">
+                            <span class="info-span">Имя:</span> {{ user.first_name }}
+                        </p>
+                    {% endif %}
+                    {% if user.last_name %}
+                        <p class="info-p">
+                            <span class="info-span">Фамилия:</span> {{ user.last_name }}
+                        </p>
+                    {% endif %}
+                    {% if user.email %}
+                        <p class="info-p">
+                            <span class="info-span">E-mail:</span> {{ user.email }}
+                        </p>
+                    {% endif %}
+                    <p class="info-p">
+                        <span class="info-span">Пол:</span> {{ user.get_sex_display }}
+                    </p>
+                    {% if user.city %}
+                        <p class="info-p">
+                            <span class="info-span">Город:</span> {{ user.city }}
+                        </p>
+                    {% endif %}
+                    {% if user.date_of_birth %}
+                        <p class="info-p">
+                            <span class="info-span">Дата рождения:</span> {{ user.date_of_birth }}
+                        </p>
+                    {% endif %}
+                </div>
+            </div>
+            {% if user.about %}
+                <h2 class="about-title">О себе</h2>
+                <p class="description">{{ user.about }}</p>
+            {% endif %}
+        </div>
+    </main>
+{% endblock %}

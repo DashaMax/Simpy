@@ -95,7 +95,7 @@ header nav{
     }
 
     #dot{
-        display: none;
+        display: none!important;
     }
 
     .close-menu{

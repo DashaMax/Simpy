@@ -128,6 +128,11 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+AUTH_USER_MODEL = 'users.UserModel'
+
+LOGIN_URL = 'login'
+LOGOUT_REDIRECT_URL = 'login'
+
 
 # CONST
 
@@ -138,10 +143,19 @@ TYPE_OF_BIND = (
     (SOLID, 'твёрдая'),
     (SOFT, 'мягкая'),
 )
+
 RU = 'ru'
 EN = 'en'
 LANGUAGE = (
     (None, 'Выберите язык:'),
     (RU, 'русский'),
     (EN, 'английский'),
+)
+
+MALE = 'male'
+FEMALE = 'female'
+SEX = (
+    (None, 'Выберите пол:'),
+    (MALE, 'мужской'),
+    (FEMALE, 'женский'),
 )

@@ -13,7 +13,7 @@ TIME_NOW = datetime.now()
 
 #CURRENT_DIR = os.getcwd()
 #FIXTURE_DIR = os.path.abspath('books/fixtures')
-FIXTURE_DIR = os.path.normpath('books/fixtures')
+FIXTURE_DIR = os.path.normpath('fixtures')
 IMAGE_DIR = os.path.normpath(f'images/{YEAR_TODAY}/{MONTH_TODAY}/{DAY_TODAY}')
 MEDIA_DIR = os.path.join('media', IMAGE_DIR)
 

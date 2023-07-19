@@ -1,0 +1,25 @@
+<h1 class="book-title">{{ book.title }}</h1>
+<h3 class="book-author">
+    {% for author in book.author.all %}
+        <span>{{ author.name }}</span>
+    {% endfor %}
+</h3>
+<hr>
+<div class="nav-book">
+    <ul class="book-ul">
+        <li class="book-li">
+            <a href="{% url 'book' book.slug %}" class="book-link active">Книга</a>
+        </li>
+        <li class="book-li">
+            <a href="readers.html" class="book-link">Читатели</a>
+        </li>
+        <li class="book-li">
+            <a href="reviews.html" class="book-link">Отзывы</a>
+        </li>
+        <li class="book-li">
+            <a href="quotes.html" class="book-link">Цитаты</a>
+        </li>
+    </ul>
+    <a href="#" class="book-add">+&#160;Добавить</a>
+</div>
+<hr>
