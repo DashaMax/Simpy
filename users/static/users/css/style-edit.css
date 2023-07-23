@@ -1,0 +1,84 @@
+.form-edit .form{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-edit .photo{
+    max-width: 300px;
+}
+
+.form-edit .photo-img{
+    width: 100%;
+}
+
+.form-edit .data{
+    width: 500px;
+}
+
+.form-edit .field-title{
+    color: grey;
+    font-size: 18px;
+}
+
+.form-edit .input-field{
+    padding: 7px 12px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid rgb(90, 90, 90);
+    width: 100%;
+    margin-top: 5px;
+}
+
+.form-edit select{
+    padding: 0;
+}
+
+.form-edit textarea{
+    resize: none;
+}
+
+.form-edit .input-field:hover, .form-edit .input-field:focus{
+    background-color: rgba(0, 0, 0, 0.039);
+}
+
+.form-edit input[type=submit]{
+    display: block;
+    margin: 20px auto 0;
+    text-align: center;
+    font-size: 16px;
+    padding: 5px 30px;
+    border-radius: 5px;
+    background-color: rgb(46, 46, 46);
+    color: white;
+}
+
+.form-edit input[type=submit]:hover{
+    background-color: black;
+}
+
+.block-message{
+    text-align: center;
+}
+
+.errorlist{
+    margin-top: 20px;
+    list-style: none;
+    color: red;
+}
+
+@media(max-width: 873px){
+    .form-edit .photo{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .form-edit .data{
+        width: 100%;
+        margin-top: 30px;
+    }
+}

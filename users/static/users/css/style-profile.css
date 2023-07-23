@@ -5,6 +5,10 @@ main{
     background-size: cover;
 }
 
+/*main{
+    padding: 170px 0 411px;
+}*/
+
 main .block-back{
     display: none;
     position: fixed;
@@ -174,46 +178,13 @@ main .container{
 
 
 
+/* BOOKSHELF */
 
-
-
-
-main .books{
+.books{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
-}
-
-main .books .book{
-    margin-right: 20px;
-    box-shadow: 0 0 7px rgb(197, 197, 197);
-    padding: 20px;
-    box-sizing: border-box;
-    flex-basis: 180px;
-    border-radius: 5px;
-    margin-top: 20px;
-    transition: all .3s linear;
-}
-
-main .books .book:hover{
-    transform: scale(1.03);
-}
-
-main .books .book img{
-    width: 100%;
-    text-align: center;
-}
-
-main .books .book .title{
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-    font-weight: 500;
-}
-
-main .books .book .author{
-    font-size: 14px;
-    margin: 10px 0 20px;
+    margin-left: 0;
 }
 
 

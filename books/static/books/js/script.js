@@ -14,18 +14,50 @@ closeMenuH3.onclick = function(){
     dot.style.display = 'block';
 };
 
+/* Добавление класса active в nav-profile */
 
-/* Добавить книгу к себе */
+let currentURL = document.URL;
+let navLink = document.querySelectorAll('.nav-profile .nav-link');
 
-let bookAdd = document.querySelectorAll('.book-add');
-
-for(let i=0; i<bookAdd.length; i++){
-    bookAdd[i].onclick = function(){
-        bookAdd[i].innerHTML = 'Добавлена';
-        bookAdd[i].classList.remove('book-add');
-        bookAdd[i].classList.add('book-add-yet');
+if(navLink){
+    for(let i = 0; i < navLink.length; i++){
+        if(navLink[i].className == 'nav-link active'){
+            navLink[i].className = 'nav-link';
+        }
     }
-};
+
+    if(currentURL.includes('bookshelf') && currentURL.includes('user')){
+        navLink[1].className = 'nav-link active';
+    }
+    else if(currentURL.includes('user')){
+        navLink[0].className = 'nav-link active';
+    }
+}
+
+/* Добавление класса active в nav-book */
+
+currentURL = document.URL;
+let bookLink = document.querySelectorAll('.nav-book .book-link');
+
+if(bookLink){
+    for(let i = 0; i < bookLink.length; i++){
+        console.log(bookLink[i].className);
+        if(bookLink[i].className == 'book-link active'){
+            bookLink[i].className = 'book-link';
+        }
+    }
+
+    if(currentURL.includes('book') && currentURL.includes('readers')){
+        bookLink[1].className = 'book-link active';
+    }
+    else if(currentURL.includes('book')){
+        bookLink[0].className = 'book-link active';
+    }
+}
+
+
+
+
 
 
 

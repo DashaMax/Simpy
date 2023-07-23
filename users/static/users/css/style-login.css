@@ -1,13 +1,17 @@
 main{
-    padding: 170px 0;
+    padding: 180px 0;
     background-image: url('../images/fon-login.png');
     background-size: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
+/*main{
+    padding: 170px 0 411px;
+}*/
+
 .form-login{
-    margin: 0 auto;
+    margin: 0 auto 100px;
     max-width: 600px;
     padding: 40px;
     box-sizing: border-box;
@@ -45,7 +49,7 @@ main{
     resize: none;
 }
 
-.form-login  .input-field:hover, .form-login select:hover, .form-login .input-field:focus, .form-login select:focus{
+.form-login .input-field:hover, .form-login .input-field:focus{
     background-color: rgba(0, 0, 0, 0.039);
 }
 

@@ -10,31 +10,7 @@
 {% block content %}
     <main>
         <div class="container">
-            <p class="p-change">
-                <a href="edit.html" class="change">🖉&#160;&#160;Редактировать</a>
-                {% if user.is_staff %}
-                    <a href="/admin" class="exit">Админка</a>
-                {% endif %}
-            </p>
-            <hr>
-            <div class="nav-profile">
-                <ul class="nav-ul">
-                    <li class="nav-li">
-                        <a href="{% url 'user' %}" class="nav-link active">{{ user.username }}</a>
-                    </li>
-                    <li class="nav-li">
-                        <a href="bookshelf.html" class="nav-link">Книжная&#160;полка</a>
-                    </li>
-                    <li class="nav-li">
-                        <a href="profile-blog.html" class="nav-link">Блог</a>
-                    </li>
-                    <li class="nav-li">
-                        <a href="profile-quotes.html" class="nav-link">Цитаты</a>
-                    </li>
-                </ul>
-                <a href="{% url 'logout' %}" class="exit">Выйти</a>
-            </div>
-            <hr>
+            {% include 'users/nav-profile.html' %}
             <div class="profile-block">
                 <div>
                     <img src="{{ user.image.url }}" alt="Фото" class="profile-img">

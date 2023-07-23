@@ -5,6 +5,7 @@
 {% block style %}
     <link rel="stylesheet" href="{% static 'books/css/style-books.css' %}">
     <link rel="stylesheet" href="{% static 'books/css/style-one-book.css' %}">
+    <link rel="stylesheet" href="{% static 'books/css/style-add-delete-book.css' %}">
 {% endblock %}
 
 
@@ -13,13 +14,10 @@
         <div class="container">
             <div class="block">
                 <div class="filters">
-                    <h1>Книги</h1>
-                    <form action="" method="get">
-                        <select class="form-select">
-                            <option selected disabled>Сортировать:</option>
-                            <option>последние</option>
-                            <option>по популярности</option>
-                        </select>
+                    <h1 class="filters-h1">Книги</h1>
+                    <form method="get">
+                        <input type="text" name="search" placeholder="поиск" class="search-text">
+                        <input type="submit" value="Найти" class="search-submit">
                     </form>
                 </div>
                 <div class="books-block">                

@@ -1,0 +1,29 @@
+<p class="p-change">
+    {% if user.slug == request.user.slug %}
+        <a href="{% url 'edit' request.user.slug %}" class="change">🖉&#160;&#160;Редактировать</a>
+        {% if user.is_staff %}
+            <a href="/admin" class="exit">Админка</a>
+        {% endif %}
+    {% endif %}
+</p>
+<hr>
+<div class="nav-profile">
+    <ul class="nav-ul">
+        <li class="nav-li">
+            <a href="{% url 'user' user.slug %}" class="nav-link active">{{ user.username }}</a>
+        </li>
+        <li class="nav-li">
+            <a href="{% url 'bookshelf' user.slug %}" class="nav-link">Книжная&#160;полка</a>
+        </li>
+        <li class="nav-li">
+            <a href="profile-blog.html" class="nav-link">Блог</a>
+        </li>
+        <li class="nav-li">
+            <a href="profile-quotes.html" class="nav-link">Цитаты</a>
+        </li>
+    </ul>
+    {% if user.slug == request.user.slug %}
+        <a href="{% url 'logout' %}" class="exit">Выйти</a>
+    {% endif %}
+</div>
+<hr>

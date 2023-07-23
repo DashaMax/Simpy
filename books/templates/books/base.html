@@ -11,87 +11,89 @@
     <title>{{ title }}</title>
 </head>
 <body>
-    <header>
-        <div class="close-menu">
-            <h3 class="close-x">x</h3>
-            <ul>
-                <li class="menu-li">
-                    <a href="{% url 'books' %}" class="menu-link">Книги</a>
-                </li>
-                <li class="menu-li">
-                    <a href="blogs.html" class="menu-link">Блог</a>
-                </li>
-                <li class="menu-li">
-                    <a href="quotes-main.html" class="menu-link">Цитаты</a>
-                </li>
-            </ul>
-        </div>
-        <nav>
-            <div class="container">
-                <div class="nav">
-                    <div class="nav-menu">
-                        <a href="{% url 'index' %}" class="nav-icon-1">
-                            <img src="{% static 'books/images/icon_main.png' %}" alt="Simpy" title="На главную">
-                        </a>
-                        <a href="#" class="nav-icon-2" id="dot">
-                            <img src="{% static 'books/images/dot_menu.png' %}" alt="Меню" title="Меню">
-                        </a>
-                        <ul class="nav-ul">
-                            <li>
-                                <a href="{% url 'books' %}" class="nav-link">Книги</a>
-                            </li>
-                            <li>
-                                <a href="blogs.html" class="nav-link">Блог</a>
-                            </li>
-                            <li>
-                                <a href="quotes-main.html" class="nav-link">Цитаты</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="nav-menu-user">
-                        {% if not user.is_authenticated %}
-                            <a href="{% url 'login' %}" class="nav-icon-2">
-                                <img src="{% static 'books/images/profile.png' %}" alt="Профиль" title="Войти">
-                            </a>
-                        {% else %}
-                            <a href="{% url 'user' %}" class="nav-icon-2">
-                                <img src="{% static 'books/images/profile.png' %}" alt="Профиль" title="Профиль">
-                            </a>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    {% block content %}{% endblock %}
-
-    <footer>
-        <div class="container">
-            <div class="block-foot">
-                <h2 class="foot-h2">Simpy © 2023</h2>
-                <ul class="foot-ul">
-                    <li class="foot-li">
-                        <a href="{% url 'index' %}" class="foot-link">Главная</a>
+    <div class="wrapper">
+        <header>
+            <div class="close-menu">
+                <h3 class="close-x">x</h3>
+                <ul>
+                    <li class="menu-li">
+                        <a href="{% url 'books' %}" class="menu-link">Книги</a>
                     </li>
-                    <li class="foot-li">
-                        <a href="{% url 'books' %}" class="foot-link">Книги</a>
+                    <li class="menu-li">
+                        <a href="blogs.html" class="menu-link">Блог</a>
                     </li>
-                    <li class="foot-li">
-                        <a href="blogs.html" class="foot-link">Блог</a>
-                    </li>
-                    <li class="foot-li">
-                        <a href="quotes-main.html" class="foot-link">Цитаты</a>
+                    <li class="menu-li">
+                        <a href="quotes-main.html" class="menu-link">Цитаты</a>
                     </li>
                 </ul>
-                <div class="foot-contacts">
-                    <a href="mailto:simpy@yandex.ru" class="foot-link">simpy@yandex.ru</a>
-                    <a href="tel:+79XXXXXXXXX" class="foot-link">+79XXXXXXXXX</a>
+            </div>
+            <nav>
+                <div class="container">
+                    <div class="nav">
+                        <div class="nav-menu">
+                            <a href="{% url 'index' %}" class="nav-icon-1">
+                                <img src="{% static 'books/images/icon_main.png' %}" alt="Simpy" title="На главную">
+                            </a>
+                            <a href="#" class="nav-icon-2" id="dot">
+                                <img src="{% static 'books/images/dot_menu.png' %}" alt="Меню" title="Меню">
+                            </a>
+                            <ul class="nav-ul">
+                                <li>
+                                    <a href="{% url 'books' %}" class="nav-link">Книги</a>
+                                </li>
+                                <li>
+                                    <a href="blogs.html" class="nav-link">Блог</a>
+                                </li>
+                                <li>
+                                    <a href="quotes-main.html" class="nav-link">Цитаты</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav-menu-user">
+                            {% if not user.is_authenticated %}
+                                <a href="{% url 'login' %}" class="nav-icon-2">
+                                    <img src="{% static 'books/images/profile.png' %}" alt="Профиль" title="Войти">
+                                </a>
+                            {% else %}
+                                <a href="{% url 'user' request.user.slug %}" class="nav-icon-2">
+                                    <img src="{% static 'books/images/profile.png' %}" alt="Профиль" title="Профиль">
+                                </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        {% block content %}{% endblock %}
+
+        <footer>
+            <div class="container">
+                <div class="block-foot">
+                    <h2 class="foot-h2">Simpy © 2023</h2>
+                    <ul class="foot-ul">
+                        <li class="foot-li">
+                            <a href="{% url 'index' %}" class="foot-link">Главная</a>
+                        </li>
+                        <li class="foot-li">
+                            <a href="{% url 'books' %}" class="foot-link">Книги</a>
+                        </li>
+                        <li class="foot-li">
+                            <a href="blogs.html" class="foot-link">Блог</a>
+                        </li>
+                        <li class="foot-li">
+                            <a href="quotes-main.html" class="foot-link">Цитаты</a>
+                        </li>
+                    </ul>
+                    <div class="foot-contacts">
+                        <a href="mailto:simpy@mail.ru" class="foot-link">simpy@mail.ru</a>
+                        <a href="tel:+79XXXXXXXXX" class="foot-link">+79XXXXXXXXX</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-    <script src="{% static 'books/js/script.js' %}"></script>
+        <script src="{% static 'books/js/script.js' %}"></script>
+    </div>
 </body>
 </html>

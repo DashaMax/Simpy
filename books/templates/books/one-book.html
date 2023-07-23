@@ -1,12 +1,30 @@
+{% load static %}
+
+
 <div class="book" title="{{ book.title }}">
     <a href="{% url 'book' book.slug %}">
         <img src="{{ book.image.url }}" alt="Книга" class="book-img">
     </a>
-    <a href="{% url 'book' book.slug %}" class="book-link">{{ book.title|truncatechars:20 }}</a>
+    <a href="{% url 'book' book.slug %}" class="book-link">{{ book.title|truncatechars:14 }}</a>
     <p class="book-author">
         {% for author in book.author.all %}
-            <span>{{ author.name|truncatechars:15 }}</span>
+            <span>{{ author.name|truncatechars:17 }}</span>
         {% endfor %}
     </p>
-    <a href="#" class="book-add">+ Добавить</a>
+    {% if user.is_authenticated %}
+        <form method="get" class="but">
+            {% if book not in user_books %}
+                <input type="hidden" name="add" value="{{ book.slug }}">
+                <input type="submit" class="book-add" value="✚&#160;&#160;Добавить">
+            {% else %}
+                <input type="hidden" name="delete" value="{{ book.slug }}">
+                <input type="submit" class="book-delete" value="🗑&#160;&#160;Удалить">
+            {% endif %}
+        </form>
+    {% else %}
+        <form method="get" class="but">
+            <input type="hidden" name="add" value="{{ book.slug }}">
+            <input type="submit" class="book-add" value="✚&#160;&#160;Добавить">
+        </form>
+    {% endif %}
 </div>

@@ -1,0 +1,32 @@
+{% extends 'books/base.html' %}
+{% load static %}
+
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'books/css/style-book.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    <main>
+        <div class="container">
+            {% include 'books/nav-book.html' %}
+            <div class="readers">
+                {% if readers %}
+                    {% for reader in readers %}
+                        <div class="reader">
+                            <a href="{% url 'user' reader.slug %}" class="reader-link">
+                                <img src="{{ reader.image.url }}" alt="Фото" class="reader-img">
+                                <h3 class="reader-name">{{ reader.username }}</h3>
+                            </a>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                <div class="reader">
+                    <h3 class="reader-name">Читателей нет</h3>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </main>
+{% endblock %}

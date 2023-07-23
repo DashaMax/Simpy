@@ -134,15 +134,6 @@ main .nav-book .add-form:hover, .nav-book .book-add:hover{
     background-color: rgb(10, 10, 10);
 }
 
-.nav-book .book-add-yet{
-    text-decoration: none;
-    color: rgb(47, 165, 32);
-}
-
-.nav-book .book-add-yet:hover{
-    cursor: auto;
-}
-
 
 /* КНИГА */
 
@@ -194,31 +185,38 @@ main .nav-book .add-form:hover, .nav-book .book-add:hover{
 
 
 
+/* ЧИТАТЕЛИ */
 
-
-main .readers{
+.readers{
     margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
 
-main .readers .reader{
+.readers .reader{
     margin-right: 20px;
     text-align: center;
 }
 
-main .readers .reader img{
+.readers .reader-img{
     width: 80px;
 }
 
-main .readers .reader a{
+.readers .reader-link{
     text-decoration: none;
 }
 
-main .readers .reader h3{
+.readers .reader-name{
     font-size: 20px;
+    color: grey;
+    font-weight: 400;xxx
 }
+
+
+
+
+
 
 main .reviews{
     margin-top: 30px;

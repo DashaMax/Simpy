@@ -1,0 +1,42 @@
+{% extends 'books/base.html' %}
+{% load static %}
+
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'users/css/style-profile.css' %}">
+    <link rel="stylesheet" href="{% static 'users/css/style-edit.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    <main>
+        <div class="container">
+            {% include 'users/nav-profile.html' %}
+            <div class="form-edit">
+                <form method="post" class="form" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="photo">
+                        <img src="{{ request.user.image.url }}" alt="Фото" class="photo-img">
+                        {{ form.image }}
+                    </div>
+                    <div class="data">
+                        <div class="block-message">
+                            {% if form.errors %}
+                                {{ form.username.errors }}
+                            {% endif %}
+                        </div>
+                        {% for field in form %}
+                           {% if field.html_name != 'password' and field.html_name != 'image' %}
+                                <p class="field-title">{{ field.label }}:</p>
+                                {{ field }}
+                           {% endif %}
+                        {% endfor %}
+                        <p class="form-input">
+                            <input type="submit" value="Сохранить">
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+{% endblock %}

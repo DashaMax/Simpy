@@ -1,0 +1,23 @@
+{% extends 'books/base.html' %}
+{% load static %}
+
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'users/css/style-profile.css' %}">
+    <link rel="stylesheet" href="{% static 'books/css/style-one-book.css' %}">
+    <link rel="stylesheet" href="{% static 'books/css/style-add-delete-book.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    <main>
+        <div class="container">
+            {% include 'users/nav-profile.html' %}
+            <div class="books">
+                {% for book in books %}
+                    {% include 'books/one-book.html' %}
+                {% endfor %}
+            </div>
+        </div>
+    </main>
+{% endblock %}
