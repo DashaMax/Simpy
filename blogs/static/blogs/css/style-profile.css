@@ -1,0 +1,452 @@
+main{
+    background-image: url('../images/fon-login.png');
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*main{
+    padding: 170px 0 411px;
+}*/
+
+main .block-back{
+    display: none;
+    position: fixed;
+    padding: 30px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.683);
+    z-index: 100001;
+}
+
+main .block-back form{
+    position: relative;
+    max-width: 600px;
+    margin: 80px auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+main .block-back form h2{
+    text-align: right;
+    margin: 0;
+    cursor: pointer;
+    font-size: 30px;
+    color: rgb(68, 68, 68);
+    font-weight: 500;
+}
+
+main .block-back form h1{
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    color: rgb(45, 45, 45);
+    font-weight: 500;
+}
+
+main .block-back form textarea, main .block-back form input[type=text], main .block-back form input[type=file]{
+    padding: 7px 12px;
+    box-sizing: border-box;
+    font-size: 18px;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid rgb(90, 90, 90);
+    width: 100%;
+    margin-top: 20px;
+    resize: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+main .block-back form input[type=submit]{
+    font-size: 18px;
+    padding: 5px 30px;
+    border-radius: 5px;
+    background-color: rgb(46, 46, 46);
+    color: white;
+    display: block;
+    margin: 30px auto 0;
+}
+
+main .block-back form input[type=submit]:hover{
+    background-color: black;
+}
+
+main .container{
+    padding: 130px 30px;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+
+/* USERNAME */
+
+.nav-profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.nav-profile .nav-ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-profile .nav-li{
+    margin-right: 20px;
+}
+
+.nav-profile .nav-link{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(116, 116, 116);
+}
+
+.nav-profile .active{
+    color: rgb(47, 165, 32);
+}
+
+.add-form, .change, .exit{
+    padding: 5px 15px;
+    box-sizing: border-box;
+    background-color: rgb(44, 44, 44);
+    border-radius: 3px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.p-change{
+    margin-bottom: 10px;
+}
+
+.add-form:hover, .change:hover, .exit:hover{
+    background-color: rgb(10, 10, 10);
+}
+
+.profile-block{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile-block .profile-img{
+    margin-top: 30px;
+    width: 200px;
+}
+
+.profile-block .status{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.profile-block .status .inweb{
+    color: green;
+}
+
+.profile-block .block-info{
+    margin-left: 30px;
+}
+
+.profile-block .info-p{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.profile-block .info-span{
+    color: rgb(150, 150, 150);
+}
+
+.about-title{
+    margin-top: 30px;
+}
+
+.description{
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+
+
+/* BOOKSHELF */
+
+.books{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 0;
+}
+
+
+main .blogs{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main .blogs .blog{
+    width: 400px;
+    box-shadow: 0 0 7px rgb(197, 197, 197);
+    padding: 20px;
+    box-sizing: border-box;
+    flex-basis: 150px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: all .3s linear;
+    margin-top: 30px;
+}
+
+main .blogs .blog:hover{
+    transform: scale(1.02);
+}
+
+main .blogs .blog h3{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+main .blogs .blog h3 a{
+    text-decoration: none;
+    color: rgb(77, 77, 77);
+}
+
+main .blogs .blog img{
+    margin-top: 20px;
+    width: 300px;
+}
+
+main .blogs .blog p{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+main .blogs .blog .block-author{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main .blogs .blog .block-author .author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .blogs .blog .block-author .author img{
+    width: 70px;
+}
+
+main .blogs .blog .block-author .author .name{
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(32, 32, 32);
+}
+
+main .blogs .blog .block-author .date{
+    margin: 0;
+    color: rgb(163, 163, 163);
+}
+
+main .blogs .blog .comment{
+    display: block;
+    margin-top: 30px;
+    font-size: 18px;
+    color: gray;
+}
+
+
+@media(max-width: 734px){
+    .profile-block{
+        justify-content: center;
+    }
+
+    .profile-block .profile-img{
+        width: 100%;
+    }
+
+    .profile-block .block-info{
+        margin: 20px 0 0;
+        width: 100%;
+    }
+}
+
+@media(max-width: 420px){
+    main .blogs .blog{
+        width: 100%;
+    }
+
+    main .blogs .blog img{
+        width: 200px;
+    }
+}
+
+@media(max-width: 380px){
+    .nav-profile .nav-link{
+        font-size: 16px;
+    }
+
+    .change, .exit{
+        font-size: 12px;
+    }
+}
+
+
+main .quotes{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+main .quotes .quote{
+    position: relative;
+    margin-top: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 400px;
+    box-shadow: 0 0 7px rgb(197, 197, 197);
+}
+
+main .quotes .quote .block-author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .quotes .quote .block-author .author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .quotes .quote .block-author .author img{
+    width: 70px;
+}
+
+main .quotes .quote .block-author .author h3{
+    margin-left: 15px;
+}
+
+main .quotes .quote .block-author .author a{
+    text-decoration: none;
+    color: rgb(107, 107, 107);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+main .quotes .quote .block-author p{
+    color: rgb(107, 107, 107);
+}
+
+main .quotes .quote .quote-p{
+    margin-top: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+
+main .quotes .quote .author-quote{
+    margin: 20px 0;
+    text-align: right;
+    font-weight: 600;
+}
+
+main .quotes .quote .add-comment{
+    display: block;
+    margin-top: 30px;
+    color: gray;
+}
+
+@media(max-width: 360px){
+    main .quotes .quote .block-author p{
+        font-size: 12px;
+    }
+}
+
+main .comments .block-comment{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+
+main .comments .show{
+    text-align: center;
+    color: green;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+main .comments .back{
+    display: none;
+}
+
+main .comments .block-comment .author{
+    width: 40px;
+    margin-right: 40px;
+    text-align: center;
+}
+
+main .comments .block-comment .author img{
+    width: 100%;
+}
+
+main .comments .block-comment .author h3{
+    font-size: 14px;
+    margin: 0;
+}
+
+main .comments .block-comment .author h3 a{
+    text-decoration: none;
+    color: black;
+}
+
+main .comments .block-comment .author p{
+    font-size: 8px;
+    color: grey;
+}
+
+main .comments .comment{
+    margin: 0;
+}
+
+main form p{
+    width: 100%;
+    margin-top: 20px;
+}
+
+main form input[type=text]{
+    padding: 7px 12px;
+    box-sizing: border-box;
+    font-size: 14px;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid rgb(90, 90, 90);
+    width: 100%;
+}
+
+main form input[type=submit]{
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: rgb(46, 46, 46);
+    color: white;
+}
+
+main form input[type=submit]:hover{
+    background-color: black;
+}

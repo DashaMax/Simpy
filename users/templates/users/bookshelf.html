@@ -13,11 +13,15 @@
     <main>
         <div class="container">
             {% include 'users/nav-profile.html' %}
-            <div class="books">
-                {% for book in books %}
-                    {% include 'books/one-book.html' %}
-                {% endfor %}
-            </div>
+            {% if books %}
+                <div class="books">
+                    {% for book in books %}
+                        {% include 'books/one-book.html' %}
+                    {% endfor %}
+                </div>
+            {% else %}
+                <p class="none">Книжная полка пуста</p>
+            {% endif %}
         </div>
     </main>
 {% endblock %}

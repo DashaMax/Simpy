@@ -1,42 +1,24 @@
-.books .but{
+.but{
     position: absolute;
     bottom: 0;
     padding-bottom: 20px;
     box-sizing: border-box;
 }
 
-.books .book-add{
+.book-add, .book-delete, .add-review{
     display: block;
     width: 100%;
     text-align: center;
     padding: 5px 18px;
     box-sizing: border-box;
-    background-color: white;
-    border: 1px solid green;
     border-radius: 3px;
     text-decoration: none;
-    color: green;
     font-size: 12px;
+    background-color: rgb(67, 67, 67);
+    border: 1px solid rgb(67, 67, 67);
+    color: white;
 }
 
-.books .book-delete{
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 5px 18px;
-    box-sizing: border-box;
-    background-color: white;
-    border: 1px solid red;
-    border-radius: 3px;
-    text-decoration: none;
-    color: red;
-    font-size: 12px;
-}
-
-.books .book-add:hover{
-    background-color: rgba(0, 128, 0, 0.2);
-}
-
-.books .book-delete:hover{
-    background-color: rgba(255, 0, 0, 0.2);
+.book-add:hover, .book-delete:hover, .add-review:hover{
+    background-color: black;
 }

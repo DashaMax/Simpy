@@ -1,0 +1,18 @@
+<div class="blog">
+    <h3 class="blog-title">
+        <a href="{% url 'blog' blog.slug %}" class="blog-link">{{ blog.title }}</a>
+    </h3>
+    <a href="{% url 'blog' blog.slug %}">
+        <img src="{{ blog.image.url }}" alt="Фото" class="blog-img">
+    </a>
+    <p class="blog-body">{{ blog.description|truncatechars:500 }}</p>
+    <div class="block-author">
+        <div class="author">
+            <a href="{% url 'user' blog.author.slug %}">
+                <img src="{{ blog.author.image.url }}" alt="Фото" class="author-avatar">
+            </a>
+            <a href="{% url 'user' blog.author.slug %}" class="blog-name">{{ blog.author.username }}</a>
+        </div>
+        <p class="date">{{ blog.create_date }}</p>
+    </div>
+</div>

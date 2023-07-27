@@ -16,7 +16,7 @@
                 <img src="{{ book.image.url }}" alt="Книга" class="book-img">
                 <div class="block-info">
                     <p class="info-p"><span class="info-span">Издательство:</span> {{ book.publishing.all.0 }}</p>
-                    <p class="info-p"><span class="info-span">Переплёт:</span> {{ book.get_binding_display }}</p>
+                    <p class="info-p"><span class="info-span">Обложка:</span> {{ book.get_binding_display }}</p>
                     <p class="info-p"><span class="info-span">Год издания:</span> {{ book.year }}</p>
                     <p class="info-p"><span class="info-span">Количество страниц:</span> {{ book.pages }}</p>
                     <p class="info-p"><span class="info-span">Язык:</span> {{ book.get_language_display }}</p>

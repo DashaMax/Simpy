@@ -4,7 +4,7 @@
 
 {% block style %}
     <link rel="stylesheet" href="{% static 'books/css/style-main.css' %}">
-    <link rel="stylesheet" href="{% static 'books/css/style-one-blog.css' %}">
+    <link rel="stylesheet" href="{% static 'blogs/css/style-one-blog.css' %}">
 {% endblock %}
 
 
@@ -38,8 +38,9 @@
         <div class="container">
             <h2 class="blog-h2">Блог</h2>
             <div class="blogs">
-                {% include 'books/one-blog.html' %}
-                {% include 'books/one-blog.html' %}
+                {% for blog in blogs %}
+                    {% include 'blogs/one-blog.html' %}
+                {% endfor %}
             </div>
         </div>
         <div class="block-quote">

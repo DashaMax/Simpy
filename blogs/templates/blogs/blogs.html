@@ -1,0 +1,41 @@
+{% extends 'books/base.html' %}
+{% load static %}
+
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'blogs/css/style-blogs.css' %}">
+    <link rel="stylesheet" href="{% static 'blogs/css/style-one-blog.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    <main>
+        <div class="container">
+            <div class="first-block">
+                <div class="filters">
+                    <h1>Блог</h1>
+                    {% if blogs %}
+                        <form method="get">
+                            <select class="filters-select">
+                                <option selected>Сортировать:</option>
+                                <option>по дате ↑</option>
+                                <option>по дате ↓</option>
+                                <option>по рейтингу ↑</option>
+                                <option>по рейтингу ↓</option>
+                            </select>
+                        </form>
+                    {% endif %}
+                </div>
+                <div class="blogs">
+                    {% if blogs %}
+                        {% for blog in blogs %}
+                            {% include 'blogs/one-blog.html' %}
+                        {% endfor %}
+                    {% else %}
+                        <p class="blogs-none">Статей пока нет</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}

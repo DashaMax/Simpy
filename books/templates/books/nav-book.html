@@ -14,7 +14,7 @@
             <a href="{% url 'readers' book.slug %}" class="book-link">Читатели</a>
         </li>
         <li class="book-li">
-            <a href="reviews.html" class="book-link">Отзывы</a>
+            <a href="{% url 'reviews' book.slug %}" class="book-link">Отзывы</a>
         </li>
         <li class="book-li">
             <a href="quotes.html" class="book-link">Цитаты</a>
@@ -22,12 +22,16 @@
     </ul>
     {% if user.is_authenticated %}
         <form method="get">
-            {% if book not in user_books %}
-                <input type="hidden" name="add" value="{{ book.slug }}">
-                <input type="submit" class="book-add" value="✚&#160;&#160;Добавить">
-            {% else %}
-                <input type="hidden" name="delete" value="{{ book.slug }}">
-                <input type="submit" class="book-delete" value="🗑&#160;&#160;Удалить">
+            {% if flag == 'book' %}
+                {% if book not in user_books %}
+                    <input type="hidden" name="add" value="{{ book.slug }}">
+                    <input type="submit" class="book-add" value="✚&#160;&#160;Добавить">
+                {% else %}
+                    <input type="hidden" name="delete" value="{{ book.slug }}">
+                    <input type="submit" class="book-delete" value="🗑&#160;&#160;Удалить">
+                {% endif %}
+            {% elif flag == 'reviews' %}
+                    <a href="#" class="add-review">✚&#160;&#160;Добавить&#160;отзыв</a>
             {% endif %}
         </form>
     {% endif %}

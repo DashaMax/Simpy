@@ -1,6 +1,7 @@
 from django.contrib.auth.forms import AuthenticationForm, UserCreationForm, UserChangeForm
 from django import forms
 
+from blogs.models import BlogModel
 from users.models import UserModel
 
 
@@ -110,3 +111,23 @@ class UserUpdateForm(UserChangeForm):
         for title, field in self.fields.items():
             if field not in ('image', 'date_of_birth'):
                 field.widget.attrs.update({'class': 'input-field'})
+
+
+class AddBlogForm(forms.ModelForm):
+    class Meta:
+        model = BlogModel
+        fields = (
+            'title',
+            'image',
+            'description'
+        )
+        widgets = {
+            'title': forms.TextInput(attrs={'class': 'input-field'}),
+            'image': forms.FileInput(attrs={'class': 'input-field'}),
+            'description': forms.Textarea(attrs={'rows': 10, 'class': 'input-field'}),
+        }
+        labels = {
+            'title': 'Название',
+            'image': 'Фото',
+            'description': 'Текст',
+        }

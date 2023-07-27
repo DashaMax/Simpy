@@ -3,9 +3,10 @@ from django.contrib.auth.views import LoginView
 from django.contrib.messages.views import SuccessMessageMixin
 from django.shortcuts import redirect
 from django.urls import reverse_lazy
-from django.views.generic import CreateView, UpdateView, DetailView
+from django.views.generic import CreateView, UpdateView, DetailView, ListView, FormView
 
-from users.forms import UserLoginForm, UserRegisterForm, UserUpdateForm
+from blogs.models import BlogModel
+from users.forms import UserLoginForm, UserRegisterForm, UserUpdateForm, AddBlogForm
 from users.models import UserModel
 from utils.utils import GetMixin
 
@@ -72,4 +73,27 @@ class UserBookshelfView(GetMixin, LoginRequiredMixin, DetailView):
         context['books'] = context['user'].book.all()
         return context
 
-        
+
+class UserBlogsView(SuccessMessageMixin, LoginRequiredMixin, CreateView):
+    model = BlogModel
+    template_name = 'users/profile-blog.html'
+    form_class = AddBlogForm
+    success_message = 'Статья успешно добавлена'
+
+    def get_context_data(self, **kwargs):
+        context = super(UserBlogsView, self).get_context_data(**kwargs)
+        user = UserModel.objects.get(slug=self.kwargs['slug'])
+        context['title'] = 'Simpy - блог'
+        context['flag'] = 'user_blogs'
+        context['user'] = UserModel.objects.get(slug=self.kwargs['slug'])
+        context['user_blogs'] = BlogModel.objects.filter(author=user)
+        return context
+
+    def get_success_url(self):
+        return reverse_lazy('user-blogs', args=(self.kwargs['slug'],))
+
+    def form_valid(self, form):
+        self.object = form.save(commit=False)
+        self.object.author = self.request.user
+        self.object.save()
+        return super(UserBlogsView, self).form_valid(form)

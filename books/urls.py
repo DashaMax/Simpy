@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import MainView, BooksView, BooksCategoryView, BookView, BookReadersView
+from .views import MainView, BooksView, BooksCategoryView, BookView, BookReadersView, BookReviewsView
 
 
 urlpatterns = [
@@ -8,4 +8,5 @@ urlpatterns = [
     path('books/<str:category>/', BooksCategoryView.as_view(), name='books_category'),
     path('book/<slug:book_slug>/', BookView.as_view(), name='book'),
     path('book/<slug:book_slug>/readers/', BookReadersView.as_view(), name='readers'),
+    path('book/<slug:book_slug>/reviews/', BookReviewsView.as_view(), name='reviews'),
 ]

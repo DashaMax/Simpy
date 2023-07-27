@@ -1,0 +1,27 @@
+/* filters */
+
+.first-block{
+    padding: 120px 0;
+}
+
+.first-block .filters{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.first-block .filters-select{
+    outline: none;
+    padding: 2px 5px;
+    color: rgb(37, 37, 37);
+}
+
+/* Статей нет */
+
+.blogs-none{
+    margin-top: 20px;
+    font-size: 20px;
+    color: grey;
+    font-weight: 400;xxx
+}

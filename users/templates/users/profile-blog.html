@@ -1,0 +1,54 @@
+{% extends 'books/base.html' %}
+{% load static %}
+
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'users/css/style-profile.css' %}">
+    <link rel="stylesheet" href="{% static 'blogs/css/style-one-blog.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    <main>
+        <div class="block-back">
+            <form method="post" enctype="multipart/form-data" class="form">
+                {% csrf_token %}
+                <h2 class="close">x</h2>
+                <h1 class="form-title">Добавить статью</h1>
+                {% for field in form %}
+                    <p class="label">{{ field.label }}</p>
+                    {{ field }}
+                {% endfor %}
+                <p class="form-input">
+                    <input type="submit" value="Добавить" class="input-submit">
+                </p>
+            </form>
+        </div>
+        <div class="container">
+            {% include 'users/nav-profile.html' %}
+            <div class="block-message">
+                {% if form.errors %}
+                    <p class="text-error">
+                        Ошибка! Статья с таким названием уже существует
+                    </p>
+                {% endif %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <p class="text-success">
+                            {{ message }}
+                        </p>
+                    {% endfor %}
+                {% endif %}
+            </div>
+            {% if user_blogs %}
+                <div class="blogs">
+                    {% for blog in user_blogs %}
+                        {% include 'blogs/one-blog.html' %}
+                    {% endfor %}
+                </div>
+            {% else %}
+                <p class="none">Статей нет</p>
+            {% endif %}
+        </div>
+    </main>
+{% endblock %}

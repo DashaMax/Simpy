@@ -1,6 +1,8 @@
 from django.db import models
 from django.conf import settings
 
+from users.models import UserModel
+
 
 class BookModel(models.Model):
     title = models.CharField(max_length=255, verbose_name='Название', unique=True)
@@ -59,3 +61,17 @@ class PublishingModel(models.Model):
     class Meta:
         verbose_name = 'Издательство'
         verbose_name_plural = 'Издательства'
+
+
+class ReviewModel(models.Model):
+    book = models.ForeignKey(to=BookModel, on_delete=models.CASCADE, verbose_name='Книга')
+    user = models.ForeignKey(to=UserModel, on_delete=models.DO_NOTHING, verbose_name='Пользователь')
+    review = models.TextField(verbose_name='Отзыв')
+    create_date = models.DateTimeField(verbose_name='Дата добавления', auto_now_add=True)
+
+    def __str__(self):
+        return self.review
+
+    class Meta:
+        verbose_name = 'Отзыв'
+        verbose_name_plural = 'Отзывы'

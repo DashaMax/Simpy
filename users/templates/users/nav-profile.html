@@ -16,14 +16,18 @@
             <a href="{% url 'bookshelf' user.slug %}" class="nav-link">Книжная&#160;полка</a>
         </li>
         <li class="nav-li">
-            <a href="profile-blog.html" class="nav-link">Блог</a>
+            <a href="{% url 'user-blogs' user.slug %}" class="nav-link">Блог</a>
         </li>
         <li class="nav-li">
             <a href="profile-quotes.html" class="nav-link">Цитаты</a>
         </li>
     </ul>
     {% if user.slug == request.user.slug %}
-        <a href="{% url 'logout' %}" class="exit">Выйти</a>
+        {% if flag == 'user_blogs' %}
+            <a href="#" class="add-review">✚&#160;&#160;Добавить&#160;статью</a>
+        {% else %}
+            <a href="{% url 'logout' %}" class="exit">Выйти</a>
+        {% endif %}
     {% endif %}
 </div>
 <hr>

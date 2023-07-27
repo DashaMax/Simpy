@@ -14,6 +14,7 @@ closeMenuH3.onclick = function(){
     dot.style.display = 'block';
 };
 
+
 /* Добавление класса active в nav-profile */
 
 let currentURL = document.URL;
@@ -29,10 +30,14 @@ if(navLink){
     if(currentURL.includes('bookshelf') && currentURL.includes('user')){
         navLink[1].className = 'nav-link active';
     }
+    else if(currentURL.includes('user') && currentURL.includes('blogs')){
+        navLink[2].className = 'nav-link active';
+    }
     else if(currentURL.includes('user')){
         navLink[0].className = 'nav-link active';
     }
 }
+
 
 /* Добавление класса active в nav-book */
 
@@ -50,34 +55,40 @@ if(bookLink){
     if(currentURL.includes('book') && currentURL.includes('readers')){
         bookLink[1].className = 'book-link active';
     }
+    else if(currentURL.includes('book') && currentURL.includes('reviews')){
+        bookLink[2].className = 'book-link active';
+    }
     else if(currentURL.includes('book')){
         bookLink[0].className = 'book-link active';
     }
 }
 
 
+/* Форма добавления нового отзыва */
 
-
-
-
-
-let butAdd = document.querySelector('.add-form');
+let butAdd = document.querySelector('.add-review');
 let addForm = document.querySelector('.block-back');
 let blockH2 = document.querySelector('.block-back h2');
-
-let showComments = document.querySelectorAll('main .comments .show');
+let body = document.querySelector('body');
 
 if(butAdd){
     butAdd.onclick = function(){
         addForm.style.display = 'block';
+        body.style.overflowY = 'hidden'
     };
 }
 
 if (blockH2){
     blockH2.onclick = function(){
         addForm.style.display = 'none';
+        body.style.overflowY = 'visible';
     };
 }
+
+
+
+
+let showComments = document.querySelectorAll('main .comments .show');
 
 showComments.forEach(item => {
     item.addEventListener('click', function(){

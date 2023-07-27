@@ -5,6 +5,15 @@ main{
     background-size: cover;
 }
 
+main .container{
+    padding: 130px 30px;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* block-back */
+
 main .block-back{
     display: none;
     position: fixed;
@@ -16,7 +25,7 @@ main .block-back{
     z-index: 100001;
 }
 
-main .block-back form{
+.block-back .form{
     position: relative;
     max-width: 600px;
     margin: 80px auto;
@@ -26,7 +35,7 @@ main .block-back form{
     box-sizing: border-box;
 }
 
-main .block-back form h2{
+.block-back .close{
     text-align: right;
     margin: 0;
     cursor: pointer;
@@ -35,7 +44,7 @@ main .block-back form h2{
     font-weight: 500;
 }
 
-main .block-back form h1{
+.block-back .back-review{
     text-align: center;
     margin: 0;
     font-size: 30px;
@@ -43,7 +52,7 @@ main .block-back form h1{
     font-weight: 500;
 }
 
-main .block-back form textarea{
+.block-back .textarea{
     padding: 7px 12px;
     box-sizing: border-box;
     font-size: 18px;
@@ -56,24 +65,18 @@ main .block-back form textarea{
     background-color: rgba(255, 255, 255, 0);
 }
 
-main .block-back form input[type=submit]{
-    font-size: 18px;
+.block-back .form-input{
+    font-size: 16px;
     padding: 5px 30px;
     border-radius: 5px;
     background-color: rgb(46, 46, 46);
     color: white;
     display: block;
-    margin: 30px auto 0;
+    margin: 30px auto;
 }
 
-main .block-back form input[type=submit]:hover{
+.block-back .form-input:hover{
     background-color: black;
-}
-
-main .container{
-    padding: 130px 30px;
-    box-sizing: border-box;
-    background-color: rgb(255, 255, 255);
 }
 
 
@@ -207,7 +210,7 @@ main .nav-book .add-form:hover, .nav-book .book-add:hover{
     text-decoration: none;
 }
 
-.readers .reader-name{
+.readers .reader-name, .review-none{
     font-size: 20px;
     color: grey;
     font-weight: 400;xxx
@@ -216,51 +219,55 @@ main .nav-book .add-form:hover, .nav-book .book-add:hover{
 
 
 
+/* ОТЗЫВЫ */
 
-
-main .reviews{
+.reviews{
     margin-top: 30px;
 }
 
-main .reviews .review{
+.reviews .review{
     margin-top: 20px;
     box-shadow: 0 0 7px rgb(197, 197, 197);
     padding: 20px;
     box-sizing: border-box;
 }
 
-main .reviews .review .block-author{
+.reviews .block-author{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
-main .reviews .review .block-author .author{
+.reviews .author{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-main .reviews .review .block-author .author img{
+.reviews .author-img{
     width: 70px;
 }
 
-main .reviews .review .block-author .author h3{
+.reviews .author-h3{
     margin-left: 15px;
 }
 
-main .reviews .review .block-author .author a{
+.reviews .author-link{
     text-decoration: none;
     color: rgb(107, 107, 107);
     font-size: 24px;
     font-weight: 400;
 }
 
-main .reviews .review .block-author p{
+.reviews .review-text{
     padding: 0;
     color: rgb(145, 145, 145);
 }
+
+
+
+/* КОММЕНТАРИИ */
 
 main .reviews .review .comment{
     margin: 30px 0 20px;
