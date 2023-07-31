@@ -4,6 +4,8 @@
 
 {% block style %}
     <link rel="stylesheet" href="{% static 'users/css/style-profile.css' %}">
+    <link rel="stylesheet" href="{% static 'blogs/css/style-add-blog.css' %}">
+    <link rel="stylesheet" href="{% static 'books/css/style-block-back.css' %}">
     <link rel="stylesheet" href="{% static 'blogs/css/style-one-blog.css' %}">
 {% endblock %}
 
@@ -19,7 +21,7 @@
                     <p class="label">{{ field.label }}</p>
                     {{ field }}
                 {% endfor %}
-                <p class="form-input">
+                <p>
                     <input type="submit" value="Добавить" class="input-submit">
                 </p>
             </form>

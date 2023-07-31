@@ -10,7 +10,7 @@
 <div class="nav-profile">
     <ul class="nav-ul">
         <li class="nav-li">
-            <a href="{% url 'user' user.slug %}" class="nav-link active">{{ user.username }}</a>
+            <a href="{% url 'user' user.slug %}" class="nav-link">{{ user.username }}</a>
         </li>
         <li class="nav-li">
             <a href="{% url 'bookshelf' user.slug %}" class="nav-link">Книжная&#160;полка</a>
@@ -19,12 +19,14 @@
             <a href="{% url 'user-blogs' user.slug %}" class="nav-link">Блог</a>
         </li>
         <li class="nav-li">
-            <a href="profile-quotes.html" class="nav-link">Цитаты</a>
+            <a href="{% url 'user-quotes' user.slug %}" class="nav-link">Цитаты</a>
         </li>
     </ul>
     {% if user.slug == request.user.slug %}
         {% if flag == 'user_blogs' %}
-            <a href="#" class="add-review">✚&#160;&#160;Добавить&#160;статью</a>
+            <a href="#" class="add">✚&#160;&#160;Добавить&#160;статью</a>
+        {% elif flag == 'user_quotes' %}
+                <a href="#" class="add">✚&#160;&#160;Добавить&#160;цитату</a>
         {% else %}
             <a href="{% url 'logout' %}" class="exit">Выйти</a>
         {% endif %}

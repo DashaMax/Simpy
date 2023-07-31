@@ -1,11 +1,13 @@
 from django.urls import reverse_lazy
-from django.views.generic import TemplateView, ListView, DetailView, FormView, CreateView
+from django.views.generic import ListView, DetailView, FormView
 
 from blogs.models import BlogModel
 from books.forms import AddReviewForm
 from books.models import BookModel, CategoryModel, ReviewModel
-from users.models import UserModel
-from utils.utils import GetMixin
+from comments.forms import AddCommentForm
+from quotes.forms import AddQuoteForm
+from quotes.models import QuoteModel
+from utils.utils import GetMixin, CommentMixin
 
 
 class MainView(ListView):
@@ -42,7 +44,7 @@ class BooksCategoryView(GetMixin, ListView):
 
     def get_context_data(self, **kwargs):
         context = super(BooksCategoryView, self).get_context_data(**kwargs)
-        active_category = CategoryModel.objects.get(slug=self.kwargs["category"])
+        active_category = CategoryModel.objects.get(slug=self.kwargs["category_slug"])
         context['title'] = f'Simpy - {active_category}'
         context['categories'] = CategoryModel.objects.all()
         context['active'] = active_category
@@ -70,31 +72,72 @@ class BookReadersView(GetMixin, DetailView):
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super(BookReadersView, self).get_context_data(object_list=None, **kwargs)
-        context['title'] = 'Simpy - читатели'
+        context['title'] = f'Simpy - {context["book"]}'
         context['readers'] = context['book'].usermodel_set.all()
         return context
 
 
-class BookReviewsView(FormView, DetailView):
-    model = BookModel
+class BookReviewsView(CommentMixin, FormView, ListView):
+    model = ReviewModel
     template_name = 'books/reviews.html'
-    context_object_name = 'book'
-    slug_url_kwarg = 'book_slug'
-    form_class = AddReviewForm
+    context_object_name = 'reviews'
+    form_class = AddCommentForm
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super(BookReviewsView, self).get_context_data(object_list=None, **kwargs)
-        context['title'] = 'Simpy - отзывы'
-        context['reviews'] = context['book'].reviewmodel_set.all()
+        context['book'] = BookModel.objects.get(slug=self.kwargs['book_slug'])
+        context['title'] = f'Simpy - {context["book"]}'
         context['flag'] = 'reviews'
+        context['form_add_review'] = AddReviewForm
         return context
+
+    def get_queryset(self):
+        return BookModel.objects.get(slug=self.kwargs['book_slug']).reviewmodel_set.all().order_by('-create_date')
 
     def get_success_url(self):
         return reverse_lazy('reviews', args=(self.kwargs['book_slug'],))
 
-    def form_valid(self, form):
-        self.object = form.save(commit=False)
-        self.object.book = BookModel.objects.get(slug=self.kwargs['book_slug'])
-        self.object.user = self.request.user
-        self.object.save()
-        return super(BookReviewsView, self).form_valid(form)
+    def post(self, request, *args, **kwargs):
+        if 'review' in request.POST:
+            form = AddCommentForm()
+            book = BookModel.objects.get(slug=self.kwargs['book_slug'])
+            user = request.user
+            review = ReviewModel(book=book, user=user, review=request.POST['review'])
+            review.save()
+            return super(BookReviewsView, self).form_valid(form)
+
+        return super(BookReviewsView, self).post(request, *args, **kwargs)
+
+
+class BookQuotesView(CommentMixin, FormView, ListView):
+    model = QuoteModel
+    context_object_name = 'quotes'
+    template_name = 'books/book-quotes.html'
+    form_class = AddCommentForm
+
+    def get_queryset(self):
+        book = BookModel.objects.get(slug=self.kwargs['book_slug'])
+        return QuoteModel.objects.filter(book=book).order_by('-create_date')
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super(BookQuotesView, self).get_context_data(object_list=None, **kwargs)
+        book = BookModel.objects.get(slug=self.kwargs['book_slug'])
+        context['book'] = book
+        context['title'] = f'Simpy - {context["book"]}'
+        context['flag'] = 'quotes'
+        context['form_add_quote'] = AddQuoteForm
+        return context
+
+    def get_success_url(self):
+        return reverse_lazy('book-quotes', args=(self.kwargs['book_slug'],))
+
+    def post(self, request, *args, **kwargs):
+        if 'text' in request.POST:
+            form = AddCommentForm()
+            book = BookModel.objects.get(slug=self.kwargs['book_slug'])
+            user = request.user
+            quote = QuoteModel(book=book, user=user, text=request.POST['text'])
+            quote.save()
+            return super(BookQuotesView, self).form_valid(form)
+
+        return super(BookQuotesView, self).post(request, *args, **kwargs)

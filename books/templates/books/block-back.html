@@ -1,0 +1,20 @@
+<div class="block-back">
+    <form method="post" class="form">
+        {% csrf_token %}
+        <h2 class="close">x</h2>
+        {% if flag == 'reviews' %}
+            <h1 class="back-title">Отзыв</h1>
+            <p>
+                {{ form_add_review.review }}
+            </p>
+        {% elif flag == 'quotes' %}
+            <h1 class="back-title">Цитата</h1>
+            <p>
+                {{ form_add_quote.text }}
+            </p>
+        {% endif %}
+        <p>
+            <input type="submit" value="Добавить" class="form-input">
+        </p>
+    </form>
+</div>

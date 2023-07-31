@@ -24,6 +24,7 @@ urlpatterns = [
     path('', include('books.urls')),
     path('user/', include('users.urls')),
     path('', include('blogs.urls')),
+    path('', include('quotes.urls')),
 ]
 
 if settings.DEBUG:

@@ -36,11 +36,11 @@
                             {% for category in categories %}
                                 {% if category.slug == active.slug %}
                                     <li class="category-li">
-                                        <a href="{% url 'books_category' category.slug %}" class="category-link active">{{ category.title }}</a>
+                                        <a href="{% url 'books-category' category.slug %}" class="category-link active">{{ category.title }}</a>
                                     </li>
                                 {% else %}
                                     <li class="category-li">
-                                        <a href="{% url 'books_category' category.slug %}" class="category-link">{{ category.title }}</a>
+                                        <a href="{% url 'books-category' category.slug %}" class="category-link">{{ category.title }}</a>
                                     </li>
                                 {% endif %}
                             {% endfor %}

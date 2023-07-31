@@ -1,0 +1,66 @@
+.quotes{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.quotes .quote{
+    position: relative;
+    margin-top: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 400px;
+    box-shadow: 0 0 7px rgb(197, 197, 197);
+}
+
+.quotes .block-author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.quotes .author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quotes .author-img{
+    width: 70px;
+}
+
+.quotes .author-h3{
+    margin-left: 15px;
+}
+
+.quotes .author-link{
+    text-decoration: none;
+    color: rgb(107, 107, 107);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.quotes .date{
+    color: rgb(107, 107, 107);
+    font-size: 12px;
+}
+
+.quotes .quote-p{
+    margin-top: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.quotes .author-quote{
+    margin: 20px 0;
+    text-align: right;
+    font-weight: 600;
+}
+
+@media(max-width: 360px){
+    .quotes .date{
+        font-size: 12px;
+    }
+}

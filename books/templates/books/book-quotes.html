@@ -1,0 +1,30 @@
+{% extends 'books/base.html' %}
+{% load static %}
+
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'books/css/style-book.css' %}">
+    <link rel="stylesheet" href="{% static 'books/css/style-block-back.css' %}">
+    <link rel="stylesheet" href="{% static 'books/css/style-add-delete-book.css' %}">
+    <link rel="stylesheet" href="{% static 'quotes/css/style-one-quote.css' %}">
+    <link rel="stylesheet" href="{% static 'comments/css/style-comments.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    <main>
+        {% include 'books/block-back.html' %}
+        <div class="container">
+            {% include 'books/nav-book.html' %}
+            <div class="quotes">
+              {% if quotes %}
+                {% for quote in quotes %}
+                  {% include 'quotes/one-quote.html' %}
+                {% endfor %}
+              {% else %}
+                <p class="quote-none">Цитат нет</p>
+              {% endif %}
+            </div>
+        </div>
+    </main>
+{% endblock %}

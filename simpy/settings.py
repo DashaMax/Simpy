@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'books.apps.BooksConfig',
     'blogs.apps.BlogsConfig',
+    'quotes.apps.QuotesConfig',
+    'comments.apps.CommentsConfig',
 ]
 
 MIDDLEWARE = [

@@ -1,0 +1,42 @@
+{% extends 'books/base.html' %}
+{% load static %}
+
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'users/css/style-profile.css' %}">
+    <link rel="stylesheet" href="{% static 'blogs/css/style-add-blog.css' %}">
+    <link rel="stylesheet" href="{% static 'quotes/css/style-one-quote.css' %}">
+    <link rel="stylesheet" href="{% static 'comments/css/style-comments.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    <main>
+        <div class="block-back">
+            <form method="post" class="form">
+                {% csrf_token %}
+                <h2 class="close">x</h2>
+                <h1 class="form-title">Добавить цитату</h1>
+                {% for field in form_add_quote %}
+                    <p class="label">{{ field.label }}</p>
+                    {{ field }}
+                {% endfor %}
+                <p>
+                    <input type="submit" value="Добавить" class="input-submit">
+                </p>
+            </form>
+        </div>
+        <div class="container">
+            {% include 'users/nav-profile.html' %}
+            <div class="quotes">
+              {% if quotes %}
+                {% for quote in quotes %}
+                  {% include 'quotes/one-quote.html' %}
+                {% endfor %}
+              {% else %}
+                <p class="quote-none">Цитат нет</p>
+              {% endif %}
+            </div>
+        </div>
+    </main>
+{% endblock %}

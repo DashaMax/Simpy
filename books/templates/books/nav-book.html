@@ -8,7 +8,7 @@
 <div class="nav-book">
     <ul class="book-ul">
         <li class="book-li">
-            <a href="{% url 'book' book.slug %}" class="book-link active">Книга</a>
+            <a href="{% url 'book' book.slug %}" class="book-link">Книга</a>
         </li>
         <li class="book-li">
             <a href="{% url 'readers' book.slug %}" class="book-link">Читатели</a>
@@ -17,7 +17,7 @@
             <a href="{% url 'reviews' book.slug %}" class="book-link">Отзывы</a>
         </li>
         <li class="book-li">
-            <a href="quotes.html" class="book-link">Цитаты</a>
+            <a href="{% url 'book-quotes' book.slug %}" class="book-link">Цитаты</a>
         </li>
     </ul>
     {% if user.is_authenticated %}
@@ -31,7 +31,9 @@
                     <input type="submit" class="book-delete" value="🗑&#160;&#160;Удалить">
                 {% endif %}
             {% elif flag == 'reviews' %}
-                    <a href="#" class="add-review">✚&#160;&#160;Добавить&#160;отзыв</a>
+                <a href="#" class="add">✚&#160;&#160;Добавить&#160;отзыв</a>
+            {% elif flag == 'quotes' %}
+                <a href="#" class="add">✚&#160;&#160;Добавить&#160;цитату</a>
             {% endif %}
         </form>
     {% endif %}

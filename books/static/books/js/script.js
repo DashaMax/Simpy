@@ -33,6 +33,9 @@ if(navLink){
     else if(currentURL.includes('user') && currentURL.includes('blogs')){
         navLink[2].className = 'nav-link active';
     }
+    else if(currentURL.includes('user') && currentURL.includes('quotes')){
+        navLink[3].className = 'nav-link active';
+    }
     else if(currentURL.includes('user')){
         navLink[0].className = 'nav-link active';
     }
@@ -58,15 +61,19 @@ if(bookLink){
     else if(currentURL.includes('book') && currentURL.includes('reviews')){
         bookLink[2].className = 'book-link active';
     }
+    else if(currentURL.includes('book') && currentURL.includes('quotes')){
+        bookLink[3].className = 'book-link active';
+    }
     else if(currentURL.includes('book')){
         bookLink[0].className = 'book-link active';
     }
+
 }
 
 
 /* Форма добавления нового отзыва */
 
-let butAdd = document.querySelector('.add-review');
+let butAdd = document.querySelector('.add');
 let addForm = document.querySelector('.block-back');
 let blockH2 = document.querySelector('.block-back h2');
 let body = document.querySelector('body');
@@ -86,7 +93,7 @@ if (blockH2){
 }
 
 
-
+/* Показать/спрятать комментарий */
 
 let showComments = document.querySelectorAll('main .comments .show');
 

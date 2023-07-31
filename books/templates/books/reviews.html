@@ -5,98 +5,37 @@
 {% block style %}
     <link rel="stylesheet" href="{% static 'books/css/style-book.css' %}">
     <link rel="stylesheet" href="{% static 'books/css/style-add-delete-book.css' %}">
+    <link rel="stylesheet" href="{% static 'books/css/style-block-back.css' %}">
+    <link rel="stylesheet" href="{% static 'comments/css/style-comments.css' %}">
 {% endblock %}
 
 
 {% block content %}
     <main>
-        <div class="block-back">
-            <form method="post" class="form">
-                {% csrf_token %}
-                <h2 class="close">x</h2>
-                <h1 class="back-review">Отзыв</h1>
-                <p>
-                    {{ form.review }}
-                </p> 
-                <p>
-                    <input type="submit" value="Добавить" class="form-input">
-                </p>
-            </form>
-        </div>
+        {% include 'books/block-back.html' %}
         <div class="container">
             {% include 'books/nav-book.html' %}
             <div class="reviews">
                 {% if reviews %}
                     {% for review in reviews %}
                         <div class="review">
-                        <div class="block-author">
-                            <div class="author">
-                                <a href="{% url 'user' review.user.slug %}">
-                                    <img src="{{ review.user.image.url }}" alt="Фото" class="author-img">
-                                </a>
-                                <h3 class="author-h3">
-                                    <a href="{% url 'user' review.user.slug %}" class="author-link">{{ review.user.username }}</a>
-                                </h3>
+                            <div class="block-author">
+                                <div class="author">
+                                    <a href="{% url 'user' review.user.slug %}">
+                                        <img src="{{ review.user.image.url }}" alt="Фото" class="author-img">
+                                    </a>
+                                    <h3 class="author-h3">
+                                        <a href="{% url 'user' review.user.slug %}" class="author-link">{{ review.user.username }}</a>
+                                    </h3>
+                                </div>
+                                <p class="review-text">{{ review.create_date|date:'d.m.Y H:i' }}</p>
                             </div>
-                            <p class="review-text">{{ review.create_date }}</p>
+                            <p class="review-review">{{ review.review }}</p>
+                            {% include 'comments/get-comments.html' with name_object=review %}
                         </div>
-                        <p class="comment">{{ review.review }}</p>
-                        <hr>
-                        <div class="comments">
-                            <div class="block-comment">
-                                <div class="author">
-                                    <a href="account.html">
-                                        <img src="images/avatar_icon.png" alt="">
-                                    </a>
-                                    <h3><a href="account.html">Имя</a></h3>
-                                    <p>dd.mm.YYYY</p>
-                                </div>
-                                <p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            </div>
-                            <div class="block-comment">
-                                <div class="author">
-                                    <a href="account.html">
-                                        <img src="images/avatar_icon.png" alt="">
-                                    </a>
-                                    <h3><a href="account.html">Имя</a></h3>
-                                    <p>dd.mm.YYYY</p>
-                                </div>
-                                <p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            </div>
-                            <p class="show">----- Показать ещё -----</p>
-                            <div class="block-comment back">
-                                <div class="author">
-                                    <a href="account.html">
-                                        <img src="images/avatar_icon.png" alt="">
-                                    </a>
-                                    <h3><a href="account.html">Имя</a></h3>
-                                    <p>dd.mm.YYYY</p>
-                                </div>
-                                <p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            </div>
-                            <div class="block-comment back">
-                                <div class="author">
-                                    <a href="account.html">
-                                        <img src="images/avatar_icon.png" alt="">
-                                    </a>
-                                    <h3><a href="account.html">Имя</a></h3>
-                                    <p>dd.mm.YYYY</p>
-                                </div>
-                                <p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            </div>
-                        </div>
-                        <form action="" method="post">
-                            <p>
-                                <input type="text" placeholder="Комментарий">
-                            </p>
-                            <p>
-                                <input type="submit" value="Отправить">
-                            </p>
-                        </form>
-                    </div>
                     {% endfor %}
                 {% else %}
-                    <p class="review-none">Отзывов пока нет</p>
+                    <p class="review-none">Отзывов нет</p>
                 {% endif %}
             </div>
         </div>

@@ -4,6 +4,7 @@
 
 {% block style %}
     <link rel="stylesheet" href="{% static 'blogs/css/style-blog.css' %}">
+    <link rel="stylesheet" href="{% static 'comments/css/style-comments.css' %}">
 {% endblock %}
 
 
@@ -21,60 +22,9 @@
                         </a>
                         <a href="{% url 'user' blog.author.username %}" class="name">{{ blog.author.username }}</a>
                     </div>
-                    <p class="date">{{ blog.create_date }}</p>
+                    <p class="date">{{ blog.create_date|date:'d.m.Y H:i' }}</p>
                 </div>
-                <hr>
-                <div class="comments">
-                    <div class="block-comment">
-                        <div class="author">
-                            <a href="account.html">
-                                <img src="images/avatar_icon.png" alt="">
-                            </a>
-                            <h3><a href="account.html">Имя</a></h3>
-                            <p>dd.mm.YYYY</p>
-                        </div>
-                        <p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="block-comment">
-                        <div class="author">
-                            <a href="account.html">
-                                <img src="images/avatar_icon.png" alt="">
-                            </a>
-                            <h3><a href="account.html">Имя</a></h3>
-                            <p>dd.mm.YYYY</p>
-                        </div>
-                        <p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                    <p class="show">----- Показать ещё -----</p>
-                    <div class="block-comment back">
-                        <div class="author">
-                            <a href="account.html">
-                                <img src="images/avatar_icon.png" alt="">
-                            </a>
-                            <h3><a href="account.html">Имя</a></h3>
-                            <p>dd.mm.YYYY</p>
-                        </div>
-                        <p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="block-comment back">
-                        <div class="author">
-                            <a href="account.html">
-                                <img src="images/avatar_icon.png" alt="">
-                            </a>
-                            <h3><a href="account.html">Имя</a></h3>
-                            <p>dd.mm.YYYY</p>
-                        </div>
-                        <p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <form action="" method="post">
-                    <p>
-                        <input type="text" placeholder="Комментарий">
-                    </p>
-                    <p>
-                        <input type="submit" value="Отправить">
-                    </p>
-                </form>
+                {% include 'comments/get-comments.html' with name_object=blog %}
             </div>
         </div>
     </main>

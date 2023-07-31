@@ -34,15 +34,17 @@
                 </div>
             </div>
         </div>
-        <hr>
-        <div class="container">
-            <h2 class="blog-h2">Блог</h2>
-            <div class="blogs">
-                {% for blog in blogs %}
-                    {% include 'blogs/one-blog.html' %}
-                {% endfor %}
+        {% if blogs %}
+            <hr>
+            <div class="container">
+                <h2 class="blog-h2">Блог</h2>
+                <div class="blogs">
+                    {% for blog in blogs %}
+                        {% include 'blogs/one-blog.html' %}
+                    {% endfor %}
+                </div>
             </div>
-        </div>
+        {% endif %}
         <div class="block-quote">
             <div class="container">
                 <div class="block-content">
@@ -74,7 +76,7 @@
             <div class="container">
                 <div class="block-form">
                     <h2 class="form-h2">Форма обратной связи</h2>
-                    <form method="" class="form-feedback">
+                    <form method="post" class="form-feedback">
                         <input type="text" placeholder="Тема обращения" class="form-input"><br>
                         <input type="email" placeholder="Ваша почта для связи" class="form-input"><br>
                         <textarea placeholder="Сообщение" class="form-input form-textarea"></textarea><br>

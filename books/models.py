@@ -1,6 +1,8 @@
+from django.contrib.contenttypes.fields import GenericRelation
 from django.db import models
 from django.conf import settings
 
+from comments.models import CommentModel
 from users.models import UserModel
 
 
@@ -19,6 +21,10 @@ class BookModel(models.Model):
                               blank=True,
                               default='book-default.png'
                               )
+    # image = models.ImageField(verbose_name='Изображение', upload_to='books/%Y/%m/%d/',
+    #                           blank=True,
+    #                           default='book-default.png'
+    #                           )
     date_created = models.DateTimeField(verbose_name='Дата добавления', auto_now_add=True)
 
     def __str__(self):
@@ -27,6 +33,7 @@ class BookModel(models.Model):
     class Meta:
         verbose_name = 'Книга'
         verbose_name_plural = 'Книги'
+        ordering = ['title']
 
 
 class CategoryModel(models.Model):
@@ -50,6 +57,7 @@ class AuthorModel(models.Model):
     class Meta:
         verbose_name = 'Автор'
         verbose_name_plural = 'Авторы'
+        ordering = ['name']
 
 
 class PublishingModel(models.Model):
@@ -67,6 +75,7 @@ class ReviewModel(models.Model):
     book = models.ForeignKey(to=BookModel, on_delete=models.CASCADE, verbose_name='Книга')
     user = models.ForeignKey(to=UserModel, on_delete=models.DO_NOTHING, verbose_name='Пользователь')
     review = models.TextField(verbose_name='Отзыв')
+    comments = GenericRelation(CommentModel, verbose_name='Комментарии')
     create_date = models.DateTimeField(verbose_name='Дата добавления', auto_now_add=True)
 
     def __str__(self):

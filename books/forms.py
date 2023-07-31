@@ -10,7 +10,6 @@ class AddReviewForm(forms.ModelForm):
             'review',
         )
         widgets = {
-            'review': forms.Textarea(attrs={'placeholder': 'Оставьте отзыв',
-                                            'rows': 10,
+            'review': forms.Textarea(attrs={'rows': 10,
                                             'class': 'textarea'}),
         }

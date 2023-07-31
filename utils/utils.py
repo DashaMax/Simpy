@@ -29,8 +29,10 @@ class GetMixin:
         return super().get(request, *args, **kwargs)
 
     def get_queryset(self):
-        if 'category' in self.kwargs:
-            obj = BookModel.objects.filter(category__slug=self.kwargs['category'])
+        #if 'category' in self.kwargs:
+        if 'category_slug' in self.kwargs:
+            #obj = BookModel.objects.filter(category__slug=self.kwargs['category'])
+            obj = BookModel.objects.filter(category__slug=self.kwargs['category_slug'])
         else:
             obj = super().get_queryset()
 
@@ -43,3 +45,13 @@ class GetMixin:
                 return books_search
 
         return obj
+
+
+class CommentMixin:
+    def post(self, request, *args, **kwargs):
+        if 'comment' in request.POST:
+            user = request.user
+            object_name = self.model.objects.get(pk=request.POST['pk'])
+            comment = request.POST['comment']
+            object_name.comments.create(user=user, comment=comment)
+            return super(CommentMixin, self).post(request, *args, **kwargs)

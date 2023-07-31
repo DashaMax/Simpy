@@ -1,0 +1,48 @@
+{% if name_object.comments.all %}
+    <hr>
+    <div class="comments">
+        {% for comment in name_object.comments.all|slice:':2' %}
+            <div class="comment">
+                <div class="comment-author">
+                    <a href="{% url 'user' comment.user.slug %}">
+                        <img src="{{ comment.user.image.url }}" alt="Фото" class="comment-img">
+                    </a>
+                    <h3 class="comment-h3">
+                        <a href="{% url 'user' comment.user.slug %}" class="comment-link">{{ comment.user.username }}</a>
+                    </h3>
+                    <p class="comment-date">{{ comment.create_date|date:'d.m.Y H:i' }}</p>
+                </div>
+                <p class="comment-text">{{ comment.comment }}</p>
+            </div>
+        {% endfor %}
+        {% if name_object.comments.all|length > 2 %}
+            <p class="show">----- Показать ещё -----</p>
+            {% for comment in name_object.comments.all|slice:'2:' %}
+                <div class="comment back">
+                    <div class="comment-author">
+                        <a href="{% url 'user' comment.user.slug %}">
+                            <img src="{{ comment.user.image.url }}" alt="Фото" class="comment-img">
+                        </a>
+                        <h3 class="comment-h3">
+                            <a href="{% url 'user' comment.user.slug %}" class="comment-link">{{ comment.user.username }}</a>
+                        </h3>
+                        <p class="comment-date">{{ comment.create_date|date:'d.m.Y H:i' }}</p>
+                    </div>
+                    <p class="comment-text">{{ comment.comment }}</p>
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+{% endif %}
+{% if request.user.is_authenticated %}
+    <form method="post">
+        {% csrf_token %}
+        <input type="hidden" name="pk" value="{{ name_object.pk }}">
+        <p>
+            {{ form.comment }}
+        </p>
+        <p>
+            <input type="submit" value="Отправить">
+        </p>
+    </form>
+{% endif %}

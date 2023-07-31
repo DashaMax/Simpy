@@ -13,6 +13,6 @@
             </a>
             <a href="{% url 'user' blog.author.slug %}" class="blog-name">{{ blog.author.username }}</a>
         </div>
-        <p class="date">{{ blog.create_date }}</p>
+        <p class="date">{{ blog.create_date|date:'d.m.Y H:i' }}</p>
     </div>
 </div>

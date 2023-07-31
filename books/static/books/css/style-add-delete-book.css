@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-.book-add, .book-delete, .add-review{
+.book-add, .book-delete, .add{
     display: block;
     width: 100%;
     text-align: center;
@@ -19,6 +19,29 @@
     color: white;
 }
 
-.book-add:hover, .book-delete:hover, .add-review:hover{
+.book-add{
+    background-color: white;
+    border: 1px solid green;
+    color: green;
+}
+
+.book-delete{
+    background-color: white;
+    border: 1px solid red;
+    color: red;
+}
+
+.add:hover{
     background-color: black;
+    cursor: pointer;
+}
+
+.book-add:hover{
+    background-color: rgba(0, 128, 0, 0.2);
+    cursor: pointer;
+}
+
+.book-delete:hover{
+    background-color: rgba(255, 0, 0, 0.2);
+    cursor: pointer;
 }
