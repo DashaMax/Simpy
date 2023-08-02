@@ -45,7 +45,7 @@
                     {% endif %}
                     {% if user.date_of_birth %}
                         <p class="info-p">
-                            <span class="info-span">Дата рождения:</span> {{ user.date_of_birth }}
+                            <span class="info-span">Дата рождения:</span> {{ user.date_of_birth|date:'d.m.Y' }}
                         </p>
                     {% endif %}
                 </div>

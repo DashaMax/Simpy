@@ -167,63 +167,125 @@
     background-size: no-repeat;
     background-position: center;
     background-size: cover;
+    padding: 100px 0;
 }
 
-.form .container{
-    background-color: white;
-    max-width: 600px;
+.form-login{
     margin: 0 auto;
-    padding: 70px 50px;
+    max-width: 600px;
+    padding: 40px;
     box-sizing: border-box;
+    box-shadow: 0 0 10px rgb(131, 131, 131);
+    background-color: white;
 }
 
-.form .form-h2{
+.form-login .login-title{
     text-align: center;
     font-size: 30px;
+    color: rgb(33, 33, 33);
+    margin-bottom: 30px;
 }
 
-.form .form-feedback{
-    margin-top: 30px;
+.form-login .form-input{
     text-align: center;
 }
 
-.form .form-input{
-    width: 100%;
-    padding: 10px 15px;
-    box-sizing: border-box;
+.form-login .input-field, .form-login select{
     font-size: 16px;
-    border-radius: 5px;
-    margin-top: 20px;
+    padding: 7px 12px;
+    box-sizing: border-box;
     outline: none;
-    border: 1px solid rgb(85, 85, 85);
+    border-radius: 3px;
+    border: 1px solid rgb(90, 90, 90);
+    width: 90%;
+    margin-top: 20px;
 }
 
-.form .form-input:hover, .form .form-input:focus{
+.form-login select{
+    padding: 7px;
+}
+
+.form-login textarea{
+    resize: none;
+}
+
+.form-login .input-field:hover, .form-login .input-field:focus{
     background-color: rgba(0, 0, 0, 0.039);
 }
 
-@media(max-width: 800px){
-    .form .form-input{
+.form-login input[type=submit]{
+    font-size: 14px;
+    padding: 5px 30px;
+    border-radius: 5px;
+    background-color: rgb(46, 46, 46);
+    color: white;
+    margin-top: 40px;
+}
+
+.form-login input[type=submit]:hover{
+    background-color: black;
+}
+
+.form-link{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.form-link-a{
+    font-size: 16px;
+    color: grey;
+}
+
+.block-message{
+    text-align: center;
+    font-size: 18px;
+}
+
+.block-message .text-error{
+    text-align: center;
+    color: red;
+}
+
+.block-message .text-success{
+    text-align: center;
+    color: green;
+}
+
+.errorlist{
+    list-style: none;
+    color: red;
+    font-size: 14px;
+}
+
+@media(max-width: 600px){
+    .form-login .input-field, .form-login select{
         width: 100%;
     }
 }
 
-.form .form-textarea{
-    resize: none;
-    height: 200px;
-}
+@media(max-width: 480px){
+    .form-login{
+        padding: 20px;
+        box-sizing: border-box;
+    }
 
-.form .form-submit{
-    width: 150px;
-    font-size: 18px;
-    padding: 5px 0;
-    box-sizing: border-box;
-    border-radius: 5px;
-    background-color: rgb(46, 46, 46);
-    color: white;
-    margin: 30px auto 0;
-}
+    .form-login .login-title{
+        font-size: 24px;
+    }
 
-.form .form-submit:hover{
-    background-color: black;
+    .form-link-a{
+        font-size: 14px;
+    }
+
+    .block-message{
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .form-login input[type=submit]{
+        font-size: 14px;
+    }
 }

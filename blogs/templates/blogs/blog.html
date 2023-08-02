@@ -14,13 +14,13 @@
             <div class="blog">
                 <h3 class="blog-title">{{ blog.title }}</h3>
                 <img src="{{ blog.image.url }}" alt="Фото" class="blog-image">
-                <p class="blog-body">{{ blog.description }}</p>
+                <p class="blog-body">{{ blog.blog }}</p>
                 <div class="block-author">
                     <div class="author">
-                        <a href="{% url 'user' blog.author.username %}">
-                            <img src="{{ blog.author.image.url }}" alt="Фото" class="author-image">
+                        <a href="{% url 'user' blog.user.username %}">
+                            <img src="{{ blog.user.image.url }}" alt="Фото" class="author-image">
                         </a>
-                        <a href="{% url 'user' blog.author.username %}" class="name">{{ blog.author.username }}</a>
+                        <a href="{% url 'user' blog.user.username %}" class="name">{{ blog.user.username }}</a>
                     </div>
                     <p class="date">{{ blog.create_date|date:'d.m.Y H:i' }}</p>
                 </div>

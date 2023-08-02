@@ -1,4 +1,5 @@
-from django.contrib.auth.forms import AuthenticationForm, UserCreationForm, UserChangeForm
+from django.contrib.auth.forms import AuthenticationForm, UserCreationForm, UserChangeForm, PasswordResetForm, \
+    SetPasswordForm
 from django import forms
 
 from blogs.models import BlogModel
@@ -75,6 +76,34 @@ class UserRegisterForm(UserCreationForm):
         }
 
 
+class UserPasswordResetForm(PasswordResetForm):
+    email = forms.EmailField(
+        max_length=150,
+        widget=forms.EmailInput(attrs={
+            'autocomplete': 'email',
+            'placeholder': 'Введите e-mail',
+            'class': 'input-field'
+        }),
+    )
+
+
+class UserSetPasswordForm(SetPasswordForm):
+    new_password1 = forms.CharField(
+        widget=forms.PasswordInput(attrs={
+            'autocomplete': 'new-password',
+            'placeholder': 'Введите новый пароль',
+            'class': 'input-field'
+        })
+    )
+    new_password2 = forms.CharField(
+        widget=forms.PasswordInput(attrs={
+            'autocomplete': 'new-password',
+            'placeholder': 'Повторите пароль',
+            'class': 'input-field'
+        }),
+    )
+
+
 class UserUpdateForm(UserChangeForm):
     class Meta:
         model = UserModel
@@ -119,15 +148,15 @@ class AddBlogForm(forms.ModelForm):
         fields = (
             'title',
             'image',
-            'description'
+            'blog'
         )
         widgets = {
             'title': forms.TextInput(attrs={'class': 'input-field'}),
             'image': forms.FileInput(attrs={'class': 'input-field'}),
-            'description': forms.Textarea(attrs={'rows': 10, 'class': 'input-field'}),
+            'blog': forms.Textarea(attrs={'rows': 10, 'class': 'input-field'}),
         }
         labels = {
             'title': 'Название',
             'image': 'Фото',
-            'description': 'Текст',
+            'blog': 'Текст',
         }

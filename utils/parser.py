@@ -14,7 +14,7 @@ TIME_NOW = datetime.now()
 #CURRENT_DIR = os.getcwd()
 #FIXTURE_DIR = os.path.abspath('books/fixtures')
 FIXTURE_DIR = os.path.normpath('fixtures')
-IMAGE_DIR = os.path.normpath(f'images/{YEAR_TODAY}/{MONTH_TODAY}/{DAY_TODAY}')
+IMAGE_DIR = os.path.normpath(f'books/{YEAR_TODAY}/{MONTH_TODAY}/{DAY_TODAY}')
 MEDIA_DIR = os.path.join('media', IMAGE_DIR)
 
 URL_SITE = 'https://www.chitai-gorod.ru'
@@ -149,7 +149,7 @@ def get_data(categories: list):
                         'model': AUTHOR_MODEL,
                         'pk': author_id,
                         'fields': {
-                            'name': author
+                            'name': author.replace(',', '')
                         }
                     }
                     authors_list.append(author_id)
@@ -217,11 +217,3 @@ def main():
     
 if __name__ == '__main__':
     main()
-
-
-
-
-
-
-
-

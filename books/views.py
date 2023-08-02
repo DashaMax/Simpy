@@ -2,18 +2,20 @@ from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, FormView
 
 from blogs.models import BlogModel
-from books.forms import AddReviewForm
+from books.forms import AddReviewForm, FeedbackForm
 from books.models import BookModel, CategoryModel, ReviewModel
 from comments.forms import AddCommentForm
 from quotes.forms import AddQuoteForm
 from quotes.models import QuoteModel
-from utils.utils import GetMixin, CommentMixin
+from utils.utils import GetMixin, CommentMixin, send_message
 
 
-class MainView(ListView):
+class MainView(FormView, ListView):
     model = BlogModel
+    form_class = FeedbackForm
     template_name = 'books/index.html'
     context_object_name = 'blogs'
+    success_url = reverse_lazy('index')
     extra_context = {
         'title': 'Simpy - главная страница'
     }
@@ -23,6 +25,13 @@ class MainView(ListView):
 
         if len(blogs) > 1:
             return blogs[0], blogs[1]
+
+    def post(self, request, *args, **kwargs):
+        title = request.POST['title']
+        email = request.POST['email']
+        message = request.POST['message']
+        send_message(email)
+        return super(MainView, self).post(request, *args, **kwargs)
 
 
 class BooksView(GetMixin, ListView):
@@ -132,11 +141,11 @@ class BookQuotesView(CommentMixin, FormView, ListView):
         return reverse_lazy('book-quotes', args=(self.kwargs['book_slug'],))
 
     def post(self, request, *args, **kwargs):
-        if 'text' in request.POST:
+        if 'quote' in request.POST:
             form = AddCommentForm()
             book = BookModel.objects.get(slug=self.kwargs['book_slug'])
             user = request.user
-            quote = QuoteModel(book=book, user=user, text=request.POST['text'])
+            quote = QuoteModel(book=book, user=user, quote=request.POST['quote'])
             quote.save()
             return super(BookQuotesView, self).form_valid(form)
 

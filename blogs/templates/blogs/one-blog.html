@@ -5,13 +5,13 @@
     <a href="{% url 'blog' blog.slug %}">
         <img src="{{ blog.image.url }}" alt="Фото" class="blog-img">
     </a>
-    <p class="blog-body">{{ blog.description|truncatechars:500 }}</p>
+    <p class="blog-body">{{ blog.blog|truncatechars:500 }}</p>
     <div class="block-author">
         <div class="author">
-            <a href="{% url 'user' blog.author.slug %}">
-                <img src="{{ blog.author.image.url }}" alt="Фото" class="author-avatar">
+            <a href="{% url 'user' blog.user.slug %}">
+                <img src="{{ blog.user.image.url }}" alt="Фото" class="author-avatar">
             </a>
-            <a href="{% url 'user' blog.author.slug %}" class="blog-name">{{ blog.author.username }}</a>
+            <a href="{% url 'user' blog.user.slug %}" class="blog-name">{{ blog.user.username }}</a>
         </div>
         <p class="date">{{ blog.create_date|date:'d.m.Y H:i' }}</p>
     </div>

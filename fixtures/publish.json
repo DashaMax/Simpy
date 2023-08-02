@@ -10,91 +10,91 @@
         "model": "books.publishingmodel",
         "pk": 2,
         "fields": {
-            "title": "Вече"
+            "title": "АСТ"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 3,
         "fields": {
-            "title": "Рипол-Классик"
+            "title": "Яуза"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 4,
         "fields": {
-            "title": "АСТ"
+            "title": "RUGRAM_Limited collection"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 5,
         "fields": {
-            "title": "Азбука"
+            "title": "Де'Либри"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 6,
         "fields": {
-            "title": "Комикс-студия GARAЖ"
+            "title": "Rugram_ЛитРес"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 7,
         "fields": {
-            "title": "Древние комиксы"
+            "title": "RUGRAM_Public Domain"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 8,
         "fields": {
-            "title": "Индивидуум"
+            "title": "Амрита-Русь"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 9,
         "fields": {
-            "title": "Другое издательство"
+            "title": "Вече"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 10,
         "fields": {
-            "title": "Питер"
+            "title": "Ад Маргинем"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 11,
         "fields": {
-            "title": "Лайвбук"
+            "title": "Перо"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 12,
         "fields": {
-            "title": "Лингва-Ф"
+            "title": "Издательские решения"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 13,
         "fields": {
-            "title": "Комикс Паблишер"
+            "title": "Алетейя"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 14,
         "fields": {
-            "title": "Bubble"
+            "title": "Комикс-студия GARAЖ"
         }
     },
     {
@@ -108,595 +108,595 @@
         "model": "books.publishingmodel",
         "pk": 16,
         "fields": {
-            "title": "КОМИЛЬФО"
+            "title": "Индивидуум"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 17,
         "fields": {
-            "title": "Звездные войны. Герои (обложка)"
+            "title": "Чумной доктор"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 18,
         "fields": {
-            "title": "БРСРК"
+            "title": "Другое издательство"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 19,
         "fields": {
-            "title": "Экслибриум: жизнь вторая"
+            "title": "WIZART COMICS"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 20,
         "fields": {
-            "title": "Майор Игорь Гром"
+            "title": "Питер"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 21,
         "fields": {
-            "title": "WIZART COMICS"
+            "title": "Лайвбук"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 22,
         "fields": {
-            "title": "Бумкнига"
+            "title": "Лингва-Ф"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 23,
         "fields": {
-            "title": "Научное доказательство любви"
+            "title": "Эксмодетство"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 24,
         "fields": {
-            "title": "Фабрика комиксов"
+            "title": "Bubble"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 25,
         "fields": {
-            "title": "Alt Graph"
+            "title": "АЙРИС-пресс Изд. (Книги) ООО"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 26,
         "fields": {
-            "title": "Моб Психо 100"
+            "title": "КОМИЛЬФО"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 27,
         "fields": {
-            "title": "Лериана, невеста герцога по контракту"
+            "title": "БОМБОРА"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 28,
         "fields": {
-            "title": "Бригада пылающего пламени"
+            "title": "Звездные войны. Герои (обложка)"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 29,
         "fields": {
-            "title": "Крутой учитель Онидзука"
+            "title": "БРСРК"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 30,
         "fields": {
-            "title": "Большой куш"
+            "title": "Экслибриум: жизнь вторая"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 31,
         "fields": {
-            "title": "Мемуары Ванитаса"
+            "title": "Майор Игорь Гром"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 32,
         "fields": {
-            "title": "Fairy Tail"
+            "title": "Бумкнига"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 33,
         "fields": {
-            "title": "Beastars. Выдающиеся звери"
+            "title": "Госпожа Кагуя"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 34,
         "fields": {
-            "title": "Гангста"
+            "title": "Азбука"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 35,
         "fields": {
-            "title": "Cotton Tales"
+            "title": "Путь домохозяина"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 36,
         "fields": {
-            "title": "Терлецки Комикс"
+            "title": "Научное доказательство любви"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 37,
         "fields": {
-            "title": "Моя геройская академия"
+            "title": "Alt Graph"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 38,
         "fields": {
-            "title": "Огненный удар"
+            "title": "Моб Психо 100"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 39,
         "fields": {
-            "title": "Счастливый Попоти"
+            "title": "Лериана, невеста герцога по контракту"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 40,
         "fields": {
-            "title": "Магмелл синего моря"
+            "title": "Бригада пылающего пламени"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 41,
         "fields": {
-            "title": "Фабрика комиксов Екатеринбург"
+            "title": "Крутой учитель Онидзука"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 42,
         "fields": {
-            "title": "Утренняя выпечка для Момо-тян"
+            "title": "Большой куш"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 43,
         "fields": {
-            "title": "Путь домохозяина"
+            "title": "Мемуары Ванитаса"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 44,
         "fields": {
-            "title": "Клинок Бессмертного"
+            "title": "Истари Комикс"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 45,
         "fields": {
-            "title": "Радиант"
+            "title": "Истории монстров"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 46,
         "fields": {
-            "title": "Магическая битва"
+            "title": "Красный Марс"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 47,
         "fields": {
-            "title": "Сердца Пандоры"
+            "title": "Твоя апрельская ложь"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 48,
         "fields": {
-            "title": "Манн, Иванов и Фербер"
+            "title": "Убийца гоблинов"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 49,
         "fields": {
-            "title": "Так сложно любить отаку"
+            "title": "Fairy Tail"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 50,
         "fields": {
-            "title": "Человек-бензопила"
+            "title": "Beastars. Выдающиеся звери"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 51,
         "fields": {
-            "title": "Поднятие уровня в одиночку"
+            "title": "Cotton Tales"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 52,
         "fields": {
-            "title": "Нелюдь"
+            "title": "Гангста"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 53,
         "fields": {
-            "title": "Рыцари «Сидонии»"
+            "title": "Терлецки Комикс"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 54,
         "fields": {
-            "title": "Истребитель демонов"
+            "title": "Моя геройская академия"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 55,
         "fields": {
-            "title": "SPYxFAMILY"
+            "title": "Огненный удар"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 56,
         "fields": {
-            "title": "КАРО"
+            "title": "Фабрика комиксов"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 57,
         "fields": {
-            "title": "RUGRAM_Пальмира"
+            "title": "Счастливый Попоти"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 58,
         "fields": {
-            "title": "HarperCollins"
+            "title": "Фабрика комиксов Екатеринбург"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 59,
         "fields": {
-            "title": "Антология"
+            "title": "Старшеклассницы в своё свободное время"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 60,
         "fields": {
-            "title": "Hodder & Stoughton"
+            "title": "Утренняя выпечка для Момо-тян"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 61,
         "fields": {
-            "title": "Vintage Books"
+            "title": "Магмелл синего моря"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 62,
         "fields": {
-            "title": "Harper Collins UK"
+            "title": "Очень приятно, бог"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 63,
         "fields": {
-            "title": "Puffin"
+            "title": "КАРО"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 64,
         "fields": {
-            "title": "Девочка с лисьим хвостом"
+            "title": "Signet"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 65,
         "fields": {
-            "title": "Simon & Schuster"
+            "title": "Bloomsbury"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 66,
         "fields": {
-            "title": "Signet"
+            "title": "Антология"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 67,
         "fields": {
-            "title": "Penguin Books"
+            "title": "Т8 Издательские технологии"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 68,
         "fields": {
-            "title": "FBR Co., Ltd."
+            "title": "RUGRAM_Пальмира"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 69,
         "fields": {
-            "title": "Т8 Издательские технологии"
+            "title": "HarperCollins"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 70,
         "fields": {
-            "title": "Издательский дом \"Тион\""
+            "title": "Random House"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 71,
         "fields": {
-            "title": "Litterature contemporaine"
+            "title": "ВБС Логистик"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 72,
         "fields": {
-            "title": "Hachette"
+            "title": "Девочка с лисьим хвостом"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 73,
         "fields": {
-            "title": "Grand Central Publishing"
+            "title": "Simon & Schuster"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 74,
         "fields": {
-            "title": "RUGRAM_Public Domain"
+            "title": "Penguin Books"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 75,
         "fields": {
-            "title": "Инсан"
+            "title": "Harper Collins Publishers"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 76,
         "fields": {
-            "title": "Хузур"
+            "title": "Hachette"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 77,
         "fields": {
-            "title": "Bookinist"
+            "title": "Grand Central Publishing"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 78,
         "fields": {
-            "title": "Зангак"
+            "title": "Инсан"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 79,
         "fields": {
-            "title": "Scholastic"
+            "title": "Хузур"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 80,
         "fields": {
-            "title": "Золотой лев"
+            "title": "Bookinist"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 81,
         "fields": {
-            "title": "Айрис-пресс"
+            "title": "Scholastic"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 82,
         "fields": {
-            "title": "ВКН"
+            "title": "Edit Print"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 83,
         "fields": {
-            "title": "Хит книга"
+            "title": "Золотой лев"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 84,
         "fields": {
-            "title": "Альпина нон-фикшн"
+            "title": "Хит книга"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 85,
         "fields": {
-            "title": "Проспект"
+            "title": "Перспектива"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 86,
         "fields": {
-            "title": "Айрис"
+            "title": "Феникс"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 87,
         "fields": {
-            "title": "Феникс"
+            "title": "Русский язык. Курсы"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 88,
         "fields": {
-            "title": "Пушкинский дом"
+            "title": "ВКН"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 89,
         "fields": {
-            "title": "Классная классика"
+            "title": "Златоуст"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 90,
         "fields": {
-            "title": "Наклейки для наших малышей"
+            "title": "Книга по Требованию"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 91,
         "fields": {
-            "title": "Стрекоза"
+            "title": "Живой язык"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 92,
         "fields": {
-            "title": "РОСМЭН"
+            "title": "Грамота"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 93,
         "fields": {
-            "title": "Книжный Дом"
+            "title": "АБВ"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 94,
         "fields": {
-            "title": "Литур"
+            "title": "Каро СПб"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 95,
         "fields": {
-            "title": "МОЗАИКА kids"
+            "title": "Просвещение"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 96,
         "fields": {
-            "title": "Эксмодетство"
+            "title": "Махаон"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 97,
         "fields": {
-            "title": "Просвещение"
+            "title": "РОСМЭН"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 98,
         "fields": {
-            "title": "Розовый жираф"
+            "title": "Омега"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 99,
         "fields": {
-            "title": "Де'Либри"
+            "title": "ТЦ Сфера"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 100,
         "fields": {
-            "title": "Карьера Пресс"
+            "title": "ЭНАС-КНИГА"
         }
     },
     {
@@ -710,371 +710,371 @@
         "model": "books.publishingmodel",
         "pk": 102,
         "fields": {
-            "title": "Тинбук"
+            "title": "Искатель"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 103,
         "fields": {
-            "title": "Самокат"
+            "title": "Время"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 104,
         "fields": {
-            "title": "Искатель"
+            "title": "Лев"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 105,
         "fields": {
-            "title": "Детская литература"
+            "title": "Розовый жираф"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 106,
         "fields": {
-            "title": "Литера Гранд"
+            "title": "Карьера Пресс"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 107,
         "fields": {
-            "title": "Черная речка"
+            "title": "Тинбук"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 108,
         "fields": {
-            "title": "Время"
+            "title": "Самокат"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 109,
         "fields": {
-            "title": "Rugram_ЛитРес"
+            "title": "Детская литература"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 110,
         "fields": {
-            "title": "Принтбук"
+            "title": "Литера"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 111,
         "fields": {
-            "title": "Зебра Е"
+            "title": "Виктория плюс"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 112,
         "fields": {
-            "title": "Дом Славянской Книги"
+            "title": "Легион"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 113,
         "fields": {
-            "title": "Академкнига"
+            "title": "Экзамен"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 114,
         "fields": {
-            "title": "BHV-CПб"
+            "title": "Илекса"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 115,
         "fields": {
-            "title": "Экзамен"
+            "title": "Гном"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 116,
         "fields": {
-            "title": "М-Книга Воронеж"
+            "title": "MACARDS"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 117,
         "fields": {
-            "title": "Практическая магия"
+            "title": "Манн, Иванов и Фербер"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 118,
         "fields": {
-            "title": "ПРОСВЕТА"
+            "title": "ИПЦ Маска"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 119,
         "fields": {
-            "title": "Весь СПб"
+            "title": "Традиция"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 120,
         "fields": {
-            "title": "Либрис"
+            "title": "Профит Стайл"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 121,
         "fields": {
-            "title": "Амрита-Русь"
+            "title": "Lo Scarabeo"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 122,
         "fields": {
-            "title": "Капитал"
+            "title": "Крылов"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 123,
         "fields": {
-            "title": "БОМБОРА"
+            "title": "Атмосфера"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 124,
         "fields": {
-            "title": "Диля"
+            "title": "Аввалон-Ло Скарабео"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 125,
         "fields": {
-            "title": "Центрполиграф"
+            "title": "Ганга"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 126,
         "fields": {
-            "title": "Альпина Паблишер"
+            "title": "ПРОСВЕТА"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 127,
         "fields": {
-            "title": "КТК Галактика"
+            "title": "Институт метафизики"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 128,
         "fields": {
-            "title": "МЕДпроф"
+            "title": "Весь СПб"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 129,
         "fields": {
-            "title": "Концептуал"
+            "title": "Издательский бутик Книжные сети"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 130,
         "fields": {
-            "title": "Прометей"
+            "title": "КоЛибри"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 131,
         "fields": {
-            "title": "Гэотар-Медиа"
+            "title": "Попурри"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 132,
         "fields": {
-            "title": "Taschen"
+            "title": "Олимп-Бизнес"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 133,
         "fields": {
-            "title": "ОДРИ"
+            "title": "КТК Галактика"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 134,
         "fields": {
-            "title": "Северный паломник"
+            "title": "МЕДпресс-информ"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 135,
         "fields": {
-            "title": "ИПЦ Маска"
+            "title": "Альпина Паблишер"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 136,
         "fields": {
-            "title": "Этерна"
+            "title": "Центрполиграф"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 137,
         "fields": {
-            "title": "1000 бестселлеров"
+            "title": "Этерна"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 138,
         "fields": {
-            "title": "Ориенталия"
+            "title": "Международные отношения"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 139,
         "fields": {
-            "title": "Попурри"
+            "title": "Taschen"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 140,
         "fields": {
-            "title": "ИП Васильев А.В."
+            "title": "ОДРИ"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 141,
         "fields": {
-            "title": "Дримбук"
+            "title": "Северный паломник"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 142,
         "fields": {
-            "title": "Алетейя"
+            "title": "1000 бестселлеров"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 143,
         "fields": {
-            "title": "Новое литературное обозрение"
+            "title": "Ориенталия"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 144,
         "fields": {
-            "title": "Пальмира"
+            "title": "СЛК"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 145,
         "fields": {
-            "title": "Алеся"
+            "title": "ИП Васильев А.В."
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 146,
         "fields": {
-            "title": "ИД Порт-Апрель"
+            "title": "Дримбук"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 147,
         "fields": {
-            "title": "ХлебСоль"
+            "title": "Новое литературное обозрение"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 148,
         "fields": {
-            "title": "Клуб Семейного Досуга"
+            "title": "Издательский дом \"Тион\""
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 149,
         "fields": {
-            "title": "Абрикобукс"
+            "title": "Пальмира"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 150,
         "fields": {
-            "title": "Профит Стайл"
+            "title": "Рипол-Классик"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 151,
         "fields": {
-            "title": "Секреты мастерства. АСТ"
+            "title": "Книжники"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 152,
         "fields": {
-            "title": "Спутник+"
+            "title": "ХлебСоль"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 153,
         "fields": {
-            "title": "Издательство ИП Секачев В.Ю."
+            "title": "GRAFO publishing lab"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 154,
         "fields": {
-            "title": "ИМ Медиа"
+            "title": "Абрикобукс"
         }
     },
     {
@@ -1088,336 +1088,434 @@
         "model": "books.publishingmodel",
         "pk": 156,
         "fields": {
-            "title": "Парадокс"
+            "title": "Спутник+"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 157,
         "fields": {
-            "title": "Аюрведа Плюс СПб"
+            "title": "Издательство ИП Секачев В.Ю."
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 158,
         "fields": {
-            "title": "КоЛибри"
+            "title": "ИМ Медиа"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 159,
         "fields": {
-            "title": "Синдбад"
+            "title": "Парадокс"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 160,
         "fields": {
-            "title": "Грифон"
+            "title": "Аюрведа Плюс СПб"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 161,
         "fields": {
-            "title": "Комсомольская Правда"
+            "title": "Синдбад"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 162,
         "fields": {
-            "title": "Физкультура и спорт"
+            "title": "Грифон"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 163,
         "fields": {
-            "title": "Третий Рим"
+            "title": "Комсомольская Правда"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 164,
         "fields": {
-            "title": "Бауэр Медиа"
+            "title": "Физкультура и спорт"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 165,
         "fields": {
-            "title": "Русский шахматный дом"
+            "title": "Врублевская"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 166,
         "fields": {
-            "title": "АБВ"
+            "title": "Калиниченко"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 167,
         "fields": {
-            "title": "Издательство \"Спутник+\""
+            "title": "Человек"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 168,
         "fields": {
-            "title": "Издатель Андрей Ельков"
+            "title": "Глотов"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 169,
         "fields": {
-            "title": "КИТОНИ"
+            "title": "Инфра-Инженерия"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 170,
         "fields": {
-            "title": "Яуза"
+            "title": "Медиарост"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 171,
         "fields": {
-            "title": "Оранжевый гид"
+            "title": "Кладезь"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 172,
         "fields": {
-            "title": "Alpina Popular Science"
+            "title": "Бауэр Медиа"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 173,
         "fields": {
-            "title": "БХВ СПб"
+            "title": "ДМК Пресс"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 174,
         "fields": {
-            "title": "БХВ"
+            "title": "Альпина нон-фикшн"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 175,
         "fields": {
-            "title": "Бестселлеры O''Reilly"
+            "title": "BHV-CПб"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 176,
         "fields": {
-            "title": "Товарищество научных изданий"
+            "title": "Юстицинформ"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 177,
         "fields": {
-            "title": "Труды выдающихся ученых МГУ"
+            "title": "Техносфера"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 178,
         "fields": {
-            "title": "АРГАМАК-"
+            "title": "МЦНМО"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 179,
         "fields": {
-            "title": "Классический университетский учебник"
+            "title": "Вышэйшая школа"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 180,
         "fields": {
-            "title": "Наука и техника"
+            "title": "Товарищество научных изданий"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 181,
         "fields": {
-            "title": "Ad Marginem Press"
+            "title": "БХВ"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 182,
         "fields": {
-            "title": "Академический проект"
+            "title": "Инфра-М"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 183,
         "fields": {
-            "title": "Родина"
+            "title": "Сибирская Благозвонница"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 184,
         "fields": {
-            "title": "Омега-Л"
+            "title": "Наше Завтра"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 185,
         "fields": {
-            "title": "Ад Маргинем"
+            "title": "Никея"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 186,
         "fields": {
-            "title": "Библос"
+            "title": "Кодекс"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 187,
         "fields": {
-            "title": "Садра"
+            "title": "Академический проект"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 188,
         "fields": {
-            "title": "Жизнь с Богом"
+            "title": "Канон+"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 189,
         "fields": {
-            "title": "Захаров"
+            "title": "Ad Marginem Press"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 190,
         "fields": {
-            "title": "Like Book"
+            "title": "Издательство М. Гринберга"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 191,
         "fields": {
-            "title": "Вита Нова"
+            "title": "Терирем"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 192,
         "fields": {
-            "title": "БиблиоРоссика/Academic Studies Press"
+            "title": "ИПЛ"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 193,
         "fields": {
-            "title": "Прайм-ЕВРОЗНАК"
+            "title": "СУПЕР Издательство"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 194,
         "fields": {
-            "title": "Москва"
+            "title": "Общецерковная аспирантура и до"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 195,
         "fields": {
-            "title": "Астрель"
+            "title": "ИД Познание"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 196,
         "fields": {
-            "title": "Гуманитарный Центр"
+            "title": "РХГА СПб"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 197,
         "fields": {
-            "title": "Фонд \"Русские Витязи\""
+            "title": "Пушкинский дом"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 198,
         "fields": {
-            "title": "Пятый Рим"
+            "title": "Добрая книга"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 199,
         "fields": {
-            "title": "Морское Наследие"
+            "title": "Издательство Студии Артемия Ле"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 200,
         "fields": {
-            "title": "ПРАВО"
+            "title": "Книговек"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 201,
         "fields": {
-            "title": "Секачев"
+            "title": "Rosebud PubIishing"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 202,
         "fields": {
-            "title": "Статут"
+            "title": "Калинина"
         }
     },
     {
         "model": "books.publishingmodel",
         "pk": 203,
         "fields": {
-            "title": "Юстицинформ"
+            "title": "Хоббитека"
+        }
+    },
+    {
+        "model": "books.publishingmodel",
+        "pk": 204,
+        "fields": {
+            "title": "Вита Нова"
+        }
+    },
+    {
+        "model": "books.publishingmodel",
+        "pk": 205,
+        "fields": {
+            "title": "Старая Басманная"
+        }
+    },
+    {
+        "model": "books.publishingmodel",
+        "pk": 206,
+        "fields": {
+            "title": "Rock-ExPress"
+        }
+    },
+    {
+        "model": "books.publishingmodel",
+        "pk": 207,
+        "fields": {
+            "title": "БиблиоРоссика/Academic Studies Press"
+        }
+    },
+    {
+        "model": "books.publishingmodel",
+        "pk": 208,
+        "fields": {
+            "title": "Композитор"
+        }
+    },
+    {
+        "model": "books.publishingmodel",
+        "pk": 209,
+        "fields": {
+            "title": "СОЛОН-Пресс"
+        }
+    },
+    {
+        "model": "books.publishingmodel",
+        "pk": 210,
+        "fields": {
+            "title": "Проспект"
+        }
+    },
+    {
+        "model": "books.publishingmodel",
+        "pk": 211,
+        "fields": {
+            "title": "Моркнига"
+        }
+    },
+    {
+        "model": "books.publishingmodel",
+        "pk": 212,
+        "fields": {
+            "title": "Альбатрос"
+        }
+    },
+    {
+        "model": "books.publishingmodel",
+        "pk": 213,
+        "fields": {
+            "title": "Остров"
+        }
+    },
+    {
+        "model": "books.publishingmodel",
+        "pk": 214,
+        "fields": {
+            "title": "Д.А.Р.К."
+        }
+    },
+    {
+        "model": "books.publishingmodel",
+        "pk": 215,
+        "fields": {
+            "title": "ПРАВО"
+        }
+    },
+    {
+        "model": "books.publishingmodel",
+        "pk": 216,
+        "fields": {
+            "title": "Городец"
+        }
+    },
+    {
+        "model": "books.publishingmodel",
+        "pk": 217,
+        "fields": {
+            "title": "Родина"
         }
     }
 ]

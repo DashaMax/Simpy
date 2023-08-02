@@ -73,16 +73,19 @@
         </div>
         <hr>
         <div class="form">
-            <div class="container">
-                <div class="block-form">
-                    <h2 class="form-h2">Форма обратной связи</h2>
-                    <form method="post" class="form-feedback">
-                        <input type="text" placeholder="Тема обращения" class="form-input"><br>
-                        <input type="email" placeholder="Ваша почта для связи" class="form-input"><br>
-                        <textarea placeholder="Сообщение" class="form-input form-textarea"></textarea><br>
-                        <input type="submit" value="Отправить" class="form-input form-submit">
-                    </form>
-                </div>
+            <div class="form-login">
+                <h1 class="login-title">Форма обратной связи</h1>
+                <form method="post">
+                    {% csrf_token %}
+                    {% for field in form %}
+                        <p class="form-input">
+                            {{ field }}
+                        </p>
+                    {% endfor %}
+                    <p class="form-input">
+                        <input type="submit" value="Отправить">
+                    </p>
+                </form>
             </div>
         </div>
     </main>

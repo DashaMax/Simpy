@@ -21,7 +21,7 @@ main{
 
 .form-login .login-title{
     text-align: center;
-    font-size: 34px;
+    font-size: 30px;
     color: rgb(33, 33, 33);
     margin-bottom: 30px;
 }
@@ -54,7 +54,7 @@ main{
 }
 
 .form-login input[type=submit]{
-    font-size: 16px;
+    font-size: 14px;
     padding: 5px 30px;
     border-radius: 5px;
     background-color: rgb(46, 46, 46);
@@ -96,6 +96,8 @@ main{
 
 .errorlist{
     list-style: none;
+    color: red;
+    font-size: 14px;
 }
 
 @media(max-width: 600px){

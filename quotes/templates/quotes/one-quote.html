@@ -10,7 +10,7 @@
         </div>
         <p class="date">{{ quote.create_date|date:'d.m.Y H:i' }}</p>
     </div>
-    <p class="quote-p">&#10077; {{ quote.text }} &#10078;</p>
+    <p class="quote-p">&#10077; {{ quote.quote }} &#10078;</p>
     <p class="author-quote">
         {% for author in quote.book.author.all %}
             <span>{{ author.name }}</span>

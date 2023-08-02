@@ -7,11 +7,11 @@ class AddQuoteForm(forms.ModelForm):
     class Meta:
         model = QuoteModel
         fields = (
-            'text',
+            'quote',
         )
         widgets = {
-            'text': forms.Textarea(attrs={'rows': 10,
-                                          'class': 'textarea'}),
+            'quote': forms.Textarea(attrs={'rows': 10,
+                                           'class': 'textarea'}),
         }
 
 
@@ -20,11 +20,11 @@ class UserAddQuoteForm(forms.ModelForm):
         model = QuoteModel
         fields = (
             'book',
-            'text',
+            'quote',
         )
         labels = {
             'book': 'Книга',
-            'text': 'Цитата',
+            'quote': 'Цитата',
         }
 
     def __init__(self, *args, **kwargs):

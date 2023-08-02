@@ -1,5 +1,6 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.contrib.auth.views import LoginView
+from django.contrib.auth.views import LoginView, PasswordResetView, PasswordResetDoneView, PasswordResetConfirmView, \
+    PasswordResetCompleteView
 from django.contrib.messages.views import SuccessMessageMixin
 from django.shortcuts import redirect
 from django.urls import reverse_lazy
@@ -10,7 +11,8 @@ from books.models import BookModel
 from comments.forms import AddCommentForm
 from quotes.forms import UserAddQuoteForm
 from quotes.models import QuoteModel
-from users.forms import UserLoginForm, UserRegisterForm, UserUpdateForm, AddBlogForm
+from users.forms import UserLoginForm, UserRegisterForm, UserUpdateForm, AddBlogForm, UserPasswordResetForm, \
+    UserSetPasswordForm
 from users.models import UserModel
 from utils.utils import GetMixin, CommentMixin
 
@@ -33,6 +35,38 @@ class UserRegisterView(SuccessMessageMixin, CreateView):
     success_url = reverse_lazy('login')
     extra_context = {
         'title': 'Simpy - регистрация'
+    }
+
+
+class UserPasswordResetView(PasswordResetView):
+    email_template_name = 'users/password_reset_email.html'
+    subject_template_name = 'users/password_reset_subject.txt'
+    form_class = UserPasswordResetForm
+    template_name = 'users/password_reset_form.html'
+    extra_context = {
+        'title': 'Simpy - восстановление пароля'
+    }
+
+
+class UserPasswordResetDoneView(PasswordResetDoneView):
+    template_name = 'users/password_reset_done.html'
+    extra_context = {
+        'title': 'Simpy - восстановление пароля'
+    }
+
+
+class UserPasswordResetConfirmView(PasswordResetConfirmView):
+    form_class = UserSetPasswordForm
+    template_name = 'users/password_reset_confirm.html'
+    extra_context = {
+        'title': 'Simpy - восстановление пароля'
+    }
+
+
+class UserPasswordResetCompleteView(PasswordResetCompleteView):
+    template_name = 'users/password_reset_complete.html'
+    extra_context = {
+        'title': 'Simpy - восстановление пароля'
     }
 
 
@@ -74,7 +108,6 @@ class UserBookshelfView(GetMixin, LoginRequiredMixin, DetailView):
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super(UserBookshelfView, self).get_context_data(object_list=None, **kwargs)
-        #context['user'] = UserModel.objects.get(slug=self.kwargs['slug'])
         context['title'] = f'Simpy - {context["user"]} - книжная полка'
         context['books'] = context['user'].book.all()
         return context
@@ -92,7 +125,7 @@ class UserBlogsView(SuccessMessageMixin, LoginRequiredMixin, CreateView):
         context['flag'] = 'user_blogs'
         context['user'] = user
         context['title'] = f'Simpy - {context["user"]} - блог'
-        context['user_blogs'] = BlogModel.objects.filter(author=user)
+        context['user_blogs'] = BlogModel.objects.filter(user=user)
         return context
 
     def get_success_url(self):
@@ -100,7 +133,7 @@ class UserBlogsView(SuccessMessageMixin, LoginRequiredMixin, CreateView):
 
     def form_valid(self, form):
         self.object = form.save(commit=False)
-        self.object.author = self.request.user
+        self.object.user = self.request.user
         self.object.save()
         return super(UserBlogsView, self).form_valid(form)
 
@@ -124,18 +157,11 @@ class UserQuotesView(CommentMixin, LoginRequiredMixin, FormView, ListView):
         return reverse_lazy('user-quotes', args=(self.kwargs['user_slug'],))
 
     def post(self, request, *args, **kwargs):
-    #     if 'comment' in request.POST:
-    #         user = request.user
-    #         quote = QuoteModel.objects.get(pk=request.POST['pk'])
-    #         comment = request.POST['comment']
-    #         quote.comments.create(user=user, comment=comment)
-    #         return super(UserQuotesView, self).post(request, *args, **kwargs)
-    #
-        if 'text' in request.POST:
+        if 'quote' in request.POST:
             form = AddCommentForm()
             book = BookModel.objects.get(pk=request.POST['book'])
             user = request.user
-            quote = QuoteModel(book=book, user=user, text=request.POST['text'])
+            quote = QuoteModel(book=book, user=user, quote=request.POST['quote'])
             quote.save()
             return super(UserQuotesView, self).form_valid(form)
 

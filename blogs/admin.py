@@ -6,7 +6,7 @@ from blogs.models import BlogModel
 class BlogAdmin(admin.ModelAdmin):
     list_display = (
         'title',
-        'author',
+        'user',
         'create_date',
     )
 

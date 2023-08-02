@@ -1,0 +1,35 @@
+[
+{
+    "model": "comments.commentmodel",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "comment": "Comment1",
+        "content_type": 12,
+        "object_id": 1,
+        "create_date": "2023-08-01T21:55:08.908"
+    }
+},
+{
+    "model": "comments.commentmodel",
+    "pk": 2,
+    "fields": {
+        "user": 1,
+        "comment": "Comment2",
+        "content_type": 14,
+        "object_id": 1,
+        "create_date": "2023-08-01T21:57:32.747"
+    }
+},
+{
+    "model": "comments.commentmodel",
+    "pk": 3,
+    "fields": {
+        "user": 1,
+        "comment": "Comment3",
+        "content_type": 13,
+        "object_id": 2,
+        "create_date": "2023-08-01T21:57:54.721"
+    }
+}
+]

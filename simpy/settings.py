@@ -9,21 +9,28 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
-
+import os
 from pathlib import Path
+from environ import environ
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+env = environ.Env(
+    DEBUG=(bool, False)
+)
+env.read_env(os.path.join(BASE_DIR, '.env'))
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure--^fc4fdsmv1i!0j=^u1xk!$%3%%)v0v!jms!c-jl8-@(ktczay'
+SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = env('DEBUG')
 
 ALLOWED_HOSTS = []
 
@@ -136,6 +143,19 @@ AUTH_USER_MODEL = 'users.UserModel'
 LOGIN_URL = 'login'
 LOGOUT_REDIRECT_URL = 'login'
 
+# Почтовый сервис
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.yandex.ru'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
+
+EMAIL_HOST_USER = env('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
+# EMAIL_SERVER = EMAIL_HOST_USER
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+# EMAIL_ADMIN = EMAIL_HOST_USER
+
 
 # CONST
 
@@ -162,3 +182,12 @@ SEX = (
     (MALE, 'мужской'),
     (FEMALE, 'женский'),
 )
+
+TITLE = 'Simpy - уведомление от книжного сервиса'
+MESSAGE = '''
+    Дорогой читатель, спасибо за обратную связь!
+    Мы обязательно обработаем вашу заявку и вернёмся с ответом позднее.
+    
+    С уважением,
+    команда Simpy
+'''

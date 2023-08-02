@@ -17,14 +17,10 @@ class BookModel(models.Model):
     binding = models.CharField(max_length=50, choices=settings.TYPE_OF_BIND, verbose_name='Тип обложки')
     pages = models.PositiveIntegerField(verbose_name='Количество страниц')
     year = models.PositiveIntegerField(verbose_name='Год издания')
-    image = models.ImageField(verbose_name='Изображение', upload_to='images/%Y/%m/%d/',
+    image = models.ImageField(verbose_name='Изображение', upload_to='books/%Y/%m/%d/',
                               blank=True,
                               default='book-default.png'
                               )
-    # image = models.ImageField(verbose_name='Изображение', upload_to='books/%Y/%m/%d/',
-    #                           blank=True,
-    #                           default='book-default.png'
-    #                           )
     date_created = models.DateTimeField(verbose_name='Дата добавления', auto_now_add=True)
 
     def __str__(self):
