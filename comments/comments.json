@@ -4,7 +4,7 @@
     "pk": 1,
     "fields": {
         "user": 1,
-        "comment": "Comment1",
+        "comment": "Все круто!",
         "content_type": 12,
         "object_id": 1,
         "create_date": "2023-08-01T21:55:08.908"

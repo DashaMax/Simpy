@@ -58,19 +58,19 @@ class UserRegisterForm(UserCreationForm):
         model = UserModel
         fields = (
             'username',
-            'first_name',
-            'last_name',
+            # 'first_name',
+            # 'last_name',
             'email',
-            'sex',
+            # 'sex',
             'password1',
             'password2'
         )
         widgets = {
             'username': forms.TextInput(attrs={'placeholder': 'Логин', 'class': 'input-field'}),
-            'first_name': forms.TextInput(attrs={'placeholder': 'Имя', 'class': 'input-field'}),
-            'last_name': forms.TextInput(attrs={'placeholder': 'Фамилия', 'class': 'input-field'}),
+            # 'first_name': forms.TextInput(attrs={'placeholder': 'Имя', 'class': 'input-field'}),
+            # 'last_name': forms.TextInput(attrs={'placeholder': 'Фамилия', 'class': 'input-field'}),
             'email': forms.EmailInput(attrs={'placeholder': 'E-mail', 'class': 'input-field'}),
-            'sex': forms.Select(attrs={'class': 'input-field'}),
+            # 'sex': forms.Select(attrs={'class': 'input-field'}),
             # 'password1': forms.PasswordInput(attrs={'placeholder': 'Пароль', 'class': 'input-field'}),
             # 'password2': forms.PasswordInput(attrs={'placeholder': 'Повторите пароль', 'class': 'input-field'}),
         }
@@ -120,7 +120,7 @@ class UserUpdateForm(UserChangeForm):
         )
         widgets = {
             'image': forms.FileInput(attrs={'class': 'input-field'}),
-            'date_of_birth': forms.DateInput(attrs={'type': 'date', 'class': 'input-field'}),
+            'date_of_birth': forms.TextInput(attrs={'type': 'date', 'class': 'input-field'}),
         }
         labels = {
             'username': 'Логин',

@@ -26,29 +26,8 @@ SEX = [
     'female',
     'male'
 ]
-IMAGES_USER = [
-    'profile-default.png',
-    os.path.join(IMAGE_USER_DIR, '1.jpg'),
-    os.path.join(IMAGE_USER_DIR, '2.jpg'),
-    os.path.join(IMAGE_USER_DIR, '3.jpg'),
-    os.path.join(IMAGE_USER_DIR, '4.jpg'),
-    os.path.join(IMAGE_USER_DIR, '5.jpg'),
-    os.path.join(IMAGE_USER_DIR, '6.jpg'),
-    os.path.join(IMAGE_USER_DIR, '7.jpg'),
-    os.path.join(IMAGE_USER_DIR, '8.jpg'),
-    os.path.join(IMAGE_USER_DIR, '9.jpg'),
-    os.path.join(IMAGE_USER_DIR, '10.jpg'),
-    os.path.join(IMAGE_USER_DIR, '11.jpg'),
-    os.path.join(IMAGE_USER_DIR, '12.jpg'),
-]
-
-IMAGES_BLOG = [
-    'blog-default.jpg',
-    os.path.join(IMAGE_BLOG_DIR, '1.jpg'),
-    os.path.join(IMAGE_BLOG_DIR, '2.jpg'),
-    os.path.join(IMAGE_BLOG_DIR, '3.jpg'),
-    os.path.join(IMAGE_BLOG_DIR, '4.jpg'),
-]
+IMAGES_USER = ['profile-default.png'] + [os.path.join(IMAGE_USER_DIR, f'{i}.jpg') for i in range(13)]
+IMAGES_BLOG = ['blog-default.jpg'] + [os.path.join(IMAGE_BLOG_DIR, f'{i}.jpg') for i in range(13)]
 
 TEXT = '''
     "Луна жёстко стелет" - научно-фантастический роман, в

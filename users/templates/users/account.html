@@ -30,14 +30,14 @@
                             <span class="info-span">Фамилия:</span> {{ user.last_name }}
                         </p>
                     {% endif %}
-                    {% if user.email %}
+                    <p class="info-p">
+                        <span class="info-span">E-mail:</span> {{ user.email }}
+                    </p>
+                    {% if user.sex %}
                         <p class="info-p">
-                            <span class="info-span">E-mail:</span> {{ user.email }}
+                            <span class="info-span">Пол:</span> {{ user.get_sex_display }}
                         </p>
                     {% endif %}
-                    <p class="info-p">
-                        <span class="info-span">Пол:</span> {{ user.get_sex_display }}
-                    </p>
                     {% if user.city %}
                         <p class="info-p">
                             <span class="info-span">Город:</span> {{ user.city }}

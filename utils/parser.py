@@ -11,8 +11,6 @@ MONTH_TODAY = date.today().month if len(str(date.today().month)) == 2 else f'0{d
 DAY_TODAY = date.today().day if len(str(date.today().day)) == 2 else f'0{date.today().day}'
 TIME_NOW = datetime.now()
 
-#CURRENT_DIR = os.getcwd()
-#FIXTURE_DIR = os.path.abspath('books/fixtures')
 FIXTURE_DIR = os.path.normpath('fixtures')
 IMAGE_DIR = os.path.normpath(f'books/{YEAR_TODAY}/{MONTH_TODAY}/{DAY_TODAY}')
 MEDIA_DIR = os.path.join('media', IMAGE_DIR)

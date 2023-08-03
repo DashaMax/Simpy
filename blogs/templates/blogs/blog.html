@@ -17,10 +17,10 @@
                 <p class="blog-body">{{ blog.blog }}</p>
                 <div class="block-author">
                     <div class="author">
-                        <a href="{% url 'user' blog.user.username %}">
+                        <a href="{% url 'user' blog.user.slug %}">
                             <img src="{{ blog.user.image.url }}" alt="Фото" class="author-image">
                         </a>
-                        <a href="{% url 'user' blog.user.username %}" class="name">{{ blog.user.username }}</a>
+                        <a href="{% url 'user' blog.user.slug %}" class="name">{{ blog.user.username }}</a>
                     </div>
                     <p class="date">{{ blog.create_date|date:'d.m.Y H:i' }}</p>
                 </div>
