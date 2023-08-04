@@ -1,3 +1,4 @@
+from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, FormView
 
@@ -8,6 +9,10 @@ from comments.forms import AddCommentForm
 from quotes.forms import AddQuoteForm
 from quotes.models import QuoteModel
 from utils.utils import GetMixin, CommentMixin, send_message
+
+
+def error_404_view(request, exception):
+    return render(request, 'books/404.html')
 
 
 class MainView(FormView, ListView):

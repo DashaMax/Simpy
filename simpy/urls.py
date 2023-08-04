@@ -16,8 +16,6 @@ Including another URLconf
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.contrib.auth.views import PasswordResetView, PasswordResetConfirmView, PasswordResetCompleteView, \
-    PasswordResetDoneView
 from django.urls import path, include
 
 
@@ -28,6 +26,8 @@ urlpatterns = [
     path('', include('blogs.urls')),
     path('', include('quotes.urls')),
 ]
+
+handler404 = 'books.views.error_404_view'
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

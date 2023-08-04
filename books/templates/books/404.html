@@ -1,0 +1,18 @@
+{% extends 'books/base.html' %}
+{% load static %}
+
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'books/css/style-errors.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    <main>
+        <div class="container">
+            <div class="error-title">
+                <h1>404 Страница не найдена :(</h1>
+            </div>
+        </div>
+    </main>
+{% endblock %}

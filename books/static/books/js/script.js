@@ -49,7 +49,6 @@ let bookLink = document.querySelectorAll('.nav-book .book-link');
 
 if(bookLink){
     for(let i = 0; i < bookLink.length; i++){
-        console.log(bookLink[i].className);
         if(bookLink[i].className == 'book-link active'){
             bookLink[i].className = 'book-link';
         }
@@ -85,7 +84,7 @@ if(butAdd){
     };
 }
 
-if (blockH2){
+if(blockH2){
     blockH2.onclick = function(){
         addForm.style.display = 'none';
         body.style.overflowY = 'visible';
@@ -109,3 +108,44 @@ showComments.forEach(item => {
         item.style.display = 'none';
     })
 })
+
+
+/* Сортировка */
+
+let select = document.querySelector('.filters-select');
+
+select.addEventListener('change', (event) => {
+    let option = event.target.options[event.target.selectedIndex];
+    let value = option.getAttribute('value');
+    let name = option.getAttribute('name');
+
+    if(currentURL.includes('?')){
+        let url = currentURL.split('?')[0];
+
+        if(name){
+            window.location.href = url + '?' + name + '=' + value;
+        }
+        else{
+            window.location.href = url;
+        }
+    }
+    else{
+        window.location.href = document.URL + '?' + name + '=' + value;
+    }
+});
+
+
+/* Добавление selected */
+
+for(let i = 0; i < select.options.length; i++){
+    if(select.options[i].selected){
+        select.options[i].setAttribute('selected', false);
+    }
+}
+
+if(currentURL.includes('?date=up')){
+    select.options[1].setAttribute('selected', true);
+}
+else if(currentURL.includes('?date=down')){
+    select.options[2].setAttribute('selected', true);
+}

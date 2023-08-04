@@ -7,14 +7,20 @@ from users.models import UserModel
 
 
 class UserLoginForm(AuthenticationForm):
-    username = forms.CharField(max_length=150, widget=forms.TextInput(attrs={
-        'placeholder': 'Логин',
-        'class': 'input-field'
-    }))
-    password = forms.CharField(max_length=128, widget=forms.PasswordInput(attrs={
-        'placeholder': 'Пароль',
-        'class': 'input-field'
-    }))
+    username = forms.CharField(
+        max_length=150,
+        widget=forms.TextInput(attrs={
+            'placeholder': 'Логин',
+            'class': 'input-field'
+        })
+    )
+    password = forms.CharField(
+        max_length=128,
+        widget=forms.PasswordInput(attrs={
+            'placeholder': 'Пароль',
+            'class': 'input-field'
+        })
+    )
 
     class Meta:
         model = UserModel
@@ -22,58 +28,47 @@ class UserLoginForm(AuthenticationForm):
             'username',
             'password'
         )
-        # widgets = {
-        #     'username': forms.TextInput(attrs={'placeholder': 'Логин', 'class': 'input-field'}),
-        #     'password': forms.PasswordInput(attrs={'placeholder': 'Пароль', 'class': 'input-field'}),
-        # }
 
 
 class UserRegisterForm(UserCreationForm):
-    # username = forms.CharField(max_length=150, widget=forms.TextInput(attrs={
-    #     'placeholder': 'Логин',
-    #     'class': 'input-field'
-    # }))
-    # first_name = forms.CharField(max_length=150, required=False, widget=forms.TextInput(attrs={
-    #     'placeholder': 'Имя',
-    #     'class': 'input-field'
-    # }))
-    # last_name = forms.CharField(max_length=150, required=False, widget=forms.TextInput(attrs={
-    #     'placeholder': 'Фамилия',
-    #     'class': 'input-field'
-    # }))
-    # email = forms.CharField(max_length=150, required=False, widget=forms.EmailInput(attrs={
-    #     'placeholder': 'E-mail',
-    #     'class': 'input-field'
-    # }))
-    password1 = forms.CharField(max_length=128, widget=forms.PasswordInput(attrs={
-        'placeholder': 'Пароль',
-        'class': 'input-field'
-    }))
-    password2 = forms.CharField(max_length=128, widget=forms.PasswordInput(attrs={
-        'placeholder': 'Повторите пароль',
-        'class': 'input-field'
-    }))
+    username = forms.CharField(
+        max_length=150,
+        widget=forms.TextInput(attrs={
+            'placeholder': 'Логин',
+            'class': 'input-field'
+        })
+    )
+    email = forms.CharField(
+        max_length=150,
+        required=False,
+        widget=forms.EmailInput(attrs={
+            'placeholder': 'E-mail',
+            'class': 'input-field'
+        })
+    )
+    password1 = forms.CharField(
+        max_length=128,
+        widget=forms.PasswordInput(attrs={
+            'placeholder': 'Пароль',
+            'class': 'input-field'
+        })
+    )
+    password2 = forms.CharField(
+        max_length=128,
+        widget=forms.PasswordInput(attrs={
+            'placeholder': 'Повторите пароль',
+            'class': 'input-field'
+        })
+    )
 
     class Meta:
         model = UserModel
         fields = (
             'username',
-            # 'first_name',
-            # 'last_name',
             'email',
-            # 'sex',
             'password1',
             'password2'
         )
-        widgets = {
-            'username': forms.TextInput(attrs={'placeholder': 'Логин', 'class': 'input-field'}),
-            # 'first_name': forms.TextInput(attrs={'placeholder': 'Имя', 'class': 'input-field'}),
-            # 'last_name': forms.TextInput(attrs={'placeholder': 'Фамилия', 'class': 'input-field'}),
-            'email': forms.EmailInput(attrs={'placeholder': 'E-mail', 'class': 'input-field'}),
-            # 'sex': forms.Select(attrs={'class': 'input-field'}),
-            # 'password1': forms.PasswordInput(attrs={'placeholder': 'Пароль', 'class': 'input-field'}),
-            # 'password2': forms.PasswordInput(attrs={'placeholder': 'Повторите пароль', 'class': 'input-field'}),
-        }
 
 
 class UserPasswordResetForm(PasswordResetForm):
@@ -119,8 +114,13 @@ class UserUpdateForm(UserChangeForm):
             'about'
         )
         widgets = {
-            'image': forms.FileInput(attrs={'class': 'input-field'}),
-            'date_of_birth': forms.TextInput(attrs={'type': 'date', 'class': 'input-field'}),
+            'image': forms.FileInput(attrs={
+                'class': 'input-field'
+            }),
+            'date_of_birth': forms.TextInput(attrs={
+                'type': 'date',
+                'class': 'input-field'
+            }),
         }
         labels = {
             'username': 'Логин',
@@ -151,9 +151,15 @@ class AddBlogForm(forms.ModelForm):
             'blog'
         )
         widgets = {
-            'title': forms.TextInput(attrs={'class': 'input-field'}),
-            'image': forms.FileInput(attrs={'class': 'input-field'}),
-            'blog': forms.Textarea(attrs={'rows': 10, 'class': 'input-field'}),
+            'title': forms.TextInput(attrs={
+                'class': 'input-field'
+            }),
+            'image': forms.FileInput(attrs={
+                'class': 'input-field'
+            }),
+            'blog': forms.Textarea(attrs={
+                'rows': 10, 'class': 'input-field'
+            }),
         }
         labels = {
             'title': 'Название',

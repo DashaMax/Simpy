@@ -15,6 +15,10 @@ class BlogsView(ListView):
     }
 
     def get_queryset(self):
+        if 'date' in self.request.GET:
+            if self.request.GET['date'] == 'up':
+                return BlogModel.objects.order_by('create_date')
+
         return BlogModel.objects.order_by('-create_date')
 
 

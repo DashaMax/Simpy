@@ -6,6 +6,7 @@ main{
 }
 
 main .container{
+    min-height: 100vh;
     padding: 130px 30px;
     box-sizing: border-box;
     background-color: rgb(255, 255, 255);

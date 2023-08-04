@@ -8,7 +8,7 @@
     <a href="{% url 'book' book.slug %}" class="book-link">{{ book.title|truncatechars:14 }}</a>
     <p class="book-author">
         {% for author in book.author.all %}
-            <span>{{ author.name|truncatechars:17 }}</span>
+            <span>{{ author.name|truncatechars:15 }}</span><br>
         {% endfor %}
     </p>
     {% if user.is_authenticated %}

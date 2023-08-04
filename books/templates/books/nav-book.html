@@ -1,7 +1,7 @@
 <h1 class="book-title">{{ book.title }}</h1>
 <h3 class="book-author">
     {% for author in book.author.all %}
-        <span>{{ author.name }}</span>
+        <span>{{ author.name }}</span><br>
     {% endfor %}
 </h3>
 <hr>
