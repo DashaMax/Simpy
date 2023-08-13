@@ -3,7 +3,7 @@ from django.db.models import Q
 from django.shortcuts import redirect
 
 from books.models import BookModel
-from simpy.settings import TITLE, MESSAGE, EMAIL_HOST_USER
+from simpy.settings import EMAIL_HOST_USER
 
 
 class GetMixin:
@@ -57,10 +57,10 @@ class CommentMixin:
             return super(CommentMixin, self).post(request, *args, **kwargs)
 
 
-def send_message(email_to):
+def send_message(title, message, email_to):
     send_mail(
-        TITLE,
-        MESSAGE,
+        title,
+        message,
         EMAIL_HOST_USER,
         [email_to]
     )

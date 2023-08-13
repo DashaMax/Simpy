@@ -10,7 +10,7 @@
         "first_name": "Mira",
         "last_name": "Patla",
         "email": "Mira@mail.ru",
-        "is_staff": false,
+        "is_staff": true,
         "is_active": true,
         "date_joined": "2023-08-01T21:51:30.460",
         "slug": "mira",
@@ -19,7 +19,9 @@
         "image": "users\\2023\\08\\01\\1.jpg",
         "date_of_birth": null,
         "about": "Мои интересы включают в себя чтение книг, путешествия по новым местам, фотографию, спортивные занятия (например, йогу или бег), музыку и кино. Я также увлекаюсь изучением истории и культуры других стран. Моё главное хобби - это создавать свои собственные проекты и реализовывать их на практике. Это может быть как творческие работы, так и организация мероприятий для общества. В целом я стараюсь находить время для того чтобы развиваться и расширять свой кругозор.",
-        "groups": [],
+        "groups": [
+            1
+        ],
         "user_permissions": [],
         "book": [
             10,
@@ -41,7 +43,7 @@
     "fields": {
         "password": "pbkdf2_sha256$390000$yKZvEahKDI5v28Xds8GN8m$zkjt3ve5f0OoqEP3m2IrrWCkid4b/ZCJCM9cXkr9r+c=",
         "last_login": "2023-08-03T22:10:44.531",
-        "is_superuser": true,
+        "is_superuser": false,
         "username": "Kapil",
         "first_name": "Kapil",
         "last_name": "Kari",
@@ -83,7 +85,7 @@
     "fields": {
         "password": "pbkdf2_sha256$390000$yKZvEahKDI5v28Xds8GN8m$zkjt3ve5f0OoqEP3m2IrrWCkid4b/ZCJCM9cXkr9r+c=",
         "last_login": "2023-08-03T22:13:08.595",
-        "is_superuser": true,
+        "is_superuser": false,
         "username": "Hemachandra",
         "first_name": "Hemachandra",
         "last_name": "Mani",
@@ -126,7 +128,7 @@
     "fields": {
         "password": "pbkdf2_sha256$390000$yKZvEahKDI5v28Xds8GN8m$zkjt3ve5f0OoqEP3m2IrrWCkid4b/ZCJCM9cXkr9r+c=",
         "last_login": "2023-08-01T21:52:09.148",
-        "is_superuser": true,
+        "is_superuser": false,
         "username": "Manu",
         "first_name": "Manu",
         "last_name": "Manda",
@@ -162,12 +164,12 @@
     "fields": {
         "password": "pbkdf2_sha256$390000$yKZvEahKDI5v28Xds8GN8m$zkjt3ve5f0OoqEP3m2IrrWCkid4b/ZCJCM9cXkr9r+c=",
         "last_login": "2023-08-01T21:52:09.148",
-        "is_superuser": true,
+        "is_superuser": false,
         "username": "Jaidev",
         "first_name": "Jaidev",
         "last_name": "Mandal",
         "email": "Jaidev@mail.ru",
-        "is_staff": false,
+        "is_staff": true,
         "is_active": true,
         "date_joined": "2023-08-01T21:51:30.460",
         "slug": "jaidev",
@@ -176,7 +178,9 @@
         "image": "users\\2023\\08\\01\\5.jpg",
         "date_of_birth": "2021-08-28",
         "about": "Каждая книга является неповторимым опытом для меня. Они расширяют мое мировоззрение, помогают понять различные аспекты жизни и позволяют увидеть вещи с другой стороны. С каждой новой прочитанной книгой я эволюционирую как писатель и как человек, обогащая свои знания и опыт.",
-        "groups": [],
+        "groups": [
+            2
+        ],
         "user_permissions": [],
         "book": [
             20,
@@ -200,7 +204,7 @@
     "fields": {
         "password": "pbkdf2_sha256$390000$yKZvEahKDI5v28Xds8GN8m$zkjt3ve5f0OoqEP3m2IrrWCkid4b/ZCJCM9cXkr9r+c=",
         "last_login": "2023-08-01T21:52:09.148",
-        "is_superuser": true,
+        "is_superuser": false,
         "username": "Deepti",
         "first_name": "Deepti",
         "last_name": "Sethi",
@@ -271,7 +275,7 @@
     "fields": {
         "password": "pbkdf2_sha256$390000$yKZvEahKDI5v28Xds8GN8m$zkjt3ve5f0OoqEP3m2IrrWCkid4b/ZCJCM9cXkr9r+c=",
         "last_login": "2023-08-01T21:52:09.148",
-        "is_superuser": true,
+        "is_superuser": false,
         "username": "Jaya",
         "first_name": "Jaya",
         "last_name": "Golla",
@@ -342,7 +346,7 @@
     "fields": {
         "password": "pbkdf2_sha256$390000$yKZvEahKDI5v28Xds8GN8m$zkjt3ve5f0OoqEP3m2IrrWCkid4b/ZCJCM9cXkr9r+c=",
         "last_login": "2023-08-01T21:52:09.148",
-        "is_superuser": true,
+        "is_superuser": false,
         "username": "Gopalkrishnaa",
         "first_name": "Gopalkrishna",
         "last_name": "Sani",
@@ -415,7 +419,7 @@
     "fields": {
         "password": "pbkdf2_sha256$390000$yKZvEahKDI5v28Xds8GN8m$zkjt3ve5f0OoqEP3m2IrrWCkid4b/ZCJCM9cXkr9r+c=",
         "last_login": "2023-08-01T21:52:09.148",
-        "is_superuser": true,
+        "is_superuser": false,
         "username": "Manjika",
         "first_name": "Manjika",
         "last_name": "Jha",
@@ -447,7 +451,7 @@
     "fields": {
         "password": "pbkdf2_sha256$390000$yKZvEahKDI5v28Xds8GN8m$zkjt3ve5f0OoqEP3m2IrrWCkid4b/ZCJCM9cXkr9r+c=",
         "last_login": "2023-08-01T21:52:09.148",
-        "is_superuser": true,
+        "is_superuser": false,
         "username": "Ajay",
         "first_name": "Ajay",
         "last_name": "Badami",
@@ -486,7 +490,7 @@
     "fields": {
         "password": "pbkdf2_sha256$390000$yKZvEahKDI5v28Xds8GN8m$zkjt3ve5f0OoqEP3m2IrrWCkid4b/ZCJCM9cXkr9r+c=",
         "last_login": "2023-08-01T21:52:09.148",
-        "is_superuser": true,
+        "is_superuser": false,
         "username": "Nila",
         "first_name": "Nila",
         "last_name": "Devi",
@@ -554,7 +558,7 @@
     "fields": {
         "password": "pbkdf2_sha256$390000$yKZvEahKDI5v28Xds8GN8m$zkjt3ve5f0OoqEP3m2IrrWCkid4b/ZCJCM9cXkr9r+c=",
         "last_login": "2023-08-01T21:52:09.148",
-        "is_superuser": true,
+        "is_superuser": false,
         "username": "Devaraja",
         "first_name": "Devaraja",
         "last_name": "Badami",
@@ -688,7 +692,7 @@
     "fields": {
         "password": "pbkdf2_sha256$390000$yKZvEahKDI5v28Xds8GN8m$zkjt3ve5f0OoqEP3m2IrrWCkid4b/ZCJCM9cXkr9r+c=",
         "last_login": "2023-08-01T21:52:09.148",
-        "is_superuser": true,
+        "is_superuser": false,
         "username": "Neha",
         "first_name": "Neha",
         "last_name": "Oza",

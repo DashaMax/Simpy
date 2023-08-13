@@ -16,6 +16,7 @@ FIXTURES = [
     'publish.json',
     'book.json',
     'cities.json',
+    'groups.json',
     'users.json',
     'blogs.json',
     'reviews.json',

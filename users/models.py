@@ -21,14 +21,25 @@ class UserModel(AbstractUser):
         self.slug = slugify(self.username)
         super(UserModel, self).save(*args, **kwargs)
 
+    class Meta:
+        verbose_name = 'Пользователь'
+        verbose_name_plural = 'Пользователи'
+        ordering = (
+            'username',
+        )
+
 
 class CityModel(models.Model):
     title = models.CharField(max_length=150, verbose_name='Название', unique=True)
 
+    def __str__(self):
+        return self.title
+
     class Meta:
         verbose_name = 'Город'
         verbose_name_plural = 'Города'
-        ordering = ['title']
+        ordering = (
+            'title',
+        )
 
-    def __str__(self):
-        return self.title
+

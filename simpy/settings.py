@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 import os
 from pathlib import Path
+
+from django.conf.locale.ru import formats
 from environ import environ
 
 
@@ -49,6 +51,7 @@ INSTALLED_APPS = [
     'blogs.apps.BlogsConfig',
     'quotes.apps.QuotesConfig',
     'comments.apps.CommentsConfig',
+    'feedback.apps.FeedbackConfig',
 ]
 
 MIDDLEWARE = [
@@ -123,6 +126,9 @@ USE_I18N = True
 
 USE_TZ = False
 
+# Format datetime
+formats.DATETIME_FORMAT = 'd.m.Y H:i'
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
@@ -152,13 +158,10 @@ EMAIL_USE_SSL = False
 
 EMAIL_HOST_USER = env('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
-# EMAIL_SERVER = EMAIL_HOST_USER
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
-# EMAIL_ADMIN = EMAIL_HOST_USER
 
 
 # CONST
-
 SOLID = 'solid'
 SOFT = 'soft'
 TYPE_OF_BIND = (

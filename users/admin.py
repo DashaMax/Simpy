@@ -1,14 +1,29 @@
 from django.contrib import admin
 
 from users.models import UserModel, CityModel
+from utils.admin import MyAdmin
 
 
-class UserAdmin(admin.ModelAdmin):
+class UserAdmin(MyAdmin):
+    list_display = (
+        'username',
+        'first_name',
+        'last_name',
+        'get_html_image',
+        'email',
+        'sex',
+        'is_staff',
+    )
+    list_display_links = (
+        'username',
+        'get_html_image'
+    )
     fields = (
         'username',
         'slug',
         'first_name',
         'last_name',
+        'get_html_image',
         'email',
         'sex',
         'city',
@@ -16,17 +31,19 @@ class UserAdmin(admin.ModelAdmin):
         'date_of_birth',
         'about',
         'book',
+        'is_staff',
+        'groups',
+    )
+    list_filter = (
+        'sex',
+        'city',
         'is_staff'
     )
-    list_display = (
-        'username',
-        'first_name',
-        'last_name',
-        'email',
-        'sex',
-        'is_staff'
+    readonly_fields = (
+        'slug',
+        'get_html_image',
     )
 
 
 admin.site.register(UserModel, UserAdmin)
-admin.site.register(CityModel)
+admin.site.register(CityModel, MyAdmin)

@@ -1,7 +1,7 @@
 <div class="quote">
     <div class="block-author">
         <div class="author">
-            <a href="{% url 'user' quote.user.slug%}">
+            <a href="{% url 'user' quote.user.slug %}">
                 <img src="{{ quote.user.image.url }}" alt="Фото" class="author-img">
             </a>
             <h3 class="author-h3">
@@ -13,7 +13,7 @@
     <p class="quote-p">&#10077; {{ quote.quote }} &#10078;</p>
     <p class="author-quote">
         {% for author in quote.book.author.all %}
-            <span>{{ author.name }}</span>
+            <span>{{ author.name }}</span><br>
         {% endfor %}
     </p>
     {% include 'comments/get-comments.html' with name_object=quote %}

@@ -20,7 +20,7 @@ closeMenuH3.onclick = function(){
 let currentURL = document.URL;
 let navLink = document.querySelectorAll('.nav-profile .nav-link');
 
-if(navLink){
+if(navLink.length > 0){
     for(let i = 0; i < navLink.length; i++){
         if(navLink[i].className == 'nav-link active'){
             navLink[i].className = 'nav-link';
@@ -54,16 +54,16 @@ if(bookLink){
         }
     }
 
-    if(currentURL.includes('book') && currentURL.includes('readers')){
+    if(currentURL.includes('book/') && currentURL.includes('readers')){
         bookLink[1].className = 'book-link active';
     }
-    else if(currentURL.includes('book') && currentURL.includes('reviews')){
+    else if(currentURL.includes('book/') && currentURL.includes('reviews')){
         bookLink[2].className = 'book-link active';
     }
-    else if(currentURL.includes('book') && currentURL.includes('quotes')){
+    else if(currentURL.includes('book/') && currentURL.includes('quotes')){
         bookLink[3].className = 'book-link active';
     }
-    else if(currentURL.includes('book')){
+    else if(currentURL.includes('book/')){
         bookLink[0].className = 'book-link active';
     }
 
@@ -114,38 +114,39 @@ showComments.forEach(item => {
 
 let select = document.querySelector('.filters-select');
 
-select.addEventListener('change', (event) => {
-    let option = event.target.options[event.target.selectedIndex];
-    let value = option.getAttribute('value');
-    let name = option.getAttribute('name');
+if(select){
+    select.addEventListener('change', (event) => {
+        let option = event.target.options[event.target.selectedIndex];
+        let value = option.getAttribute('value');
+        let name = option.getAttribute('name');
 
-    if(currentURL.includes('?')){
-        let url = currentURL.split('?')[0];
+        if(currentURL.includes('?')){
+            let url = currentURL.split('?')[0];
 
-        if(name){
-            window.location.href = url + '?' + name + '=' + value;
+            if(name){
+                window.location.href = url + '?' + name + '=' + value;
+            }
+            else{
+                window.location.href = url;
+            }
         }
         else{
-            window.location.href = url;
+            window.location.href = document.URL + '?' + name + '=' + value;
+        }
+    });
+
+    /* Добавление selected */
+
+    for(let i = 0; i < select.options.length; i++){
+        if(select.options[i].selected){
+            select.options[i].setAttribute('selected', false);
         }
     }
-    else{
-        window.location.href = document.URL + '?' + name + '=' + value;
+
+    if(currentURL.includes('?date=up')){
+        select.options[1].setAttribute('selected', true);
     }
-});
-
-
-/* Добавление selected */
-
-for(let i = 0; i < select.options.length; i++){
-    if(select.options[i].selected){
-        select.options[i].setAttribute('selected', false);
+    else if(currentURL.includes('?date=down')){
+        select.options[2].setAttribute('selected', true);
     }
-}
-
-if(currentURL.includes('?date=up')){
-    select.options[1].setAttribute('selected', true);
-}
-else if(currentURL.includes('?date=down')){
-    select.options[2].setAttribute('selected', true);
 }

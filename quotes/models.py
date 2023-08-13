@@ -17,3 +17,6 @@ class QuoteModel(models.Model):
     class Meta:
         verbose_name = 'Цитата'
         verbose_name_plural = 'Цитаты'
+        ordering = (
+            '-create_date',
+        )

@@ -17,6 +17,9 @@ main{
 .blog .blog-title{
     text-align: center;
     font-size: 30px;
+    font-weight: 400;
+    color: rgb(77, 77, 77);
+    margin: 20px 0;
 }
 
 .blog .blog-image{

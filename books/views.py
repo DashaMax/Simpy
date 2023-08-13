@@ -3,11 +3,14 @@ from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, FormView
 
 from blogs.models import BlogModel
-from books.forms import AddReviewForm, FeedbackForm
+from books.forms import AddReviewForm
 from books.models import BookModel, CategoryModel, ReviewModel
 from comments.forms import AddCommentForm
+from feedback.forms import FeedbackForm
+from feedback.models import FeedbackModel
 from quotes.forms import AddQuoteForm
 from quotes.models import QuoteModel
+from simpy.settings import TITLE, MESSAGE, EMAIL_HOST_USER
 from utils.utils import GetMixin, CommentMixin, send_message
 
 
@@ -15,27 +18,29 @@ def error_404_view(request, exception):
     return render(request, 'books/404.html')
 
 
-class MainView(FormView, ListView):
-    model = BlogModel
+class MainView(FormView):
     form_class = FeedbackForm
     template_name = 'books/index.html'
-    context_object_name = 'blogs'
     success_url = reverse_lazy('index')
-    extra_context = {
-        'title': 'Simpy - главная страница'
-    }
 
-    def get_queryset(self):
+    def get_context_data(self, **kwargs):
+        context = super(MainView, self).get_context_data(**kwargs)
+        context['title'] = 'Simpy - главная страница'
         blogs = BlogModel.objects.all()
-
-        if len(blogs) > 1:
-            return blogs[0], blogs[1]
+        context['blogs'] = [blogs[0], blogs[1]] if len(blogs) > 1 else None
+        return context
 
     def post(self, request, *args, **kwargs):
-        title = request.POST['title']
         email = request.POST['email']
-        message = request.POST['message']
-        send_message(email)
+        feedbacks = FeedbackModel.objects.first()
+        pk = feedbacks.pk + 1 if feedbacks else 1
+        feedback = FeedbackModel(title=request.POST['title'], email=email, feedback=request.POST['feedback'])
+        feedback.save()
+        title = 'Simpy - новое сообщение'
+        message = f'Новое сообщение >>>\n\nТема обращения: {request.POST["title"]}\nПочта для связи: {email}\n\nПрочитать сообщение ' \
+                  f'целиком можно по ссылке:\nhttp://127.0.0.1:8000/admin/feedback/feedbackmodel/{pk}/change/'
+        send_message(TITLE, MESSAGE, email)
+        send_message(title, message, EMAIL_HOST_USER)
         return super(MainView, self).post(request, *args, **kwargs)
 
 
