@@ -12,6 +12,12 @@
     <main>
         <div class="container">
             <div class="blog">
+                {% if flag == 'blog' and user == request.user %}
+                    <form method="get" class="but-delete">
+                        <input type="hidden" name="delete" value="{{ blog.pk }}">
+                        <input type="submit" value="X" title="Удалить блог" class="blog-delete">
+                    </form>
+                {% endif %}
                 <h3 class="blog-title">{{ blog.title }}</h3>
                 <img src="{{ blog.image.url }}" alt="Фото" class="blog-image">
                 <p class="blog-body">{{ blog.blog }}</p>

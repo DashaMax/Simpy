@@ -1,4 +1,10 @@
 <div class="quote">
+    {% if flag == 'user_quotes' and user == request.user %}
+        <form method="get" class="but-delete">
+            <input type="hidden" name="delete" value="{{ quote.pk }}">
+            <input type="submit" value="X" title="Удалить цитату" class="quote-delete">
+        </form>
+    {% endif %}
     <div class="block-author">
         <div class="author">
             <a href="{% url 'user' quote.user.slug %}">

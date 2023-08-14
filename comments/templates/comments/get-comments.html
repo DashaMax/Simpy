@@ -38,11 +38,11 @@
     <form method="post">
         {% csrf_token %}
         <input type="hidden" name="pk" value="{{ name_object.pk }}">
-        <p>
+        <p class="form-p">
             {{ form.comment }}
         </p>
-        <p>
-            <input type="submit" value="Отправить">
+        <p class="form-p">
+            <input type="submit" value="Отправить" class="form-submit">
         </p>
     </form>
 {% endif %}

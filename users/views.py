@@ -137,6 +137,12 @@ class UserBlogsView(SuccessMessageMixin, LoginRequiredMixin, CreateView):
         self.object.save()
         return super(UserBlogsView, self).form_valid(form)
 
+    def get(self, request, *args, **kwargs):
+        if self.request.user.is_authenticated and 'delete' in request.GET:
+            BlogModel.objects.get(pk=request.GET['delete']).delete()
+
+        return super(UserBlogsView, self).get(request, *args, **kwargs)
+
 
 class UserQuotesView(CommentMixin, LoginRequiredMixin, FormView, ListView):
     model = QuoteModel
@@ -155,6 +161,12 @@ class UserQuotesView(CommentMixin, LoginRequiredMixin, FormView, ListView):
 
     def get_success_url(self):
         return reverse_lazy('user-quotes', args=(self.kwargs['user_slug'],))
+
+    def get(self, request, *args, **kwargs):
+        if self.request.user.is_authenticated and 'delete' in request.GET:
+            QuoteModel.objects.get(pk=request.GET['delete']).delete()
+
+        return super(UserQuotesView, self).get(request, *args, **kwargs)
 
     def post(self, request, *args, **kwargs):
         if 'quote' in request.POST:

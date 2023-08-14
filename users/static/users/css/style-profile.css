@@ -84,7 +84,7 @@ main .container{
     margin-bottom: 10px;
 }
 
-.add-form:hover, .change:hover, .exit:hover{
+.add-form:hover, .change:hover, .exit:hover, .add:hover{
     background-color: rgb(10, 10, 10);
 }
 
