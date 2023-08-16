@@ -57,6 +57,27 @@ class CommentMixin:
             return super(CommentMixin, self).post(request, *args, **kwargs)
 
 
+class LikeMixin:
+    def get(self, request, *args, **kwargs):
+        if 'like' in request.GET and request.user.is_authenticated:
+            user = request.user
+            object_name = self.model.objects.get(pk=request.GET['like'])
+            like = object_name.likes.filter(user=user)
+
+            if like:
+                if like[0].is_like:
+                    like[0].is_like = False
+                else:
+                    like[0].is_like = True
+
+                like[0].save()
+
+            else:
+                object_name.likes.create(user=user, is_like=True)
+
+        return super(LikeMixin, self).get(request, *args, **kwargs)
+
+
 def send_message(title, message, email_to):
     send_mail(
         title,

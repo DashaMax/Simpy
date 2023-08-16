@@ -11,17 +11,18 @@ from feedback.models import FeedbackModel
 from quotes.forms import AddQuoteForm
 from quotes.models import QuoteModel
 from simpy.settings import TITLE, MESSAGE, EMAIL_HOST_USER
-from utils.utils import GetMixin, CommentMixin, send_message
+from utils.utils import GetMixin, CommentMixin, send_message, LikeMixin
 
 
 def error_404_view(request, exception):
     return render(request, 'books/404.html')
 
 
-class MainView(FormView):
+class MainView(LikeMixin, FormView):
     form_class = FeedbackForm
     template_name = 'books/index.html'
     success_url = reverse_lazy('index')
+    model = BlogModel
 
     def get_context_data(self, **kwargs):
         context = super(MainView, self).get_context_data(**kwargs)

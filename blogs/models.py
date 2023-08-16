@@ -3,6 +3,7 @@ from django.db import models
 from pytils.translit import slugify
 
 from comments.models import CommentModel
+from likes.models import LikeModel
 
 
 class BlogModel(models.Model):
@@ -12,6 +13,7 @@ class BlogModel(models.Model):
     image = models.ImageField(upload_to='blogs/%Y/%m/%d/', verbose_name='Фото', default='blog-default.jpg')
     blog = models.TextField(verbose_name='Блог')
     comments = GenericRelation(CommentModel)
+    likes = GenericRelation(LikeModel)
     create_date = models.DateTimeField(auto_now_add=True, verbose_name='Дата публикации')
 
     def __str__(self):
@@ -27,3 +29,6 @@ class BlogModel(models.Model):
         ordering = (
             '-create_date',
         )
+
+    def get_count_likes(self):
+        return len(self.likes.filter(is_like=True))

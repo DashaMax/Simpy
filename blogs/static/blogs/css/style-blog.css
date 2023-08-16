@@ -14,6 +14,13 @@ main{
     margin: 20px auto;
 }
 
+.blog .date-delete{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .blog .but-delete{
     text-align: right;
 }

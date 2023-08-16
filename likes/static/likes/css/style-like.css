@@ -1,0 +1,14 @@
+.add-like{
+    text-align: right;
+}
+
+.like{
+    border: none;
+    background-color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.like-count{
+    color: rgb(77, 77, 77);
+}

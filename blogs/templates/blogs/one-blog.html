@@ -1,10 +1,13 @@
 <div class="blog">
-    {% if flag == 'user_blogs' and user == request.user %}
-        <form method="get" class="but-delete">
-            <input type="hidden" name="delete" value="{{ blog.pk }}">
-            <input type="submit" value="X" title="Удалить блог" class="blog-delete">
-        </form>
-    {% endif %}
+    <div class="date-delete">
+        <p class="date">{{ blog.create_date|date:'d.m.Y H:i' }}</p>
+        {% if flag == 'user_blogs' and request.user == blog.user %}
+            <form method="get" class="but-delete">
+                <input type="hidden" name="delete" value="{{ blog.pk }}">
+                <input type="submit" value="X" title="Удалить блог" class="blog-delete">
+            </form>
+        {% endif %}
+    </div>
     <h3 class="blog-title">
         <a href="{% url 'blog' blog.slug %}" class="blog-link">{{ blog.title }}</a>
     </h3>
@@ -19,6 +22,6 @@
             </a>
             <a href="{% url 'user' blog.user.slug %}" class="blog-name">{{ blog.user.username }}</a>
         </div>
-        <p class="date">{{ blog.create_date|date:'d.m.Y H:i' }}</p>
+        {% include 'likes/like.html' with name_object=blog %}
     </div>
 </div>

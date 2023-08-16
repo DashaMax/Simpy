@@ -1,13 +1,15 @@
+from django.contrib.contenttypes.models import ContentType
 from django.shortcuts import redirect
 from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, FormView
 
 from blogs.models import BlogModel
 from comments.forms import AddCommentForm
-from utils.utils import CommentMixin
+from likes.models import LikeModel
+from utils.utils import CommentMixin, LikeMixin
 
 
-class BlogsView(ListView):
+class BlogsView(LikeMixin, ListView):
     model = BlogModel
     template_name = 'blogs/blogs.html'
     context_object_name = 'blogs'
@@ -23,7 +25,7 @@ class BlogsView(ListView):
         return BlogModel.objects.order_by('-create_date')
 
 
-class BlogView(CommentMixin, FormView, DetailView):
+class BlogView(LikeMixin, CommentMixin, FormView, DetailView):
     model = BlogModel
     template_name = 'blogs/blog.html'
     context_object_name = 'blog'
@@ -40,8 +42,11 @@ class BlogView(CommentMixin, FormView, DetailView):
         return reverse_lazy('blog', args=(self.kwargs['blog_slug'],))
 
     def get(self, request, *args, **kwargs):
-        if self.request.user.is_authenticated and 'delete' in request.GET:
-            BlogModel.objects.get(pk=request.GET['delete']).delete()
-            return redirect('blogs')
+        if 'delete' in request.GET:
+            blog = BlogModel.objects.get(pk=request.GET['delete'])
+
+            if self.request.user == blog.user:
+                blog.delete()
+                return redirect('blogs')
 
         return super(BlogView, self).get(request, *args, **kwargs)

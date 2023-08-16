@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'quotes.apps.QuotesConfig',
     'comments.apps.CommentsConfig',
     'feedback.apps.FeedbackConfig',
+    'likes.apps.LikesConfig',
 ]
 
 MIDDLEWARE = [

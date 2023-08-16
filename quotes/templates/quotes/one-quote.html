@@ -1,5 +1,5 @@
 <div class="quote">
-    {% if flag == 'user_quotes' and user == request.user %}
+    {% if flag == 'user_quotes' and request.user == quote.user %}
         <form method="get" class="but-delete">
             <input type="hidden" name="delete" value="{{ quote.pk }}">
             <input type="submit" value="X" title="Удалить цитату" class="quote-delete">

@@ -1,0 +1,25 @@
+{% load like %}
+
+<div class="add-like">
+    <form method="get">
+        <input type="hidden" name="like" value="{{ name_object.pk }}">
+        <span class="like-count">{{ name_object.get_count_likes }}</span>
+
+        {% if user.is_authenticated %}
+            {% like_user user=request.user pk=name_object.pk as like_user %}
+
+            {% if like_user %}
+                {% if like_user.is_like %}
+                    <input type="submit" value="&#128154;" title="Не нравится" class="like">
+                {% else %}
+                    <input type="submit" value="&#128420;" title="Нравится" class="like">
+                {% endif %}
+            {% else %}
+                <input type="submit" value="&#128420;" title="Нравится" class="like">
+            {% endif %}
+
+        {% else %}
+            <input type="submit" value="&#128420;" title="Нравится" class="like">
+        {% endif %}
+    </form>
+</div>

@@ -14,7 +14,7 @@ from quotes.models import QuoteModel
 from users.forms import UserLoginForm, UserRegisterForm, UserUpdateForm, AddBlogForm, UserPasswordResetForm, \
     UserSetPasswordForm
 from users.models import UserModel
-from utils.utils import GetMixin, CommentMixin
+from utils.utils import GetMixin, CommentMixin, LikeMixin
 
 
 class UserLoginView(LoginView):
@@ -113,7 +113,7 @@ class UserBookshelfView(GetMixin, LoginRequiredMixin, DetailView):
         return context
 
 
-class UserBlogsView(SuccessMessageMixin, LoginRequiredMixin, CreateView):
+class UserBlogsView(LikeMixin, SuccessMessageMixin, LoginRequiredMixin, CreateView):
     model = BlogModel
     template_name = 'users/profile-blog.html'
     form_class = AddBlogForm
@@ -138,8 +138,11 @@ class UserBlogsView(SuccessMessageMixin, LoginRequiredMixin, CreateView):
         return super(UserBlogsView, self).form_valid(form)
 
     def get(self, request, *args, **kwargs):
-        if self.request.user.is_authenticated and 'delete' in request.GET:
-            BlogModel.objects.get(pk=request.GET['delete']).delete()
+        if 'delete' in request.GET:
+            blog = BlogModel.objects.get(pk=request.GET['delete'])
+
+            if self.request.user == blog.user:
+                blog.delete()
 
         return super(UserBlogsView, self).get(request, *args, **kwargs)
 
@@ -163,8 +166,11 @@ class UserQuotesView(CommentMixin, LoginRequiredMixin, FormView, ListView):
         return reverse_lazy('user-quotes', args=(self.kwargs['user_slug'],))
 
     def get(self, request, *args, **kwargs):
-        if self.request.user.is_authenticated and 'delete' in request.GET:
-            QuoteModel.objects.get(pk=request.GET['delete']).delete()
+        if 'delete' in request.GET:
+            quote = QuoteModel.objects.get(pk=request.GET['delete'])
+
+            if self.request.user == quote.user:
+                quote.delete()
 
         return super(UserQuotesView, self).get(request, *args, **kwargs)
 
