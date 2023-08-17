@@ -1,28 +1,19 @@
-from django.contrib.contenttypes.models import ContentType
 from django.shortcuts import redirect
 from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, FormView
 
 from blogs.models import BlogModel
 from comments.forms import AddCommentForm
-from likes.models import LikeModel
-from utils.utils import CommentMixin, LikeMixin
+from utils.utils import CommentMixin, LikeMixin, SortedMixin
 
 
-class BlogsView(LikeMixin, ListView):
+class BlogsView(SortedMixin, LikeMixin, ListView):
     model = BlogModel
     template_name = 'blogs/blogs.html'
     context_object_name = 'blogs'
     extra_context = {
         'title': 'Simpy - блог'
     }
-
-    def get_queryset(self):
-        if 'date' in self.request.GET:
-            if self.request.GET['date'] == 'up':
-                return BlogModel.objects.order_by('create_date')
-
-        return BlogModel.objects.order_by('-create_date')
 
 
 class BlogView(LikeMixin, CommentMixin, FormView, DetailView):

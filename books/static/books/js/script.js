@@ -149,4 +149,10 @@ if(select){
     else if(currentURL.includes('?date=down')){
         select.options[2].setAttribute('selected', true);
     }
+    else if(currentURL.includes('?rating=up')){
+        select.options[3].setAttribute('selected', true);
+    }
+    else if(currentURL.includes('?rating=down')){
+        select.options[4].setAttribute('selected', true);
+    }
 }

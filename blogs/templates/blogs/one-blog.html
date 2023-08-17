@@ -22,6 +22,6 @@
             </a>
             <a href="{% url 'user' blog.user.slug %}" class="blog-name">{{ blog.user.username }}</a>
         </div>
-        {% include 'likes/like.html' with name_object=blog %}
+        {% include 'likes/like.html' with name_object=blog model='blog' %}
     </div>
 </div>

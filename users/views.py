@@ -147,7 +147,7 @@ class UserBlogsView(LikeMixin, SuccessMessageMixin, LoginRequiredMixin, CreateVi
         return super(UserBlogsView, self).get(request, *args, **kwargs)
 
 
-class UserQuotesView(CommentMixin, LoginRequiredMixin, FormView, ListView):
+class UserQuotesView(LikeMixin, CommentMixin, LoginRequiredMixin, FormView, ListView):
     model = QuoteModel
     template_name = 'users/profile-quotes.html'
     form_class = AddCommentForm

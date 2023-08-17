@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="{% static 'quotes/css/style-quotes.css' %}">
     <link rel="stylesheet" href="{% static 'quotes/css/style-one-quote.css' %}">
     <link rel="stylesheet" href="{% static 'comments/css/style-comments.css' %}">
+    <link rel="stylesheet" href="{% static 'likes/css/style-like.css' %}">
 {% endblock %}
 
 
@@ -13,20 +14,7 @@
     <main>
         <div class="container">
             <div class="first-block">
-                <div class="filters">
-                    <div class="second-block">
-                        <h1>Цитаты</h1>
-                    </div>
-                    <form method="get">
-                        <select class="filters-select">
-                                <option selected>Сортировать:</option>
-                                <option>по дате ↑</option>
-                                <option>по дате ↓</option>
-                                <option>по рейтингу ↑</option>
-                                <option>по рейтингу ↓</option>
-                        </select>
-                    </form>
-                </div>
+                {% include 'blogs/filters.html' with title='Цитаты' name_object=quotes %}
                 <div class="quotes">
                     {% if quotes %}
                       {% for quote in quotes %}

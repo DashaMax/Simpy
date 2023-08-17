@@ -6,7 +6,7 @@
         <span class="like-count">{{ name_object.get_count_likes }}</span>
 
         {% if user.is_authenticated %}
-            {% like_user user=request.user pk=name_object.pk as like_user %}
+            {% like_user model=model user=request.user pk=name_object.pk as like_user %}
 
             {% if like_user %}
                 {% if like_user.is_like %}

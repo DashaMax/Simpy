@@ -22,5 +22,6 @@
             <span>{{ author.name }}</span><br>
         {% endfor %}
     </p>
+    {% include 'likes/like.html' with name_object=quote model='quote' %}<br>
     {% include 'comments/get-comments.html' with name_object=quote %}
 </div>

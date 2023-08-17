@@ -1,0 +1,14 @@
+<div class="filters">
+    <h1>{{ title }}</h1>
+    {% if name_object %}
+        <form method="get">
+            <select class="filters-select">
+                <option selected>Сортировать:</option>
+                <option name="date" value="up">по дате ↑</option>
+                <option name="date" value="down">по дате ↓</option>
+                <option name="rating" value="up">по рейтингу ↑</option>
+                <option name="rating" value="down">по рейтингу ↓</option>
+            </select>
+        </form>
+    {% endif %}
+</div>

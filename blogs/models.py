@@ -31,4 +31,4 @@ class BlogModel(models.Model):
         )
 
     def get_count_likes(self):
-        return len(self.likes.filter(is_like=True))
+        return self.likes.filter(is_like=True).count()

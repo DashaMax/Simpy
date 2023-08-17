@@ -1,5 +1,5 @@
 from django.core.mail import send_mail
-from django.db.models import Q
+from django.db.models import Q, Sum
 from django.shortcuts import redirect
 
 from books.models import BookModel
@@ -75,7 +75,25 @@ class LikeMixin:
             else:
                 object_name.likes.create(user=user, is_like=True)
 
+        elif 'like' in request.GET and not request.user.is_authenticated:
+            return redirect('login')
+
         return super(LikeMixin, self).get(request, *args, **kwargs)
+
+
+class SortedMixin:
+    def get_queryset(self):
+        if 'date' in self.request.GET:
+            if self.request.GET['date'] == 'up':
+                return self.model.objects.order_by('create_date')
+
+        if 'rating' in self.request.GET:
+            if self.request.GET['rating'] == 'up':
+                return self.model.objects.annotate(sum=Sum('likes')).order_by('sum')
+            else:
+                return self.model.objects.annotate(sum=Sum('likes')).order_by('-sum')
+
+        return self.model.objects.order_by('-create_date')
 
 
 def send_message(title, message, email_to):

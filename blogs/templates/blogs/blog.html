@@ -32,7 +32,7 @@
                         </a>
                         <a href="{% url 'user' blog.user.slug %}" class="name">{{ blog.user.username }}</a>
                     </div>
-                    {% include 'likes/like.html' with name_object=blog %}
+                    {% include 'likes/like.html' with name_object=blog model='blog' %}
                 </div>
                 {% include 'comments/get-comments.html' with name_object=blog %}
             </div>
