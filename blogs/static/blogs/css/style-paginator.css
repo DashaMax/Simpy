@@ -1,0 +1,28 @@
+.pagination{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.pagination .step-links{
+    display: inline-flex;
+    list-style: none;
+}
+
+.pagination .page-num{
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.pagination .page-link{
+    text-decoration: none;
+    color: gray;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.pagination .page-num-selected{
+    color: green;
+    border: 1px solid green;
+    cursor: auto;
+}

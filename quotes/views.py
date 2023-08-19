@@ -7,6 +7,7 @@ from utils.utils import CommentMixin, LikeMixin, SortedMixin
 
 
 class QuotesView(SortedMixin, LikeMixin, CommentMixin, FormView, ListView):
+    paginate_by = 4
     model = QuoteModel
     context_object_name = 'quotes'
     template_name = 'quotes/quotes.html'

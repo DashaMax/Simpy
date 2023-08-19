@@ -8,6 +8,7 @@ from utils.utils import CommentMixin, LikeMixin, SortedMixin
 
 
 class BlogsView(SortedMixin, LikeMixin, ListView):
+    paginate_by = 4
     model = BlogModel
     template_name = 'blogs/blogs.html'
     context_object_name = 'blogs'

@@ -16,6 +16,7 @@
                     {% if form.errors %}
                         <div class="text-error">
                             {{ form.username.errors }}
+                            {{ form.email.errors }}
                             {{ form.password2.errors }}
                         </div>
                     {% endif %}
