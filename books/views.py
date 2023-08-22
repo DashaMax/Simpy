@@ -5,6 +5,8 @@ from django.views.generic import ListView, DetailView, FormView
 from blogs.models import BlogModel
 from books.forms import AddReviewForm
 from books.models import BookModel, CategoryModel, ReviewModel
+from bot.management.commands import bot
+from bot.models import BotChatModel
 from comments.forms import AddCommentForm
 from feedback.forms import FeedbackForm
 from feedback.models import FeedbackModel
@@ -124,12 +126,27 @@ class BookReviewsView(CommentMixin, FormView, ListView):
             user = request.user
             review = ReviewModel(book=book, user=user, review=request.POST['review'])
             review.save()
+
+            book_users = book.usermodel_set.all()
+
+            for book_user in book_users:
+                chat_user = BotChatModel.objects.filter(user=book_user)
+
+                if chat_user and user != book_user:
+                    chat_id = chat_user[0].chat_id
+                    bot.bot.send_message(chat_id, f'На книгу --- {book} ---\n'
+                                              f'пользователем --- {user.first_name} ---\n'
+                                              f'оставлен новый отзыв:\n\n'
+                                              f'{review.review}\n\n'
+                                              f'Для просмотра перейдите по ссылке:\n'
+                                              f'http://127.0.0.1:8000/book/{book.slug}/reviews/')
+
             return super(BookReviewsView, self).form_valid(form)
 
         return super(BookReviewsView, self).post(request, *args, **kwargs)
 
 
-class BookQuotesView(CommentMixin, FormView, ListView):
+class BookQuotesView(LikeMixin, CommentMixin, FormView, ListView):
     model = QuoteModel
     context_object_name = 'quotes'
     template_name = 'books/book-quotes.html'
@@ -158,6 +175,21 @@ class BookQuotesView(CommentMixin, FormView, ListView):
             user = request.user
             quote = QuoteModel(book=book, user=user, quote=request.POST['quote'])
             quote.save()
+
+            book_users = book.usermodel_set.all()
+
+            for book_user in book_users:
+                chat_user = BotChatModel.objects.filter(user=book_user)
+
+                if chat_user and user != book_user:
+                    chat_id = chat_user[0].chat_id
+                    bot.bot.send_message(chat_id, f'На книгу --- {book} ---\n'
+                                              f'пользователем --- {user.first_name} ---\n'
+                                              f'оставлена новая цитата:\n\n'
+                                              f'<< {quote.quote} >>\n\n'
+                                              f'Для просмотра перейдите по ссылке:\n'
+                                              f'http://127.0.0.1:8000/book/{book.slug}/quotes/')
+
             return super(BookQuotesView, self).form_valid(form)
 
         return super(BookQuotesView, self).post(request, *args, **kwargs)

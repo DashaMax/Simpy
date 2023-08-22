@@ -111,7 +111,8 @@ class UserUpdateForm(UserChangeForm):
             'city',
             'image',
             'date_of_birth',
-            'about'
+            'about',
+            'is_send_notifications',
         )
         widgets = {
             'image': forms.FileInput(attrs={
@@ -130,7 +131,8 @@ class UserUpdateForm(UserChangeForm):
             'sex': 'Пол',
             'city': 'Город',
             'date_of_birth': 'Дата рождения',
-            'about': 'О себе'
+            'about': 'О себе',
+            'is_send_notifications': 'Получать уведомления'
         }
 
     def __init__(self, *args, **kwargs):
@@ -138,7 +140,7 @@ class UserUpdateForm(UserChangeForm):
         self.fields['city'].empty_label = 'Выберите город:'
 
         for title, field in self.fields.items():
-            if field not in ('image', 'date_of_birth'):
+            if title not in ('image', 'date_of_birth', 'is_send_notifications', 'password'):
                 field.widget.attrs.update({'class': 'input-field'})
 
 

@@ -13,6 +13,7 @@ class UserModel(AbstractUser):
     date_of_birth = models.DateField(verbose_name='Дата рождения', blank=True, null=True)
     about = models.TextField(verbose_name='О себе', blank=True, null=True)
     book = models.ManyToManyField('books.BookModel', blank=True)
+    is_send_notifications = models.BooleanField(verbose_name='Отправлять уведомления в телеграм', default=False)
 
     def __str__(self):
         return self.username
@@ -41,5 +42,3 @@ class CityModel(models.Model):
         ordering = (
             'title',
         )
-
-

@@ -26,6 +26,3 @@ FIXTURES = [
 for fixture in FIXTURES:
     fixture_path = os.path.join(FIXTURE_DIR, fixture)
     os.system(f'python -Xutf8 manage.py loaddata {fixture_path}')
-
-# Run server
-os.system('python manage.py runserver')

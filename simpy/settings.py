@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'users.apps.UsersConfig',
     'books.apps.BooksConfig',
     'blogs.apps.BlogsConfig',
@@ -53,6 +54,7 @@ INSTALLED_APPS = [
     'comments.apps.CommentsConfig',
     'feedback.apps.FeedbackConfig',
     'likes.apps.LikesConfig',
+    'bot.apps.BotConfig',
 ]
 
 MIDDLEWARE = [
@@ -150,7 +152,7 @@ AUTH_USER_MODEL = 'users.UserModel'
 LOGIN_URL = 'login'
 LOGOUT_REDIRECT_URL = 'login'
 
-# Почтовый сервис
+# Email server
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.yandex.ru'
 EMAIL_PORT = 587
@@ -160,6 +162,9 @@ EMAIL_USE_SSL = False
 EMAIL_HOST_USER = env('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+# Telegram bot API
+TELEGRAM_BOT_API_KEY = env('TELEGRAM_BOT_API_KEY')
 
 
 # CONST

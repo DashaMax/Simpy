@@ -10,7 +10,7 @@
 <div class="nav-profile">
     <ul class="nav-ul">
         <li class="nav-li">
-            <a href="{% url 'user' user.slug %}" class="nav-link">{{ user.username }}</a>
+            <a href="{% url 'user' user.slug %}" class="nav-link">{{ user.first_name }}</a>
         </li>
         <li class="nav-li">
             <a href="{% url 'bookshelf' user.slug %}" class="nav-link">Книжная&#160;полка</a>

@@ -18,6 +18,13 @@
                     <div class="photo">
                         <img src="{{ request.user.image.url }}" alt="Фото" class="photo-img">
                         {{ form.image }}
+                        <div class="form-notification">
+                            <p class="form-p">Хочу получать уведомления в телеграм об обновлениях по добавленными книгам.</p>
+                            <p class="form-p">(обращаем ваше внимание, что получать уведомления, можно добавившись к телеграм-боту @SimpyBot)</p>
+                            <label for="{{ form.is_send_notifications.id_for_label }}">
+                            {{ form.is_send_notifications }}<span class="form-span">Получать уведомления</span>
+                            </label>
+                        </div>
                     </div>
                     <div class="data">
                         <div class="block-message">
@@ -26,7 +33,7 @@
                             {% endif %}
                         </div>
                         {% for field in form %}
-                           {% if field.html_name != 'password' and field.html_name != 'image' %}
+                           {% if field.html_name != 'is_send_notifications' and field.html_name != 'image' and field.html_name != 'password' %}
                                 <p class="field-title">{{ field.label }}:</p>
                                 {{ field }}
                            {% endif %}
