@@ -8,7 +8,7 @@
                         <img src="{{ comment.user.image.url }}" alt="Фото" class="comment-img">
                     </a>
                     <h3 class="comment-h3">
-                        <a href="{% url 'user' comment.user.slug %}" class="comment-link">{{ comment.user.username }}</a>
+                        <a href="{% url 'user' comment.user.slug %}" class="comment-link">{{ comment.user.first_name }}</a>
                     </h3>
                     <p class="comment-date">{{ comment.create_date|date:'d.m.Y H:i' }}</p>
                 </div>
@@ -24,7 +24,7 @@
                             <img src="{{ comment.user.image.url }}" alt="Фото" class="comment-img">
                         </a>
                         <h3 class="comment-h3">
-                            <a href="{% url 'user' comment.user.slug %}" class="comment-link">{{ comment.user.username }}</a>
+                            <a href="{% url 'user' comment.user.slug %}" class="comment-link">{{ comment.user.first_name }}</a>
                         </h3>
                         <p class="comment-date">{{ comment.create_date|date:'d.m.Y H:i' }}</p>
                     </div>

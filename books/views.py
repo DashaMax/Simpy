@@ -5,7 +5,7 @@ from django.views.generic import ListView, DetailView, FormView
 from blogs.models import BlogModel
 from books.forms import AddReviewForm
 from books.models import BookModel, CategoryModel, ReviewModel
-from bot.management.commands import bot
+from bot.bot import bot
 from bot.models import BotChatModel
 from comments.forms import AddCommentForm
 from feedback.forms import FeedbackForm
@@ -132,9 +132,9 @@ class BookReviewsView(CommentMixin, FormView, ListView):
             for book_user in book_users:
                 chat_user = BotChatModel.objects.filter(user=book_user)
 
-                if chat_user and user != book_user:
+                if chat_user and chat_user[0].user.is_send_notifications and user != book_user:
                     chat_id = chat_user[0].chat_id
-                    bot.bot.send_message(chat_id, f'На книгу --- {book} ---\n'
+                    bot.send_message(chat_id, f'На книгу --- {book} ---\n'
                                               f'пользователем --- {user.first_name} ---\n'
                                               f'оставлен новый отзыв:\n\n'
                                               f'{review.review}\n\n'
@@ -181,12 +181,12 @@ class BookQuotesView(LikeMixin, CommentMixin, FormView, ListView):
             for book_user in book_users:
                 chat_user = BotChatModel.objects.filter(user=book_user)
 
-                if chat_user and user != book_user:
+                if chat_user and chat_user[0].user.is_send_notifications and user != book_user:
                     chat_id = chat_user[0].chat_id
-                    bot.bot.send_message(chat_id, f'На книгу --- {book} ---\n'
+                    bot.send_message(chat_id, f'На книгу --- {book} ---\n'
                                               f'пользователем --- {user.first_name} ---\n'
                                               f'оставлена новая цитата:\n\n'
-                                              f'<< {quote.quote} >>\n\n'
+                                              f'❝ {quote.quote} ❞\n\n'
                                               f'Для просмотра перейдите по ссылке:\n'
                                               f'http://127.0.0.1:8000/book/{book.slug}/quotes/')
 

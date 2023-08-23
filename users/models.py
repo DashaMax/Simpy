@@ -16,10 +16,10 @@ class UserModel(AbstractUser):
     is_send_notifications = models.BooleanField(verbose_name='Отправлять уведомления в телеграм', default=False)
 
     def __str__(self):
-        return self.username
+        return self.first_name
 
     def save(self, *args, **kwargs):
-        self.slug = slugify(self.username)
+        self.slug = slugify(self.first_name)
         super(UserModel, self).save(*args, **kwargs)
 
     class Meta:

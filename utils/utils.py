@@ -3,7 +3,16 @@ from django.db.models import Q, Sum
 from django.shortcuts import redirect
 
 from books.models import BookModel
+from bot.bot import bot
+from bot.models import BotChatModel
 from simpy.settings import EMAIL_HOST_USER
+
+
+MODEL = {
+    'ReviewModel': 'ваш отзыв',
+    'QuoteModel': 'вашу цитату',
+    'BlogModel': 'ваш блог',
+}
 
 
 class GetMixin:
@@ -54,6 +63,17 @@ class CommentMixin:
             object_name = self.model.objects.get(pk=request.POST['pk'])
             comment = request.POST['comment']
             object_name.comments.create(user=user, comment=comment)
+
+            user_object = object_name.user
+            model_object_name = MODEL[self.model.__name__]
+            chat_user = BotChatModel.objects.filter(user=user_object)
+
+            if chat_user and chat_user[0].user.is_send_notifications and user != user_object:
+                chat_id = chat_user[0].chat_id
+                bot.send_message(chat_id, f'На {model_object_name} "{object_name}" пользователем {user} '
+                                          f'оставлен новый комментарий:\n\n'
+                                          f'{comment}')
+
             return super(CommentMixin, self).post(request, *args, **kwargs)
 
 
@@ -63,6 +83,15 @@ class LikeMixin:
             user = request.user
             object_name = self.model.objects.get(pk=request.GET['like'])
             like = object_name.likes.filter(user=user)
+
+            if not like or not like[0].is_like:
+                user_object = object_name.user
+                model_object_name = MODEL[self.model.__name__]
+                chat_user = BotChatModel.objects.filter(user=user_object)
+
+                if chat_user and chat_user[0].user.is_send_notifications and user != user_object:
+                    chat_id = chat_user[0].chat_id
+                    bot.send_message(chat_id, f'Пользователь {user} оценил {model_object_name} "{object_name}"')
 
             if like:
                 if like[0].is_like:

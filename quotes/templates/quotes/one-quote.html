@@ -11,7 +11,7 @@
                 <img src="{{ quote.user.image.url }}" alt="Фото" class="author-img">
             </a>
             <h3 class="author-h3">
-                <a href="{% url 'user' quote.user.slug %}" class="author-link">{{ quote.user.username }}</a>
+                <a href="{% url 'user' quote.user.slug %}" class="author-link">{{ quote.user.first_name }}</a>
             </h3>
         </div>
         <p class="date">{{ quote.create_date|date:'d.m.Y H:i' }}</p>

@@ -20,7 +20,7 @@
             <a href="{% url 'user' blog.user.slug %}">
                 <img src="{{ blog.user.image.url }}" alt="Фото" class="author-avatar">
             </a>
-            <a href="{% url 'user' blog.user.slug %}" class="blog-name">{{ blog.user.username }}</a>
+            <a href="{% url 'user' blog.user.slug %}" class="blog-name">{{ blog.user.first_name }}</a>
         </div>
         {% include 'likes/like.html' with name_object=blog model='blog' %}
     </div>

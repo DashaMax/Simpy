@@ -17,7 +17,7 @@
                         <div class="reader">
                             <a href="{% url 'user' reader.slug %}" class="reader-link">
                                 <img src="{{ reader.image.url }}" alt="Фото" class="reader-img">
-                                <h3 class="reader-name">{{ reader.username }}</h3>
+                                <h3 class="reader-name">{{ reader.first_name }}</h3>
                             </a>
                         </div>
                     {% endfor %}

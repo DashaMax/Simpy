@@ -8,7 +8,7 @@ from django.views.generic import CreateView, UpdateView, DetailView, ListView, F
 
 from blogs.models import BlogModel
 from books.models import BookModel
-from bot.management.commands import bot
+from bot.bot import bot
 from bot.models import BotChatModel
 from comments.forms import AddCommentForm
 from quotes.forms import UserAddQuoteForm
@@ -189,12 +189,12 @@ class UserQuotesView(LikeMixin, CommentMixin, LoginRequiredMixin, FormView, List
             for book_user in book_users:
                 chat_user = BotChatModel.objects.filter(user=book_user)
 
-                if chat_user and user != book_user:
+                if chat_user and chat_user[0].user.is_send_notifications and user != book_user:
                     chat_id = chat_user[0].chat_id
-                    bot.bot.send_message(chat_id, f'На книгу --- {book} ---\n'
+                    bot.send_message(chat_id, f'На книгу --- {book} ---\n'
                                               f'пользователем --- {user.first_name} ---\n'
                                               f'оставлена новая цитата:\n\n'
-                                              f'<< {quote.quote} >>\n\n'
+                                              f'❝ {quote.quote} ❞\n\n'
                                               f'Для просмотра перейдите по ссылке:\n'
                                               f'http://127.0.0.1:8000/book/{book.slug}/quotes/')
 

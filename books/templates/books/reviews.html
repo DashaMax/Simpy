@@ -25,7 +25,7 @@
                                         <img src="{{ review.user.image.url }}" alt="Фото" class="author-img">
                                     </a>
                                     <h3 class="author-h3">
-                                        <a href="{% url 'user' review.user.slug %}" class="author-link">{{ review.user.username }}</a>
+                                        <a href="{% url 'user' review.user.slug %}" class="author-link">{{ review.user.first_name }}</a>
                                     </h3>
                                 </div>
                                 <p class="review-text">{{ review.create_date|date:'d.m.Y H:i' }}</p>
