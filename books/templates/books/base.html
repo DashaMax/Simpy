@@ -55,6 +55,10 @@
                                     <img src="{% static 'books/images/profile.png' %}" alt="Профиль" title="Войти">
                                 </a>
                             {% else %}
+                                <a href="{% url 'chats' %}" class="nav-icon-3">
+                                    <img src="{% static 'books/images/chat.png' %}" alt="Чат" title="Чат">
+                                    <span class="count-messages">{{ count_messages }}</span>
+                                </a>
                                 <a href="{% url 'user' request.user.slug %}" class="nav-icon-2">
                                     <img src="{% static 'books/images/profile.png' %}" alt="Профиль" title="Профиль">
                                 </a>

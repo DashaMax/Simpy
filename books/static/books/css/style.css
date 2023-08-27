@@ -39,6 +39,7 @@ header{
     padding: 0;
     width: 100%;
     text-align: center;
+    z-index: 10000;
 }
 
 .close-menu .close-x{
@@ -76,7 +77,7 @@ header nav{
 }
 
 .nav-menu .nav-link{
-    margin-left: 50px;
+    margin-left: 40px;
     font-size: 22px;
     font-weight: 300;
     text-decoration: none;
@@ -85,15 +86,35 @@ header nav{
 
 .nav-icon-1{
     text-decoration: none;
+    margin-right: 10px;
 }
 
 .nav-icon-1 img{
-    width: 80px;
+    width: 70px;
 }
 
 .nav-icon-2 img{
-    width: 50px;
-    margin-left: 30px;
+    width: 40px;
+}
+
+.nav-icon-3{
+    text-decoration: none;
+}
+
+.nav-icon-3 img{
+    width: 40px;
+}
+
+.count-messages{
+    position: relative;
+    right: 16px;
+    bottom: 28px;
+    color: rgb(27, 27, 27);
+    background-color: white;
+    padding: 0 3px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    font-size: 10px;
 }
 
 @media(min-width: 600px){

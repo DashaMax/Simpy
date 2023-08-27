@@ -1,0 +1,28 @@
+{% extends 'books/base.html' %}
+{% load static %}
+
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'users/css/style-profile.css' %}">
+    <link rel="stylesheet" href="{% static 'msg/css/style-chats.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    <main>
+        <div class="container">
+            <h1 class="title">Чаты</h1>
+            {% if chats %}
+                <div class="chats">
+                    {% for chat in chats %}
+                        {% if chat.msgmodel_set.count %}
+                            {% include 'msg/one-chat.html' %}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            {% else %}
+                <p class="chats-none">Тут будут отображаться ваши чаты</p>
+            {% endif %}
+        </div>
+    </main>
+{% endblock %}

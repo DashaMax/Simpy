@@ -10,6 +10,7 @@ from bot.models import BotChatModel
 from comments.forms import AddCommentForm
 from feedback.forms import FeedbackForm
 from feedback.models import FeedbackModel
+from msg.models import MsgModel
 from quotes.forms import AddQuoteForm
 from quotes.models import QuoteModel
 from simpy.settings import TITLE, MESSAGE, EMAIL_HOST_USER
@@ -20,17 +21,20 @@ def error_404_view(request, exception):
     return render(request, 'books/404.html')
 
 
-class MainView(LikeMixin, FormView):
+class MainView(GetMixin, LikeMixin, FormView):
     form_class = FeedbackForm
     template_name = 'books/index.html'
     success_url = reverse_lazy('index')
     model = BlogModel
 
     def get_context_data(self, **kwargs):
+        blogs = BlogModel.objects.all()
+        # messages = MsgModel.objects.filter(recipient=self.request.user, is_read=False)\
+        #     if self.request.user.is_authenticated else ''
         context = super(MainView, self).get_context_data(**kwargs)
         context['title'] = 'Simpy - главная страница'
-        blogs = BlogModel.objects.all()
         context['blogs'] = [blogs[0], blogs[1]] if len(blogs) > 1 else None
+        # context['count_messages'] = len(messages)
         return context
 
     def post(self, request, *args, **kwargs):
@@ -99,7 +103,7 @@ class BookReadersView(GetMixin, DetailView):
         return context
 
 
-class BookReviewsView(CommentMixin, FormView, ListView):
+class BookReviewsView(GetMixin, CommentMixin, FormView, ListView):
     model = ReviewModel
     template_name = 'books/reviews.html'
     context_object_name = 'reviews'
@@ -146,7 +150,7 @@ class BookReviewsView(CommentMixin, FormView, ListView):
         return super(BookReviewsView, self).post(request, *args, **kwargs)
 
 
-class BookQuotesView(LikeMixin, CommentMixin, FormView, ListView):
+class BookQuotesView(GetMixin, LikeMixin, CommentMixin, FormView, ListView):
     model = QuoteModel
     context_object_name = 'quotes'
     template_name = 'books/book-quotes.html'

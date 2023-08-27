@@ -4,10 +4,10 @@ from django.views.generic import ListView, DetailView, FormView
 
 from blogs.models import BlogModel
 from comments.forms import AddCommentForm
-from utils.utils import CommentMixin, LikeMixin, SortedMixin
+from utils.utils import CommentMixin, LikeMixin, SortedMixin, GetMixin
 
 
-class BlogsView(SortedMixin, LikeMixin, ListView):
+class BlogsView(GetMixin, SortedMixin, LikeMixin, ListView):
     paginate_by = 4
     model = BlogModel
     template_name = 'blogs/blogs.html'
@@ -17,7 +17,7 @@ class BlogsView(SortedMixin, LikeMixin, ListView):
     }
 
 
-class BlogView(LikeMixin, CommentMixin, FormView, DetailView):
+class BlogView(GetMixin, LikeMixin, CommentMixin, FormView, DetailView):
     model = BlogModel
     template_name = 'blogs/blog.html'
     context_object_name = 'blog'

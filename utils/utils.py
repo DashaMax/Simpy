@@ -5,6 +5,7 @@ from django.shortcuts import redirect
 from books.models import BookModel
 from bot.bot import bot
 from bot.models import BotChatModel
+from msg.models import MsgModel
 from simpy.settings import EMAIL_HOST_USER
 
 
@@ -20,7 +21,9 @@ class GetMixin:
         context = super().get_context_data(**kwargs)
 
         if self.request.user.is_authenticated:
+            messages = MsgModel.objects.filter(recipient=self.request.user, is_read=False)
             context['user_books'] = self.request.user.book.all()
+            context['count_messages'] = len(messages)
 
         return context
 

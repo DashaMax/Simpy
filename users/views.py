@@ -72,7 +72,7 @@ class UserPasswordResetCompleteView(PasswordResetCompleteView):
     }
 
 
-class UserView(LoginRequiredMixin, DetailView):
+class UserView(GetMixin, LoginRequiredMixin, DetailView):
     model = UserModel
     template_name = 'users/account.html'
     slug_url_kwarg = 'user_slug'
@@ -84,7 +84,7 @@ class UserView(LoginRequiredMixin, DetailView):
         return context
 
 
-class UserEditView(LoginRequiredMixin, UpdateView):
+class UserEditView(GetMixin, LoginRequiredMixin, UpdateView):
     model = UserModel
     form_class = UserUpdateForm
     template_name = 'users/edit.html'
@@ -115,7 +115,7 @@ class UserBookshelfView(GetMixin, LoginRequiredMixin, DetailView):
         return context
 
 
-class UserBlogsView(LikeMixin, SuccessMessageMixin, LoginRequiredMixin, CreateView):
+class UserBlogsView(GetMixin, LikeMixin, SuccessMessageMixin, LoginRequiredMixin, CreateView):
     model = BlogModel
     template_name = 'users/profile-blog.html'
     form_class = AddBlogForm
@@ -149,7 +149,7 @@ class UserBlogsView(LikeMixin, SuccessMessageMixin, LoginRequiredMixin, CreateVi
         return super(UserBlogsView, self).get(request, *args, **kwargs)
 
 
-class UserQuotesView(LikeMixin, CommentMixin, LoginRequiredMixin, FormView, ListView):
+class UserQuotesView(GetMixin, LikeMixin, CommentMixin, LoginRequiredMixin, FormView, ListView):
     model = QuoteModel
     template_name = 'users/profile-quotes.html'
     form_class = AddCommentForm

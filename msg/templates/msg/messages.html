@@ -1,0 +1,45 @@
+{% extends 'books/base.html' %}
+{% load static %}
+
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'users/css/style-profile.css' %}">
+    <link rel="stylesheet" href="{% static 'msg/css/style-messages.css' %}">
+{% endblock %}
+
+
+{% block content %}
+    <main>
+        <div class="container">
+            <div class="messages">
+                <div class="member">
+                    <a href="{% url 'user' member.slug %}" class="member-link">
+                        <img src="{{ member.image.url }}" alt="Фото" class="image">
+                    </a>
+                    <a href="{% url 'user' member.slug %}" class="member-link name">
+                        {{ member.first_name }}
+                    </a>
+                </div>
+                <hr>
+                {% if messages %}
+                    <div class="block-messages">
+                        {% for message in messages %}
+                            {% include 'msg/one-message.html' %}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+                <div class="form-message">
+                    <form method="post">
+                        {% csrf_token %}
+                        <p>
+                            {{ form.message }}
+                        </p>
+                        <p>
+                            <input type="submit" value="Отправить" class="input-submit">
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}

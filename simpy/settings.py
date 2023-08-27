@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'feedback.apps.FeedbackConfig',
     'likes.apps.LikesConfig',
     'bot.apps.BotConfig',
+    'msg.apps.MsgConfig',
 ]
 
 MIDDLEWARE = [

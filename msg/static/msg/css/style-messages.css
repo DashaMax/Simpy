@@ -1,0 +1,111 @@
+.messages{
+    position: relative;
+    height: 620px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 7px rgb(197, 197, 197);
+}
+
+.messages .member{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.messages .member-link{
+    text-decoration: none;
+    color: gray;
+    font-size: 18px;
+}
+
+.name{
+    margin-left: 20px;
+}
+
+.messages .image{
+    width: 50px;
+}
+
+.block-messages{
+    height: 400px;
+    overflow-y: auto;
+}
+
+.message{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left{
+    max-width: 400px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background-color: rgba(0, 128, 0, 0.25);
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+.right{
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: 0;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 128, 0, 0.25);
+    border-radius: 30px;
+}
+
+.message .message-text{
+    margin-right: 10px;
+}
+
+.message .date-time{
+    font-size: 10px;
+    color: gray;
+}
+
+.form-message{
+    position: absolute;
+    width: 95%;
+    bottom: 20px;
+}
+
+.input-text{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 30px;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-submit{
+    margin-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 30px;
+    outline: none;
+    background-color: rgb(46, 46, 46);
+    color: white;
+}
+
+.input-submit:hover{
+    background-color: black;
+}
+
+@media(max-width: 700px){
+    .input-text{
+        width: 91%;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid gray;
+        border-radius: 30px;
+        outline: none;
+        font-size: 16px;
+    }
+}

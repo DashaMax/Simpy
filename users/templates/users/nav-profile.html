@@ -4,6 +4,8 @@
         {% if user.is_staff %}
             <a href="/admin" class="exit">Админка</a>
         {% endif %}
+    {% else %}
+        <a href="{% url 'get-chat' user.slug %}" class="write">Написать</a>
     {% endif %}
 </p>
 <hr>

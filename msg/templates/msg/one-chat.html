@@ -1,0 +1,20 @@
+{% for member in chat.members.all %}
+    {% if member != request.user %}
+        <div class="chat {% if chat.msgmodel_set.all.last.sender != request.user and not chat.msgmodel_set.all.last.is_read %}unread{% endif %}">
+            <a href="{% url 'chat-messages' chat.pk %}" class="chat-link">
+                <div class="message">
+                    <div class="sender-message">
+                        <img src="{{ member.image.url }}" alt="Фото" class="image">
+                        <p class="name">{{ member.first_name }}</p>
+                    </div>
+                    <p class="message-text">{{ chat.msgmodel_set.all.last.message|truncatechars:50 }}</p>
+                </div>
+                <div class="date-time">
+                    <p>
+                        {{ chat.msgmodel_set.all.last.date_time }}
+                    </p>
+                </div>
+            </a>
+        </div>
+    {% endif %}
+{% endfor %}

@@ -156,3 +156,11 @@ if(select){
         select.options[4].setAttribute('selected', true);
     }
 }
+
+/* Scroll */
+
+let div = document.querySelector('.messages .block-messages');
+
+if(div){
+    div.scrollTop = div.scrollHeight;
+}

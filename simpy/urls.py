@@ -25,6 +25,7 @@ urlpatterns = [
     path('user/', include('users.urls')),
     path('', include('blogs.urls')),
     path('', include('quotes.urls')),
+    path('chats/', include('msg.urls')),
 ]
 
 handler404 = 'books.views.error_404_view'

@@ -68,7 +68,7 @@ main .container{
     color: rgb(47, 165, 32);
 }
 
-.add-form, .change, .exit, .add{
+.add-form, .change, .exit, .add, .write{
     padding: 5px 15px;
     box-sizing: border-box;
     background-color: rgb(44, 44, 44);
@@ -84,7 +84,7 @@ main .container{
     margin-bottom: 10px;
 }
 
-.add-form:hover, .change:hover, .exit:hover, .add:hover{
+.add-form:hover, .change:hover, .exit:hover, .add:hover, write:hover{
     background-color: rgb(10, 10, 10);
 }
 

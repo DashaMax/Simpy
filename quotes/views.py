@@ -3,10 +3,10 @@ from django.views.generic import ListView, FormView
 
 from comments.forms import AddCommentForm
 from quotes.models import QuoteModel
-from utils.utils import CommentMixin, LikeMixin, SortedMixin
+from utils.utils import CommentMixin, LikeMixin, SortedMixin, GetMixin
 
 
-class QuotesView(SortedMixin, LikeMixin, CommentMixin, FormView, ListView):
+class QuotesView(GetMixin, SortedMixin, LikeMixin, CommentMixin, FormView, ListView):
     paginate_by = 4
     model = QuoteModel
     context_object_name = 'quotes'

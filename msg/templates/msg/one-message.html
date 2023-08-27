@@ -1,0 +1,4 @@
+<div class="message {% if message.sender == member %}left{% else %}right{% endif %}">
+    <p class="message-text">{{ message.message }}</p>
+    <p class="date-time">{{ message.date_time }}</p>
+</div>
