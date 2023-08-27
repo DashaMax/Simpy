@@ -10,7 +10,6 @@ from bot.models import BotChatModel
 from comments.forms import AddCommentForm
 from feedback.forms import FeedbackForm
 from feedback.models import FeedbackModel
-from msg.models import MsgModel
 from quotes.forms import AddQuoteForm
 from quotes.models import QuoteModel
 from simpy.settings import TITLE, MESSAGE, EMAIL_HOST_USER
@@ -29,12 +28,9 @@ class MainView(GetMixin, LikeMixin, FormView):
 
     def get_context_data(self, **kwargs):
         blogs = BlogModel.objects.all()
-        # messages = MsgModel.objects.filter(recipient=self.request.user, is_read=False)\
-        #     if self.request.user.is_authenticated else ''
         context = super(MainView, self).get_context_data(**kwargs)
         context['title'] = 'Simpy - главная страница'
         context['blogs'] = [blogs[0], blogs[1]] if len(blogs) > 1 else None
-        # context['count_messages'] = len(messages)
         return context
 
     def post(self, request, *args, **kwargs):
