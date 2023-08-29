@@ -12,12 +12,16 @@ IMAGE_BLOG_DIR = os.path.normpath(f'blogs/2023/08/01')
 USER_MODEL = 'users.usermodel'
 REVIEW_MODEL = 'books.reviewmodel'
 BLOG_MODEL = 'blogs.blogmodel'
+CHAT_MODEL = 'msg.chatmodel'
+MSG_MODEL = 'msg.msgmodel'
 
-FILENAME_JSON = [
+FILENAME_JSON = (
     'users.json',
     'reviews.json',
-    'blogs.json'
-]
+    'blogs.json',
+    'chats.json',
+    'messages.json',
+)
 
 PASSWORD = 'pbkdf2_sha256$390000$yKZvEahKDI5v28Xds8GN8m$zkjt3ve5f0OoqEP3m2IrrWCkid4b/ZCJCM9cXkr9r+c='
 LAST_LOGIN = '2023-08-01T21:52:09.148'
@@ -57,8 +61,20 @@ TEXT = '''
 '''
 
 REVIEW = '''
-    Этот роман - одно из самых спорных произведений русской литературы. Кто-то назовёт его шедевром, другие скажут, что невозможно читать, ничего не понятно. Для меня эта книга стала одним из любимых произведений. Несколько сюжетных линий, герои, живущие в разные времена в разных городах, но по сути, по одним и тем же законам. И конечно, бессмертная история любви мастера и Маргариты. Все это не оставит равнодушным любителей вдумчивого чтения.
+    Этот роман - одно из самых спорных произведений русской литературы. Кто-то назовёт его шедевром, другие скажут,
+    что невозможно читать, ничего не понятно. Для меня эта книга стала одним из любимых произведений.
+    Несколько сюжетных линий, герои, живущие в разные времена в разных городах, но по сути, по одним и тем же законам.
+    И конечно, бессмертная история любви мастера и Маргариты.
+    Все это не оставит равнодушным любителей вдумчивого чтения.
 '''
+
+MESSAGE_TEXT = (
+    'Привет)',
+    'Как дела?',
+    'Откуда ты?',
+    'Чем занимаешься?',
+    'Поговорим?',
+)
 
 
 def write_to_json(json_name: str, data: list):
@@ -73,6 +89,8 @@ def main():
     users_data = []
     reviews_data = []
     blogs_data = []
+    chats_data = []
+    messages_data = []
 
     for i in range(20):
         sex = choice(SEX)
@@ -131,8 +149,49 @@ def main():
         blogs_data.append(blog_data)
 
     # write_to_json(FILENAME_JSON[0], users_data)
-    write_to_json(FILENAME_JSON[1], reviews_data)
-    write_to_json(FILENAME_JSON[2], blogs_data)
+    # write_to_json(FILENAME_JSON[1], reviews_data)
+    # write_to_json(FILENAME_JSON[2], blogs_data)
+
+    for i in range(50):
+        user1 = users_data[randint(0, len(users_data) - 1)]['pk']
+        user2 = users_data[randint(0, len(users_data) - 1)]['pk']
+
+        if user1 != user2:
+            chat_data = {
+                "model": "msg.chatmodel",
+                "pk": i + 1,
+                "fields": {
+                    "last_message": None,
+                    "members": [
+                        user1,
+                        user2,
+                    ]
+                }
+            }
+            chats_data.append(chat_data)
+
+    for i in range(500):
+        chat = chats_data[randint(0, len(chats_data) - 1)]
+        sender = chat['fields']['members'][randint(0, 1)]
+        recipient = chat['fields']['members'][randint(0, 1)]
+
+        if sender != recipient:
+            message_data = {
+                "model": "msg.msgmodel",
+                "pk": i + 1,
+                "fields": {
+                    "chat": chat['pk'],
+                    "message": MESSAGE_TEXT[randint(0, len(MESSAGE_TEXT) - 1)],
+                    "sender": sender,
+                    "recipient": recipient,
+                    "is_read": False,
+                    "date_time": f"2023-08-2{randint(0, 9)}T{randint(10, 23)}:51:00.576"
+                }
+            }
+            messages_data.append(message_data)
+
+    write_to_json(FILENAME_JSON[3], chats_data)
+    write_to_json(FILENAME_JSON[4], messages_data)
 
 
 if __name__ == '__main__':

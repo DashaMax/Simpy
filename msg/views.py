@@ -5,6 +5,8 @@ from django.urls import reverse_lazy
 from django.views import View
 from django.views.generic import ListView, FormView, DetailView
 
+from bot.bot import bot
+from bot.models import BotChatModel
 from msg.forms import MessageForm
 from msg.models import ChatModel
 from users.models import UserModel
@@ -96,5 +98,16 @@ class ChatMessagesView(GetMixin, LoginRequiredMixin, DetailView, FormView):
         self.object.sender = self.request.user
         self.object.recipient = member_chat
         self.object.save()
+
+        chat_user = BotChatModel.objects.filter(user=member_chat)
+
+        if chat_user and chat_user[0].user.is_send_notifications:
+            chat_id = chat_user[0].chat_id
+            bot.send_message(chat_id, f'Привет)\n'
+                                      f'Пользователь --- {self.request.user} ---\n'
+                                      f'прислал новое сообщение:\n\n'
+                                      f'{self.object.message}\n\n'
+                                      f'Для просмотра перейдите по ссылке:\n'
+                                      f'http://127.0.0.1:8000/chats/messages/{chat.pk}/')
 
         return super(ChatMessagesView, self).form_valid(form)

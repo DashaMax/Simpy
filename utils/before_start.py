@@ -21,6 +21,8 @@ FIXTURES = [
     'blogs.json',
     'reviews.json',
     'quotes.json',
+    'chats.json',
+    'messages.json',
 ]
 
 for fixture in FIXTURES:

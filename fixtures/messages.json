@@ -1,0 +1,2966 @@
+[
+    {
+        "model": "msg.msgmodel",
+        "pk": 4,
+        "fields": {
+            "chat": 8,
+            "message": "Откуда ты?",
+            "sender": 16,
+            "recipient": 17,
+            "is_read": false,
+            "date_time": "2023-08-27T21:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 6,
+        "fields": {
+            "chat": 13,
+            "message": "Как дела?",
+            "sender": 12,
+            "recipient": 18,
+            "is_read": false,
+            "date_time": "2023-08-28T13:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 9,
+        "fields": {
+            "chat": 49,
+            "message": "Откуда ты?",
+            "sender": 11,
+            "recipient": 15,
+            "is_read": false,
+            "date_time": "2023-08-23T18:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 10,
+        "fields": {
+            "chat": 5,
+            "message": "Привет)",
+            "sender": 3,
+            "recipient": 16,
+            "is_read": false,
+            "date_time": "2023-08-22T19:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 11,
+        "fields": {
+            "chat": 22,
+            "message": "Как дела?",
+            "sender": 1,
+            "recipient": 8,
+            "is_read": false,
+            "date_time": "2023-08-21T17:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 12,
+        "fields": {
+            "chat": 27,
+            "message": "Привет)",
+            "sender": 16,
+            "recipient": 13,
+            "is_read": false,
+            "date_time": "2023-08-20T21:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 15,
+        "fields": {
+            "chat": 4,
+            "message": "Чем занимаешься?",
+            "sender": 14,
+            "recipient": 10,
+            "is_read": false,
+            "date_time": "2023-08-24T12:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 16,
+        "fields": {
+            "chat": 13,
+            "message": "Поговорим?",
+            "sender": 18,
+            "recipient": 12,
+            "is_read": false,
+            "date_time": "2023-08-27T20:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 17,
+        "fields": {
+            "chat": 21,
+            "message": "Откуда ты?",
+            "sender": 8,
+            "recipient": 14,
+            "is_read": false,
+            "date_time": "2023-08-25T22:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 18,
+        "fields": {
+            "chat": 42,
+            "message": "Откуда ты?",
+            "sender": 12,
+            "recipient": 18,
+            "is_read": false,
+            "date_time": "2023-08-24T22:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 21,
+        "fields": {
+            "chat": 42,
+            "message": "Как дела?",
+            "sender": 12,
+            "recipient": 18,
+            "is_read": false,
+            "date_time": "2023-08-24T14:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 23,
+        "fields": {
+            "chat": 29,
+            "message": "Откуда ты?",
+            "sender": 11,
+            "recipient": 14,
+            "is_read": false,
+            "date_time": "2023-08-29T17:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 24,
+        "fields": {
+            "chat": 44,
+            "message": "Откуда ты?",
+            "sender": 3,
+            "recipient": 4,
+            "is_read": false,
+            "date_time": "2023-08-29T19:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 27,
+        "fields": {
+            "chat": 45,
+            "message": "Откуда ты?",
+            "sender": 19,
+            "recipient": 1,
+            "is_read": false,
+            "date_time": "2023-08-26T15:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 30,
+        "fields": {
+            "chat": 18,
+            "message": "Как дела?",
+            "sender": 9,
+            "recipient": 1,
+            "is_read": false,
+            "date_time": "2023-08-26T13:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 34,
+        "fields": {
+            "chat": 9,
+            "message": "Поговорим?",
+            "sender": 2,
+            "recipient": 11,
+            "is_read": false,
+            "date_time": "2023-08-20T23:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 36,
+        "fields": {
+            "chat": 33,
+            "message": "Привет)",
+            "sender": 11,
+            "recipient": 5,
+            "is_read": false,
+            "date_time": "2023-08-25T21:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 41,
+        "fields": {
+            "chat": 31,
+            "message": "Чем занимаешься?",
+            "sender": 7,
+            "recipient": 5,
+            "is_read": false,
+            "date_time": "2023-08-27T22:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 43,
+        "fields": {
+            "chat": 38,
+            "message": "Откуда ты?",
+            "sender": 8,
+            "recipient": 16,
+            "is_read": false,
+            "date_time": "2023-08-27T22:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 44,
+        "fields": {
+            "chat": 22,
+            "message": "Поговорим?",
+            "sender": 8,
+            "recipient": 1,
+            "is_read": false,
+            "date_time": "2023-08-27T14:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 46,
+        "fields": {
+            "chat": 31,
+            "message": "Чем занимаешься?",
+            "sender": 5,
+            "recipient": 7,
+            "is_read": false,
+            "date_time": "2023-08-27T12:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 48,
+        "fields": {
+            "chat": 41,
+            "message": "Привет)",
+            "sender": 20,
+            "recipient": 7,
+            "is_read": false,
+            "date_time": "2023-08-24T21:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 49,
+        "fields": {
+            "chat": 41,
+            "message": "Поговорим?",
+            "sender": 20,
+            "recipient": 7,
+            "is_read": false,
+            "date_time": "2023-08-23T14:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 51,
+        "fields": {
+            "chat": 16,
+            "message": "Как дела?",
+            "sender": 11,
+            "recipient": 7,
+            "is_read": false,
+            "date_time": "2023-08-23T11:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 54,
+        "fields": {
+            "chat": 38,
+            "message": "Чем занимаешься?",
+            "sender": 16,
+            "recipient": 8,
+            "is_read": false,
+            "date_time": "2023-08-26T18:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 55,
+        "fields": {
+            "chat": 20,
+            "message": "Поговорим?",
+            "sender": 4,
+            "recipient": 2,
+            "is_read": false,
+            "date_time": "2023-08-20T20:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 58,
+        "fields": {
+            "chat": 45,
+            "message": "Откуда ты?",
+            "sender": 19,
+            "recipient": 1,
+            "is_read": false,
+            "date_time": "2023-08-26T18:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 60,
+        "fields": {
+            "chat": 16,
+            "message": "Привет)",
+            "sender": 7,
+            "recipient": 11,
+            "is_read": false,
+            "date_time": "2023-08-23T17:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 61,
+        "fields": {
+            "chat": 29,
+            "message": "Привет)",
+            "sender": 14,
+            "recipient": 11,
+            "is_read": false,
+            "date_time": "2023-08-27T23:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 62,
+        "fields": {
+            "chat": 11,
+            "message": "Привет)",
+            "sender": 3,
+            "recipient": 14,
+            "is_read": false,
+            "date_time": "2023-08-28T18:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 66,
+        "fields": {
+            "chat": 33,
+            "message": "Как дела?",
+            "sender": 5,
+            "recipient": 11,
+            "is_read": false,
+            "date_time": "2023-08-21T20:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 69,
+        "fields": {
+            "chat": 35,
+            "message": "Чем занимаешься?",
+            "sender": 15,
+            "recipient": 7,
+            "is_read": false,
+            "date_time": "2023-08-26T13:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 73,
+        "fields": {
+            "chat": 34,
+            "message": "Откуда ты?",
+            "sender": 18,
+            "recipient": 11,
+            "is_read": false,
+            "date_time": "2023-08-24T11:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 74,
+        "fields": {
+            "chat": 13,
+            "message": "Как дела?",
+            "sender": 12,
+            "recipient": 18,
+            "is_read": false,
+            "date_time": "2023-08-22T21:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 75,
+        "fields": {
+            "chat": 42,
+            "message": "Привет)",
+            "sender": 18,
+            "recipient": 12,
+            "is_read": false,
+            "date_time": "2023-08-22T16:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 76,
+        "fields": {
+            "chat": 17,
+            "message": "Как дела?",
+            "sender": 17,
+            "recipient": 6,
+            "is_read": false,
+            "date_time": "2023-08-29T13:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 78,
+        "fields": {
+            "chat": 11,
+            "message": "Чем занимаешься?",
+            "sender": 14,
+            "recipient": 3,
+            "is_read": false,
+            "date_time": "2023-08-26T20:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 80,
+        "fields": {
+            "chat": 21,
+            "message": "Как дела?",
+            "sender": 8,
+            "recipient": 14,
+            "is_read": false,
+            "date_time": "2023-08-24T16:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 82,
+        "fields": {
+            "chat": 10,
+            "message": "Как дела?",
+            "sender": 9,
+            "recipient": 15,
+            "is_read": false,
+            "date_time": "2023-08-27T17:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 84,
+        "fields": {
+            "chat": 23,
+            "message": "Привет)",
+            "sender": 10,
+            "recipient": 16,
+            "is_read": false,
+            "date_time": "2023-08-20T10:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 86,
+        "fields": {
+            "chat": 36,
+            "message": "Откуда ты?",
+            "sender": 8,
+            "recipient": 12,
+            "is_read": false,
+            "date_time": "2023-08-26T11:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 91,
+        "fields": {
+            "chat": 21,
+            "message": "Откуда ты?",
+            "sender": 14,
+            "recipient": 8,
+            "is_read": false,
+            "date_time": "2023-08-23T10:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 92,
+        "fields": {
+            "chat": 20,
+            "message": "Как дела?",
+            "sender": 4,
+            "recipient": 2,
+            "is_read": false,
+            "date_time": "2023-08-22T19:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 93,
+        "fields": {
+            "chat": 11,
+            "message": "Как дела?",
+            "sender": 3,
+            "recipient": 14,
+            "is_read": false,
+            "date_time": "2023-08-24T15:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 94,
+        "fields": {
+            "chat": 34,
+            "message": "Откуда ты?",
+            "sender": 11,
+            "recipient": 18,
+            "is_read": false,
+            "date_time": "2023-08-29T10:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 98,
+        "fields": {
+            "chat": 22,
+            "message": "Откуда ты?",
+            "sender": 1,
+            "recipient": 8,
+            "is_read": false,
+            "date_time": "2023-08-20T19:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 102,
+        "fields": {
+            "chat": 4,
+            "message": "Как дела?",
+            "sender": 14,
+            "recipient": 10,
+            "is_read": false,
+            "date_time": "2023-08-22T22:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 104,
+        "fields": {
+            "chat": 44,
+            "message": "Чем занимаешься?",
+            "sender": 4,
+            "recipient": 3,
+            "is_read": false,
+            "date_time": "2023-08-24T18:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 105,
+        "fields": {
+            "chat": 12,
+            "message": "Откуда ты?",
+            "sender": 13,
+            "recipient": 9,
+            "is_read": false,
+            "date_time": "2023-08-22T12:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 106,
+        "fields": {
+            "chat": 21,
+            "message": "Откуда ты?",
+            "sender": 14,
+            "recipient": 8,
+            "is_read": false,
+            "date_time": "2023-08-20T14:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 107,
+        "fields": {
+            "chat": 38,
+            "message": "Чем занимаешься?",
+            "sender": 16,
+            "recipient": 8,
+            "is_read": false,
+            "date_time": "2023-08-22T15:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 110,
+        "fields": {
+            "chat": 40,
+            "message": "Как дела?",
+            "sender": 10,
+            "recipient": 9,
+            "is_read": false,
+            "date_time": "2023-08-27T21:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 114,
+        "fields": {
+            "chat": 9,
+            "message": "Поговорим?",
+            "sender": 2,
+            "recipient": 11,
+            "is_read": false,
+            "date_time": "2023-08-20T23:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 115,
+        "fields": {
+            "chat": 15,
+            "message": "Как дела?",
+            "sender": 2,
+            "recipient": 15,
+            "is_read": false,
+            "date_time": "2023-08-29T11:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 117,
+        "fields": {
+            "chat": 17,
+            "message": "Откуда ты?",
+            "sender": 17,
+            "recipient": 6,
+            "is_read": false,
+            "date_time": "2023-08-26T13:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 118,
+        "fields": {
+            "chat": 4,
+            "message": "Привет)",
+            "sender": 10,
+            "recipient": 14,
+            "is_read": false,
+            "date_time": "2023-08-26T15:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 120,
+        "fields": {
+            "chat": 31,
+            "message": "Чем занимаешься?",
+            "sender": 7,
+            "recipient": 5,
+            "is_read": false,
+            "date_time": "2023-08-29T18:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 122,
+        "fields": {
+            "chat": 27,
+            "message": "Как дела?",
+            "sender": 16,
+            "recipient": 13,
+            "is_read": false,
+            "date_time": "2023-08-21T14:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 124,
+        "fields": {
+            "chat": 8,
+            "message": "Чем занимаешься?",
+            "sender": 16,
+            "recipient": 17,
+            "is_read": false,
+            "date_time": "2023-08-28T14:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 125,
+        "fields": {
+            "chat": 6,
+            "message": "Поговорим?",
+            "sender": 13,
+            "recipient": 3,
+            "is_read": false,
+            "date_time": "2023-08-20T18:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 127,
+        "fields": {
+            "chat": 10,
+            "message": "Откуда ты?",
+            "sender": 9,
+            "recipient": 15,
+            "is_read": false,
+            "date_time": "2023-08-24T19:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 131,
+        "fields": {
+            "chat": 48,
+            "message": "Привет)",
+            "sender": 3,
+            "recipient": 12,
+            "is_read": false,
+            "date_time": "2023-08-20T19:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 132,
+        "fields": {
+            "chat": 30,
+            "message": "Привет)",
+            "sender": 12,
+            "recipient": 3,
+            "is_read": false,
+            "date_time": "2023-08-22T21:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 134,
+        "fields": {
+            "chat": 36,
+            "message": "Привет)",
+            "sender": 8,
+            "recipient": 12,
+            "is_read": false,
+            "date_time": "2023-08-28T17:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 136,
+        "fields": {
+            "chat": 31,
+            "message": "Как дела?",
+            "sender": 7,
+            "recipient": 5,
+            "is_read": false,
+            "date_time": "2023-08-22T17:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 137,
+        "fields": {
+            "chat": 27,
+            "message": "Чем занимаешься?",
+            "sender": 13,
+            "recipient": 16,
+            "is_read": false,
+            "date_time": "2023-08-27T12:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 138,
+        "fields": {
+            "chat": 9,
+            "message": "Чем занимаешься?",
+            "sender": 11,
+            "recipient": 2,
+            "is_read": false,
+            "date_time": "2023-08-23T21:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 139,
+        "fields": {
+            "chat": 38,
+            "message": "Поговорим?",
+            "sender": 16,
+            "recipient": 8,
+            "is_read": false,
+            "date_time": "2023-08-21T19:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 140,
+        "fields": {
+            "chat": 49,
+            "message": "Как дела?",
+            "sender": 11,
+            "recipient": 15,
+            "is_read": false,
+            "date_time": "2023-08-28T22:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 141,
+        "fields": {
+            "chat": 40,
+            "message": "Откуда ты?",
+            "sender": 9,
+            "recipient": 10,
+            "is_read": false,
+            "date_time": "2023-08-24T20:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 143,
+        "fields": {
+            "chat": 14,
+            "message": "Поговорим?",
+            "sender": 16,
+            "recipient": 7,
+            "is_read": false,
+            "date_time": "2023-08-25T15:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 144,
+        "fields": {
+            "chat": 35,
+            "message": "Как дела?",
+            "sender": 7,
+            "recipient": 15,
+            "is_read": false,
+            "date_time": "2023-08-24T19:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 145,
+        "fields": {
+            "chat": 28,
+            "message": "Поговорим?",
+            "sender": 13,
+            "recipient": 18,
+            "is_read": false,
+            "date_time": "2023-08-26T18:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 148,
+        "fields": {
+            "chat": 40,
+            "message": "Поговорим?",
+            "sender": 10,
+            "recipient": 9,
+            "is_read": false,
+            "date_time": "2023-08-27T20:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 150,
+        "fields": {
+            "chat": 44,
+            "message": "Привет)",
+            "sender": 3,
+            "recipient": 4,
+            "is_read": false,
+            "date_time": "2023-08-26T11:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 154,
+        "fields": {
+            "chat": 50,
+            "message": "Как дела?",
+            "sender": 11,
+            "recipient": 6,
+            "is_read": false,
+            "date_time": "2023-08-22T17:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 155,
+        "fields": {
+            "chat": 25,
+            "message": "Откуда ты?",
+            "sender": 9,
+            "recipient": 15,
+            "is_read": false,
+            "date_time": "2023-08-28T12:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 156,
+        "fields": {
+            "chat": 17,
+            "message": "Чем занимаешься?",
+            "sender": 6,
+            "recipient": 17,
+            "is_read": false,
+            "date_time": "2023-08-20T21:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 161,
+        "fields": {
+            "chat": 15,
+            "message": "Привет)",
+            "sender": 15,
+            "recipient": 2,
+            "is_read": false,
+            "date_time": "2023-08-28T20:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 162,
+        "fields": {
+            "chat": 22,
+            "message": "Как дела?",
+            "sender": 8,
+            "recipient": 1,
+            "is_read": false,
+            "date_time": "2023-08-20T11:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 167,
+        "fields": {
+            "chat": 28,
+            "message": "Как дела?",
+            "sender": 13,
+            "recipient": 18,
+            "is_read": false,
+            "date_time": "2023-08-22T14:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 168,
+        "fields": {
+            "chat": 30,
+            "message": "Чем занимаешься?",
+            "sender": 3,
+            "recipient": 12,
+            "is_read": false,
+            "date_time": "2023-08-23T13:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 169,
+        "fields": {
+            "chat": 28,
+            "message": "Как дела?",
+            "sender": 18,
+            "recipient": 13,
+            "is_read": false,
+            "date_time": "2023-08-24T17:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 170,
+        "fields": {
+            "chat": 26,
+            "message": "Чем занимаешься?",
+            "sender": 12,
+            "recipient": 6,
+            "is_read": false,
+            "date_time": "2023-08-27T10:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 173,
+        "fields": {
+            "chat": 39,
+            "message": "Чем занимаешься?",
+            "sender": 17,
+            "recipient": 4,
+            "is_read": false,
+            "date_time": "2023-08-24T11:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 174,
+        "fields": {
+            "chat": 44,
+            "message": "Откуда ты?",
+            "sender": 3,
+            "recipient": 4,
+            "is_read": false,
+            "date_time": "2023-08-21T20:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 177,
+        "fields": {
+            "chat": 46,
+            "message": "Поговорим?",
+            "sender": 4,
+            "recipient": 14,
+            "is_read": false,
+            "date_time": "2023-08-22T20:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 178,
+        "fields": {
+            "chat": 46,
+            "message": "Как дела?",
+            "sender": 4,
+            "recipient": 14,
+            "is_read": false,
+            "date_time": "2023-08-24T19:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 180,
+        "fields": {
+            "chat": 46,
+            "message": "Поговорим?",
+            "sender": 14,
+            "recipient": 4,
+            "is_read": false,
+            "date_time": "2023-08-24T13:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 183,
+        "fields": {
+            "chat": 34,
+            "message": "Привет)",
+            "sender": 11,
+            "recipient": 18,
+            "is_read": false,
+            "date_time": "2023-08-27T10:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 185,
+        "fields": {
+            "chat": 17,
+            "message": "Откуда ты?",
+            "sender": 17,
+            "recipient": 6,
+            "is_read": false,
+            "date_time": "2023-08-28T11:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 186,
+        "fields": {
+            "chat": 36,
+            "message": "Поговорим?",
+            "sender": 12,
+            "recipient": 8,
+            "is_read": false,
+            "date_time": "2023-08-20T12:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 188,
+        "fields": {
+            "chat": 43,
+            "message": "Привет)",
+            "sender": 11,
+            "recipient": 18,
+            "is_read": false,
+            "date_time": "2023-08-22T11:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 189,
+        "fields": {
+            "chat": 6,
+            "message": "Как дела?",
+            "sender": 3,
+            "recipient": 13,
+            "is_read": false,
+            "date_time": "2023-08-23T10:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 193,
+        "fields": {
+            "chat": 14,
+            "message": "Откуда ты?",
+            "sender": 16,
+            "recipient": 7,
+            "is_read": false,
+            "date_time": "2023-08-21T14:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 195,
+        "fields": {
+            "chat": 40,
+            "message": "Чем занимаешься?",
+            "sender": 9,
+            "recipient": 10,
+            "is_read": false,
+            "date_time": "2023-08-26T23:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 198,
+        "fields": {
+            "chat": 49,
+            "message": "Как дела?",
+            "sender": 15,
+            "recipient": 11,
+            "is_read": false,
+            "date_time": "2023-08-26T16:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 203,
+        "fields": {
+            "chat": 27,
+            "message": "Привет)",
+            "sender": 16,
+            "recipient": 13,
+            "is_read": false,
+            "date_time": "2023-08-22T15:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 205,
+        "fields": {
+            "chat": 33,
+            "message": "Поговорим?",
+            "sender": 5,
+            "recipient": 11,
+            "is_read": false,
+            "date_time": "2023-08-26T12:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 207,
+        "fields": {
+            "chat": 42,
+            "message": "Привет)",
+            "sender": 18,
+            "recipient": 12,
+            "is_read": false,
+            "date_time": "2023-08-21T12:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 209,
+        "fields": {
+            "chat": 4,
+            "message": "Поговорим?",
+            "sender": 10,
+            "recipient": 14,
+            "is_read": false,
+            "date_time": "2023-08-26T21:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 210,
+        "fields": {
+            "chat": 24,
+            "message": "Привет)",
+            "sender": 10,
+            "recipient": 4,
+            "is_read": false,
+            "date_time": "2023-08-22T10:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 211,
+        "fields": {
+            "chat": 40,
+            "message": "Как дела?",
+            "sender": 9,
+            "recipient": 10,
+            "is_read": false,
+            "date_time": "2023-08-27T13:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 217,
+        "fields": {
+            "chat": 40,
+            "message": "Поговорим?",
+            "sender": 10,
+            "recipient": 9,
+            "is_read": false,
+            "date_time": "2023-08-26T11:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 219,
+        "fields": {
+            "chat": 48,
+            "message": "Откуда ты?",
+            "sender": 3,
+            "recipient": 12,
+            "is_read": false,
+            "date_time": "2023-08-24T18:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 221,
+        "fields": {
+            "chat": 24,
+            "message": "Чем занимаешься?",
+            "sender": 4,
+            "recipient": 10,
+            "is_read": false,
+            "date_time": "2023-08-26T18:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 223,
+        "fields": {
+            "chat": 12,
+            "message": "Как дела?",
+            "sender": 13,
+            "recipient": 9,
+            "is_read": false,
+            "date_time": "2023-08-23T18:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 224,
+        "fields": {
+            "chat": 16,
+            "message": "Привет)",
+            "sender": 7,
+            "recipient": 11,
+            "is_read": false,
+            "date_time": "2023-08-26T20:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 226,
+        "fields": {
+            "chat": 22,
+            "message": "Поговорим?",
+            "sender": 1,
+            "recipient": 8,
+            "is_read": false,
+            "date_time": "2023-08-20T10:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 228,
+        "fields": {
+            "chat": 30,
+            "message": "Привет)",
+            "sender": 12,
+            "recipient": 3,
+            "is_read": false,
+            "date_time": "2023-08-22T12:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 230,
+        "fields": {
+            "chat": 23,
+            "message": "Откуда ты?",
+            "sender": 16,
+            "recipient": 10,
+            "is_read": false,
+            "date_time": "2023-08-27T13:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 231,
+        "fields": {
+            "chat": 41,
+            "message": "Откуда ты?",
+            "sender": 20,
+            "recipient": 7,
+            "is_read": false,
+            "date_time": "2023-08-22T19:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 234,
+        "fields": {
+            "chat": 33,
+            "message": "Поговорим?",
+            "sender": 11,
+            "recipient": 5,
+            "is_read": false,
+            "date_time": "2023-08-27T19:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 237,
+        "fields": {
+            "chat": 29,
+            "message": "Чем занимаешься?",
+            "sender": 11,
+            "recipient": 14,
+            "is_read": false,
+            "date_time": "2023-08-25T15:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 239,
+        "fields": {
+            "chat": 19,
+            "message": "Привет)",
+            "sender": 7,
+            "recipient": 9,
+            "is_read": false,
+            "date_time": "2023-08-21T10:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 244,
+        "fields": {
+            "chat": 33,
+            "message": "Поговорим?",
+            "sender": 11,
+            "recipient": 5,
+            "is_read": false,
+            "date_time": "2023-08-24T23:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 246,
+        "fields": {
+            "chat": 18,
+            "message": "Поговорим?",
+            "sender": 1,
+            "recipient": 9,
+            "is_read": false,
+            "date_time": "2023-08-24T23:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 248,
+        "fields": {
+            "chat": 15,
+            "message": "Откуда ты?",
+            "sender": 2,
+            "recipient": 15,
+            "is_read": false,
+            "date_time": "2023-08-26T17:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 249,
+        "fields": {
+            "chat": 40,
+            "message": "Привет)",
+            "sender": 9,
+            "recipient": 10,
+            "is_read": false,
+            "date_time": "2023-08-26T18:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 251,
+        "fields": {
+            "chat": 30,
+            "message": "Поговорим?",
+            "sender": 12,
+            "recipient": 3,
+            "is_read": false,
+            "date_time": "2023-08-20T17:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 252,
+        "fields": {
+            "chat": 38,
+            "message": "Как дела?",
+            "sender": 8,
+            "recipient": 16,
+            "is_read": false,
+            "date_time": "2023-08-21T23:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 254,
+        "fields": {
+            "chat": 46,
+            "message": "Откуда ты?",
+            "sender": 14,
+            "recipient": 4,
+            "is_read": false,
+            "date_time": "2023-08-28T18:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 255,
+        "fields": {
+            "chat": 29,
+            "message": "Чем занимаешься?",
+            "sender": 14,
+            "recipient": 11,
+            "is_read": false,
+            "date_time": "2023-08-25T13:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 256,
+        "fields": {
+            "chat": 50,
+            "message": "Привет)",
+            "sender": 6,
+            "recipient": 11,
+            "is_read": false,
+            "date_time": "2023-08-28T15:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 257,
+        "fields": {
+            "chat": 48,
+            "message": "Откуда ты?",
+            "sender": 12,
+            "recipient": 3,
+            "is_read": false,
+            "date_time": "2023-08-29T17:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 259,
+        "fields": {
+            "chat": 40,
+            "message": "Как дела?",
+            "sender": 10,
+            "recipient": 9,
+            "is_read": false,
+            "date_time": "2023-08-25T17:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 263,
+        "fields": {
+            "chat": 33,
+            "message": "Привет)",
+            "sender": 11,
+            "recipient": 5,
+            "is_read": false,
+            "date_time": "2023-08-21T11:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 265,
+        "fields": {
+            "chat": 24,
+            "message": "Чем занимаешься?",
+            "sender": 10,
+            "recipient": 4,
+            "is_read": false,
+            "date_time": "2023-08-21T14:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 266,
+        "fields": {
+            "chat": 23,
+            "message": "Поговорим?",
+            "sender": 16,
+            "recipient": 10,
+            "is_read": false,
+            "date_time": "2023-08-27T13:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 267,
+        "fields": {
+            "chat": 15,
+            "message": "Привет)",
+            "sender": 15,
+            "recipient": 2,
+            "is_read": false,
+            "date_time": "2023-08-20T15:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 269,
+        "fields": {
+            "chat": 40,
+            "message": "Откуда ты?",
+            "sender": 9,
+            "recipient": 10,
+            "is_read": false,
+            "date_time": "2023-08-21T22:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 271,
+        "fields": {
+            "chat": 49,
+            "message": "Как дела?",
+            "sender": 11,
+            "recipient": 15,
+            "is_read": false,
+            "date_time": "2023-08-25T10:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 272,
+        "fields": {
+            "chat": 33,
+            "message": "Поговорим?",
+            "sender": 11,
+            "recipient": 5,
+            "is_read": false,
+            "date_time": "2023-08-25T11:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 273,
+        "fields": {
+            "chat": 6,
+            "message": "Привет)",
+            "sender": 3,
+            "recipient": 13,
+            "is_read": false,
+            "date_time": "2023-08-25T20:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 275,
+        "fields": {
+            "chat": 8,
+            "message": "Откуда ты?",
+            "sender": 16,
+            "recipient": 17,
+            "is_read": false,
+            "date_time": "2023-08-27T12:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 277,
+        "fields": {
+            "chat": 23,
+            "message": "Откуда ты?",
+            "sender": 10,
+            "recipient": 16,
+            "is_read": false,
+            "date_time": "2023-08-23T12:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 279,
+        "fields": {
+            "chat": 43,
+            "message": "Откуда ты?",
+            "sender": 11,
+            "recipient": 18,
+            "is_read": false,
+            "date_time": "2023-08-27T19:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 283,
+        "fields": {
+            "chat": 47,
+            "message": "Откуда ты?",
+            "sender": 10,
+            "recipient": 12,
+            "is_read": false,
+            "date_time": "2023-08-20T11:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 285,
+        "fields": {
+            "chat": 47,
+            "message": "Как дела?",
+            "sender": 12,
+            "recipient": 10,
+            "is_read": false,
+            "date_time": "2023-08-23T12:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 287,
+        "fields": {
+            "chat": 45,
+            "message": "Поговорим?",
+            "sender": 1,
+            "recipient": 19,
+            "is_read": false,
+            "date_time": "2023-08-27T15:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 288,
+        "fields": {
+            "chat": 29,
+            "message": "Как дела?",
+            "sender": 11,
+            "recipient": 14,
+            "is_read": false,
+            "date_time": "2023-08-24T16:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 289,
+        "fields": {
+            "chat": 26,
+            "message": "Поговорим?",
+            "sender": 12,
+            "recipient": 6,
+            "is_read": false,
+            "date_time": "2023-08-25T15:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 290,
+        "fields": {
+            "chat": 16,
+            "message": "Чем занимаешься?",
+            "sender": 7,
+            "recipient": 11,
+            "is_read": false,
+            "date_time": "2023-08-21T19:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 291,
+        "fields": {
+            "chat": 4,
+            "message": "Поговорим?",
+            "sender": 14,
+            "recipient": 10,
+            "is_read": false,
+            "date_time": "2023-08-25T13:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 292,
+        "fields": {
+            "chat": 8,
+            "message": "Как дела?",
+            "sender": 17,
+            "recipient": 16,
+            "is_read": false,
+            "date_time": "2023-08-24T17:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 295,
+        "fields": {
+            "chat": 14,
+            "message": "Поговорим?",
+            "sender": 16,
+            "recipient": 7,
+            "is_read": false,
+            "date_time": "2023-08-23T15:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 297,
+        "fields": {
+            "chat": 40,
+            "message": "Чем занимаешься?",
+            "sender": 9,
+            "recipient": 10,
+            "is_read": false,
+            "date_time": "2023-08-29T13:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 299,
+        "fields": {
+            "chat": 32,
+            "message": "Поговорим?",
+            "sender": 12,
+            "recipient": 8,
+            "is_read": false,
+            "date_time": "2023-08-25T14:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 300,
+        "fields": {
+            "chat": 18,
+            "message": "Поговорим?",
+            "sender": 1,
+            "recipient": 9,
+            "is_read": false,
+            "date_time": "2023-08-29T14:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 302,
+        "fields": {
+            "chat": 45,
+            "message": "Привет)",
+            "sender": 19,
+            "recipient": 1,
+            "is_read": false,
+            "date_time": "2023-08-25T20:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 304,
+        "fields": {
+            "chat": 32,
+            "message": "Привет)",
+            "sender": 12,
+            "recipient": 8,
+            "is_read": false,
+            "date_time": "2023-08-29T15:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 306,
+        "fields": {
+            "chat": 18,
+            "message": "Поговорим?",
+            "sender": 9,
+            "recipient": 1,
+            "is_read": false,
+            "date_time": "2023-08-27T11:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 307,
+        "fields": {
+            "chat": 25,
+            "message": "Как дела?",
+            "sender": 9,
+            "recipient": 15,
+            "is_read": false,
+            "date_time": "2023-08-26T16:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 308,
+        "fields": {
+            "chat": 23,
+            "message": "Чем занимаешься?",
+            "sender": 16,
+            "recipient": 10,
+            "is_read": false,
+            "date_time": "2023-08-24T15:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 310,
+        "fields": {
+            "chat": 34,
+            "message": "Откуда ты?",
+            "sender": 18,
+            "recipient": 11,
+            "is_read": false,
+            "date_time": "2023-08-29T11:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 313,
+        "fields": {
+            "chat": 15,
+            "message": "Чем занимаешься?",
+            "sender": 2,
+            "recipient": 15,
+            "is_read": false,
+            "date_time": "2023-08-25T14:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 314,
+        "fields": {
+            "chat": 10,
+            "message": "Чем занимаешься?",
+            "sender": 15,
+            "recipient": 9,
+            "is_read": false,
+            "date_time": "2023-08-28T23:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 316,
+        "fields": {
+            "chat": 8,
+            "message": "Поговорим?",
+            "sender": 16,
+            "recipient": 17,
+            "is_read": false,
+            "date_time": "2023-08-23T22:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 318,
+        "fields": {
+            "chat": 48,
+            "message": "Поговорим?",
+            "sender": 3,
+            "recipient": 12,
+            "is_read": false,
+            "date_time": "2023-08-27T10:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 322,
+        "fields": {
+            "chat": 46,
+            "message": "Привет)",
+            "sender": 4,
+            "recipient": 14,
+            "is_read": false,
+            "date_time": "2023-08-22T16:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 326,
+        "fields": {
+            "chat": 21,
+            "message": "Привет)",
+            "sender": 8,
+            "recipient": 14,
+            "is_read": false,
+            "date_time": "2023-08-29T14:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 328,
+        "fields": {
+            "chat": 38,
+            "message": "Привет)",
+            "sender": 16,
+            "recipient": 8,
+            "is_read": false,
+            "date_time": "2023-08-29T11:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 329,
+        "fields": {
+            "chat": 9,
+            "message": "Поговорим?",
+            "sender": 11,
+            "recipient": 2,
+            "is_read": false,
+            "date_time": "2023-08-20T23:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 330,
+        "fields": {
+            "chat": 42,
+            "message": "Чем занимаешься?",
+            "sender": 18,
+            "recipient": 12,
+            "is_read": false,
+            "date_time": "2023-08-20T18:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 334,
+        "fields": {
+            "chat": 38,
+            "message": "Как дела?",
+            "sender": 16,
+            "recipient": 8,
+            "is_read": false,
+            "date_time": "2023-08-26T13:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 335,
+        "fields": {
+            "chat": 39,
+            "message": "Как дела?",
+            "sender": 4,
+            "recipient": 17,
+            "is_read": false,
+            "date_time": "2023-08-20T17:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 336,
+        "fields": {
+            "chat": 25,
+            "message": "Чем занимаешься?",
+            "sender": 9,
+            "recipient": 15,
+            "is_read": false,
+            "date_time": "2023-08-24T17:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 337,
+        "fields": {
+            "chat": 13,
+            "message": "Поговорим?",
+            "sender": 12,
+            "recipient": 18,
+            "is_read": false,
+            "date_time": "2023-08-20T12:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 338,
+        "fields": {
+            "chat": 11,
+            "message": "Привет)",
+            "sender": 3,
+            "recipient": 14,
+            "is_read": false,
+            "date_time": "2023-08-24T11:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 340,
+        "fields": {
+            "chat": 30,
+            "message": "Откуда ты?",
+            "sender": 12,
+            "recipient": 3,
+            "is_read": false,
+            "date_time": "2023-08-24T21:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 341,
+        "fields": {
+            "chat": 48,
+            "message": "Откуда ты?",
+            "sender": 3,
+            "recipient": 12,
+            "is_read": false,
+            "date_time": "2023-08-27T13:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 343,
+        "fields": {
+            "chat": 6,
+            "message": "Поговорим?",
+            "sender": 3,
+            "recipient": 13,
+            "is_read": false,
+            "date_time": "2023-08-28T15:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 347,
+        "fields": {
+            "chat": 27,
+            "message": "Чем занимаешься?",
+            "sender": 13,
+            "recipient": 16,
+            "is_read": false,
+            "date_time": "2023-08-28T20:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 352,
+        "fields": {
+            "chat": 48,
+            "message": "Чем занимаешься?",
+            "sender": 12,
+            "recipient": 3,
+            "is_read": false,
+            "date_time": "2023-08-21T16:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 356,
+        "fields": {
+            "chat": 20,
+            "message": "Поговорим?",
+            "sender": 2,
+            "recipient": 4,
+            "is_read": false,
+            "date_time": "2023-08-26T19:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 358,
+        "fields": {
+            "chat": 41,
+            "message": "Чем занимаешься?",
+            "sender": 20,
+            "recipient": 7,
+            "is_read": false,
+            "date_time": "2023-08-26T14:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 361,
+        "fields": {
+            "chat": 49,
+            "message": "Чем занимаешься?",
+            "sender": 11,
+            "recipient": 15,
+            "is_read": false,
+            "date_time": "2023-08-27T16:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 364,
+        "fields": {
+            "chat": 43,
+            "message": "Привет)",
+            "sender": 18,
+            "recipient": 11,
+            "is_read": false,
+            "date_time": "2023-08-29T21:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 366,
+        "fields": {
+            "chat": 36,
+            "message": "Привет)",
+            "sender": 8,
+            "recipient": 12,
+            "is_read": false,
+            "date_time": "2023-08-29T14:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 367,
+        "fields": {
+            "chat": 13,
+            "message": "Привет)",
+            "sender": 18,
+            "recipient": 12,
+            "is_read": false,
+            "date_time": "2023-08-22T19:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 368,
+        "fields": {
+            "chat": 11,
+            "message": "Откуда ты?",
+            "sender": 14,
+            "recipient": 3,
+            "is_read": false,
+            "date_time": "2023-08-27T14:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 369,
+        "fields": {
+            "chat": 29,
+            "message": "Как дела?",
+            "sender": 14,
+            "recipient": 11,
+            "is_read": false,
+            "date_time": "2023-08-21T16:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 371,
+        "fields": {
+            "chat": 46,
+            "message": "Откуда ты?",
+            "sender": 14,
+            "recipient": 4,
+            "is_read": false,
+            "date_time": "2023-08-26T17:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 374,
+        "fields": {
+            "chat": 43,
+            "message": "Поговорим?",
+            "sender": 18,
+            "recipient": 11,
+            "is_read": false,
+            "date_time": "2023-08-21T15:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 375,
+        "fields": {
+            "chat": 48,
+            "message": "Поговорим?",
+            "sender": 12,
+            "recipient": 3,
+            "is_read": false,
+            "date_time": "2023-08-26T17:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 377,
+        "fields": {
+            "chat": 9,
+            "message": "Чем занимаешься?",
+            "sender": 11,
+            "recipient": 2,
+            "is_read": false,
+            "date_time": "2023-08-20T17:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 381,
+        "fields": {
+            "chat": 5,
+            "message": "Как дела?",
+            "sender": 3,
+            "recipient": 16,
+            "is_read": false,
+            "date_time": "2023-08-25T15:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 388,
+        "fields": {
+            "chat": 50,
+            "message": "Как дела?",
+            "sender": 11,
+            "recipient": 6,
+            "is_read": false,
+            "date_time": "2023-08-24T21:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 391,
+        "fields": {
+            "chat": 50,
+            "message": "Привет)",
+            "sender": 6,
+            "recipient": 11,
+            "is_read": false,
+            "date_time": "2023-08-25T15:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 392,
+        "fields": {
+            "chat": 23,
+            "message": "Поговорим?",
+            "sender": 16,
+            "recipient": 10,
+            "is_read": false,
+            "date_time": "2023-08-25T14:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 393,
+        "fields": {
+            "chat": 27,
+            "message": "Привет)",
+            "sender": 13,
+            "recipient": 16,
+            "is_read": false,
+            "date_time": "2023-08-25T13:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 395,
+        "fields": {
+            "chat": 48,
+            "message": "Привет)",
+            "sender": 12,
+            "recipient": 3,
+            "is_read": false,
+            "date_time": "2023-08-21T17:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 399,
+        "fields": {
+            "chat": 45,
+            "message": "Привет)",
+            "sender": 1,
+            "recipient": 19,
+            "is_read": false,
+            "date_time": "2023-08-25T21:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 401,
+        "fields": {
+            "chat": 47,
+            "message": "Привет)",
+            "sender": 12,
+            "recipient": 10,
+            "is_read": false,
+            "date_time": "2023-08-22T18:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 402,
+        "fields": {
+            "chat": 47,
+            "message": "Чем занимаешься?",
+            "sender": 10,
+            "recipient": 12,
+            "is_read": false,
+            "date_time": "2023-08-29T13:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 407,
+        "fields": {
+            "chat": 18,
+            "message": "Чем занимаешься?",
+            "sender": 9,
+            "recipient": 1,
+            "is_read": false,
+            "date_time": "2023-08-29T20:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 409,
+        "fields": {
+            "chat": 13,
+            "message": "Поговорим?",
+            "sender": 18,
+            "recipient": 12,
+            "is_read": false,
+            "date_time": "2023-08-23T17:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 410,
+        "fields": {
+            "chat": 5,
+            "message": "Привет)",
+            "sender": 16,
+            "recipient": 3,
+            "is_read": false,
+            "date_time": "2023-08-25T18:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 412,
+        "fields": {
+            "chat": 6,
+            "message": "Привет)",
+            "sender": 13,
+            "recipient": 3,
+            "is_read": false,
+            "date_time": "2023-08-25T22:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 413,
+        "fields": {
+            "chat": 24,
+            "message": "Как дела?",
+            "sender": 4,
+            "recipient": 10,
+            "is_read": false,
+            "date_time": "2023-08-28T22:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 415,
+        "fields": {
+            "chat": 46,
+            "message": "Откуда ты?",
+            "sender": 14,
+            "recipient": 4,
+            "is_read": false,
+            "date_time": "2023-08-25T15:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 416,
+        "fields": {
+            "chat": 7,
+            "message": "Привет)",
+            "sender": 7,
+            "recipient": 20,
+            "is_read": false,
+            "date_time": "2023-08-25T12:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 418,
+        "fields": {
+            "chat": 1,
+            "message": "Чем занимаешься?",
+            "sender": 13,
+            "recipient": 14,
+            "is_read": false,
+            "date_time": "2023-08-28T14:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 419,
+        "fields": {
+            "chat": 11,
+            "message": "Поговорим?",
+            "sender": 14,
+            "recipient": 3,
+            "is_read": false,
+            "date_time": "2023-08-22T21:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 421,
+        "fields": {
+            "chat": 9,
+            "message": "Привет)",
+            "sender": 2,
+            "recipient": 11,
+            "is_read": false,
+            "date_time": "2023-08-25T17:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 422,
+        "fields": {
+            "chat": 25,
+            "message": "Поговорим?",
+            "sender": 15,
+            "recipient": 9,
+            "is_read": false,
+            "date_time": "2023-08-23T20:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 423,
+        "fields": {
+            "chat": 9,
+            "message": "Как дела?",
+            "sender": 11,
+            "recipient": 2,
+            "is_read": false,
+            "date_time": "2023-08-29T20:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 424,
+        "fields": {
+            "chat": 15,
+            "message": "Как дела?",
+            "sender": 15,
+            "recipient": 2,
+            "is_read": false,
+            "date_time": "2023-08-22T14:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 426,
+        "fields": {
+            "chat": 35,
+            "message": "Как дела?",
+            "sender": 7,
+            "recipient": 15,
+            "is_read": false,
+            "date_time": "2023-08-29T20:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 427,
+        "fields": {
+            "chat": 31,
+            "message": "Поговорим?",
+            "sender": 5,
+            "recipient": 7,
+            "is_read": false,
+            "date_time": "2023-08-27T15:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 434,
+        "fields": {
+            "chat": 48,
+            "message": "Чем занимаешься?",
+            "sender": 3,
+            "recipient": 12,
+            "is_read": false,
+            "date_time": "2023-08-20T21:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 438,
+        "fields": {
+            "chat": 48,
+            "message": "Привет)",
+            "sender": 12,
+            "recipient": 3,
+            "is_read": false,
+            "date_time": "2023-08-21T14:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 439,
+        "fields": {
+            "chat": 29,
+            "message": "Чем занимаешься?",
+            "sender": 11,
+            "recipient": 14,
+            "is_read": false,
+            "date_time": "2023-08-22T23:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 440,
+        "fields": {
+            "chat": 27,
+            "message": "Как дела?",
+            "sender": 13,
+            "recipient": 16,
+            "is_read": false,
+            "date_time": "2023-08-24T10:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 441,
+        "fields": {
+            "chat": 29,
+            "message": "Поговорим?",
+            "sender": 11,
+            "recipient": 14,
+            "is_read": false,
+            "date_time": "2023-08-21T14:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 442,
+        "fields": {
+            "chat": 49,
+            "message": "Привет)",
+            "sender": 11,
+            "recipient": 15,
+            "is_read": false,
+            "date_time": "2023-08-24T19:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 443,
+        "fields": {
+            "chat": 13,
+            "message": "Привет)",
+            "sender": 12,
+            "recipient": 18,
+            "is_read": false,
+            "date_time": "2023-08-27T16:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 444,
+        "fields": {
+            "chat": 12,
+            "message": "Поговорим?",
+            "sender": 9,
+            "recipient": 13,
+            "is_read": false,
+            "date_time": "2023-08-21T23:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 445,
+        "fields": {
+            "chat": 27,
+            "message": "Как дела?",
+            "sender": 16,
+            "recipient": 13,
+            "is_read": false,
+            "date_time": "2023-08-23T10:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 447,
+        "fields": {
+            "chat": 26,
+            "message": "Привет)",
+            "sender": 6,
+            "recipient": 12,
+            "is_read": false,
+            "date_time": "2023-08-25T14:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 451,
+        "fields": {
+            "chat": 25,
+            "message": "Привет)",
+            "sender": 9,
+            "recipient": 15,
+            "is_read": false,
+            "date_time": "2023-08-21T13:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 454,
+        "fields": {
+            "chat": 13,
+            "message": "Чем занимаешься?",
+            "sender": 18,
+            "recipient": 12,
+            "is_read": false,
+            "date_time": "2023-08-20T14:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 455,
+        "fields": {
+            "chat": 1,
+            "message": "Привет)",
+            "sender": 14,
+            "recipient": 13,
+            "is_read": false,
+            "date_time": "2023-08-21T20:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 456,
+        "fields": {
+            "chat": 15,
+            "message": "Привет)",
+            "sender": 2,
+            "recipient": 15,
+            "is_read": false,
+            "date_time": "2023-08-26T14:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 457,
+        "fields": {
+            "chat": 25,
+            "message": "Чем занимаешься?",
+            "sender": 9,
+            "recipient": 15,
+            "is_read": false,
+            "date_time": "2023-08-25T11:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 458,
+        "fields": {
+            "chat": 15,
+            "message": "Поговорим?",
+            "sender": 15,
+            "recipient": 2,
+            "is_read": false,
+            "date_time": "2023-08-28T14:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 460,
+        "fields": {
+            "chat": 24,
+            "message": "Чем занимаешься?",
+            "sender": 4,
+            "recipient": 10,
+            "is_read": false,
+            "date_time": "2023-08-24T15:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 463,
+        "fields": {
+            "chat": 49,
+            "message": "Поговорим?",
+            "sender": 11,
+            "recipient": 15,
+            "is_read": false,
+            "date_time": "2023-08-28T22:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 464,
+        "fields": {
+            "chat": 34,
+            "message": "Откуда ты?",
+            "sender": 11,
+            "recipient": 18,
+            "is_read": false,
+            "date_time": "2023-08-23T10:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 465,
+        "fields": {
+            "chat": 21,
+            "message": "Привет)",
+            "sender": 14,
+            "recipient": 8,
+            "is_read": false,
+            "date_time": "2023-08-26T19:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 466,
+        "fields": {
+            "chat": 4,
+            "message": "Привет)",
+            "sender": 14,
+            "recipient": 10,
+            "is_read": false,
+            "date_time": "2023-08-23T21:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 468,
+        "fields": {
+            "chat": 28,
+            "message": "Привет)",
+            "sender": 13,
+            "recipient": 18,
+            "is_read": false,
+            "date_time": "2023-08-26T12:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 469,
+        "fields": {
+            "chat": 24,
+            "message": "Чем занимаешься?",
+            "sender": 10,
+            "recipient": 4,
+            "is_read": false,
+            "date_time": "2023-08-21T11:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 472,
+        "fields": {
+            "chat": 11,
+            "message": "Поговорим?",
+            "sender": 14,
+            "recipient": 3,
+            "is_read": false,
+            "date_time": "2023-08-21T22:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 475,
+        "fields": {
+            "chat": 28,
+            "message": "Чем занимаешься?",
+            "sender": 18,
+            "recipient": 13,
+            "is_read": false,
+            "date_time": "2023-08-24T20:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 478,
+        "fields": {
+            "chat": 4,
+            "message": "Привет)",
+            "sender": 14,
+            "recipient": 10,
+            "is_read": false,
+            "date_time": "2023-08-23T11:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 480,
+        "fields": {
+            "chat": 2,
+            "message": "Откуда ты?",
+            "sender": 20,
+            "recipient": 18,
+            "is_read": false,
+            "date_time": "2023-08-29T18:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 481,
+        "fields": {
+            "chat": 2,
+            "message": "Поговорим?",
+            "sender": 18,
+            "recipient": 20,
+            "is_read": false,
+            "date_time": "2023-08-25T18:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 483,
+        "fields": {
+            "chat": 22,
+            "message": "Привет)",
+            "sender": 1,
+            "recipient": 8,
+            "is_read": false,
+            "date_time": "2023-08-28T23:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 484,
+        "fields": {
+            "chat": 22,
+            "message": "Привет)",
+            "sender": 8,
+            "recipient": 1,
+            "is_read": false,
+            "date_time": "2023-08-29T20:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 486,
+        "fields": {
+            "chat": 2,
+            "message": "Поговорим?",
+            "sender": 18,
+            "recipient": 20,
+            "is_read": false,
+            "date_time": "2023-08-20T15:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 487,
+        "fields": {
+            "chat": 5,
+            "message": "Как дела?",
+            "sender": 3,
+            "recipient": 16,
+            "is_read": false,
+            "date_time": "2023-08-24T18:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 488,
+        "fields": {
+            "chat": 40,
+            "message": "Чем занимаешься?",
+            "sender": 10,
+            "recipient": 9,
+            "is_read": false,
+            "date_time": "2023-08-24T21:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 489,
+        "fields": {
+            "chat": 17,
+            "message": "Чем занимаешься?",
+            "sender": 6,
+            "recipient": 17,
+            "is_read": false,
+            "date_time": "2023-08-29T11:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 494,
+        "fields": {
+            "chat": 48,
+            "message": "Привет)",
+            "sender": 3,
+            "recipient": 12,
+            "is_read": false,
+            "date_time": "2023-08-26T13:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 498,
+        "fields": {
+            "chat": 22,
+            "message": "Чем занимаешься?",
+            "sender": 8,
+            "recipient": 1,
+            "is_read": false,
+            "date_time": "2023-08-26T18:51:00.576"
+        }
+    },
+    {
+        "model": "msg.msgmodel",
+        "pk": 500,
+        "fields": {
+            "chat": 34,
+            "message": "Поговорим?",
+            "sender": 11,
+            "recipient": 18,
+            "is_read": false,
+            "date_time": "2023-08-27T23:51:00.576"
+        }
+    }
+]
