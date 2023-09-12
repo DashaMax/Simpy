@@ -140,8 +140,8 @@ class UserBlogsView(GetMixin, LikeMixin, SuccessMessageMixin, LoginRequiredMixin
         return super(UserBlogsView, self).form_valid(form)
 
     def get(self, request, *args, **kwargs):
-        if 'delete' in request.GET:
-            blog = BlogModel.objects.get(pk=request.GET['delete'])
+        if 'delete-blog' in request.GET:
+            blog = BlogModel.objects.get(pk=request.GET['delete-blog'])
 
             if self.request.user == blog.user:
                 blog.delete()
@@ -168,8 +168,8 @@ class UserQuotesView(GetMixin, LikeMixin, CommentMixin, LoginRequiredMixin, Form
         return reverse_lazy('user-quotes', args=(self.kwargs['user_slug'],))
 
     def get(self, request, *args, **kwargs):
-        if 'delete' in request.GET:
-            quote = QuoteModel.objects.get(pk=request.GET['delete'])
+        if 'delete-quote' in request.GET:
+            quote = QuoteModel.objects.get(pk=request.GET['delete-quote'])
 
             if self.request.user == quote.user:
                 quote.delete()
