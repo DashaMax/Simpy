@@ -1,4 +1,4 @@
-from django.shortcuts import redirect
+from django.shortcuts import redirect, get_object_or_404
 from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, FormView
 
@@ -33,12 +33,12 @@ class BlogView(GetMixin, LikeMixin, CommentMixin, FormView, DetailView):
     def get_success_url(self):
         return reverse_lazy('blog', args=(self.kwargs['blog_slug'],))
 
-    def get(self, request, *args, **kwargs):
-        if 'delete' in request.GET:
-            blog = BlogModel.objects.get(pk=request.GET['delete'])
+    def post(self, request, *args, **kwargs):
+        if 'delete-blog' in request.POST:
+            blog = get_object_or_404(BlogModel, pk=request.POST['delete-blog'])
 
             if self.request.user == blog.user:
                 blog.delete()
                 return redirect('blogs')
 
-        return super(BlogView, self).get(request, *args, **kwargs)
+        return super(BlogView, self).post(request, *args, **kwargs)

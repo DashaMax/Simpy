@@ -2,9 +2,9 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.views import LoginView, PasswordResetView, PasswordResetDoneView, PasswordResetConfirmView, \
     PasswordResetCompleteView
 from django.contrib.messages.views import SuccessMessageMixin
-from django.shortcuts import redirect
+from django.shortcuts import redirect, get_object_or_404
 from django.urls import reverse_lazy
-from django.views.generic import CreateView, UpdateView, DetailView, ListView, FormView
+from django.views.generic import CreateView, UpdateView, DetailView, ListView
 
 from blogs.models import BlogModel
 from books.models import BookModel
@@ -16,7 +16,7 @@ from quotes.models import QuoteModel
 from users.forms import UserLoginForm, UserRegisterForm, UserUpdateForm, AddBlogForm, UserPasswordResetForm, \
     UserSetPasswordForm
 from users.models import UserModel
-from utils.utils import GetMixin, CommentMixin, LikeMixin
+from utils.utils import GetMixin, CommentMixin, LikeMixin, PostMixin
 
 
 class UserLoginView(LoginView):
@@ -29,6 +29,12 @@ class UserLoginView(LoginView):
     def get_success_url(self):
         return reverse_lazy('user', args=(self.request.user.slug,))
 
+    def get(self, request, *args, **kwargs):
+        if request.user.is_authenticated:
+            return redirect('index')
+        
+        return super(UserLoginView, self).get(request, *args, **kwargs)
+
 
 class UserRegisterView(SuccessMessageMixin, CreateView):
     form_class = UserRegisterForm
@@ -38,6 +44,12 @@ class UserRegisterView(SuccessMessageMixin, CreateView):
     extra_context = {
         'title': 'Simpy - регистрация'
     }
+
+    def get(self, request, *args, **kwargs):
+        if request.user.is_authenticated:
+            return redirect('index')
+
+        return super(UserRegisterView, self).get(request, *args, **kwargs)
 
 
 class UserPasswordResetView(PasswordResetView):
@@ -49,12 +61,24 @@ class UserPasswordResetView(PasswordResetView):
         'title': 'Simpy - восстановление пароля'
     }
 
+    def get(self, request, *args, **kwargs):
+        if request.user.is_authenticated:
+            return redirect('index')
+
+        return super(UserPasswordResetView, self).get(request, *args, **kwargs)
+
 
 class UserPasswordResetDoneView(PasswordResetDoneView):
     template_name = 'users/password_reset_done.html'
     extra_context = {
         'title': 'Simpy - восстановление пароля'
     }
+
+    def get(self, request, *args, **kwargs):
+        if request.user.is_authenticated:
+            return redirect('index')
+
+        return super(UserPasswordResetDoneView, self).get(request, *args, **kwargs)
 
 
 class UserPasswordResetConfirmView(PasswordResetConfirmView):
@@ -71,6 +95,12 @@ class UserPasswordResetCompleteView(PasswordResetCompleteView):
         'title': 'Simpy - восстановление пароля'
     }
 
+    def get(self, request, *args, **kwargs):
+        if request.user.is_authenticated:
+            return redirect('index')
+
+        return super(UserPasswordResetCompleteView, self).get(request, *args, **kwargs)
+
 
 class UserView(GetMixin, LoginRequiredMixin, DetailView):
     model = UserModel
@@ -79,7 +109,7 @@ class UserView(GetMixin, LoginRequiredMixin, DetailView):
 
     def get_context_data(self, **kwargs):
         context = super(UserView, self).get_context_data(**kwargs)
-        context['user'] = UserModel.objects.get(slug=self.kwargs['user_slug'])
+        context['user'] = get_object_or_404(UserModel, slug=self.kwargs['user_slug'])
         context['title'] = f'Simpy - {context["user"]}'
         return context
 
@@ -99,10 +129,11 @@ class UserEditView(GetMixin, LoginRequiredMixin, UpdateView):
     def get(self, request, *args, **kwargs):
         if kwargs['user_slug'] != self.request.user.slug:
             return redirect('index')
+
         return super(UserEditView, self).get(request, *args, **kwargs)
 
 
-class UserBookshelfView(GetMixin, LoginRequiredMixin, DetailView):
+class UserBookshelfView(GetMixin, PostMixin, LoginRequiredMixin, DetailView):
     model = UserModel
     template_name = 'users/bookshelf.html'
     context_object_name = 'user'
@@ -115,15 +146,14 @@ class UserBookshelfView(GetMixin, LoginRequiredMixin, DetailView):
         return context
 
 
-class UserBlogsView(GetMixin, LikeMixin, SuccessMessageMixin, LoginRequiredMixin, CreateView):
+class UserBlogsView(GetMixin, LikeMixin, LoginRequiredMixin, CreateView):
     model = BlogModel
     template_name = 'users/profile-blog.html'
     form_class = AddBlogForm
-    success_message = 'Статья успешно добавлена'
 
     def get_context_data(self, **kwargs):
         context = super(UserBlogsView, self).get_context_data(**kwargs)
-        user = UserModel.objects.get(slug=self.kwargs['user_slug'])
+        user = get_object_or_404(UserModel, slug=self.kwargs['user_slug'])
         context['flag'] = 'user_blogs'
         context['user'] = user
         context['title'] = f'Simpy - {context["user"]} - блог'
@@ -139,47 +169,37 @@ class UserBlogsView(GetMixin, LikeMixin, SuccessMessageMixin, LoginRequiredMixin
         self.object.save()
         return super(UserBlogsView, self).form_valid(form)
 
-    def get(self, request, *args, **kwargs):
-        if 'delete-blog' in request.GET:
-            blog = BlogModel.objects.get(pk=request.GET['delete-blog'])
+    def post(self, request, *args, **kwargs):
+        if 'delete-blog' in request.POST:
+            blog = get_object_or_404(BlogModel, pk=request.POST['delete-blog'])
 
             if self.request.user == blog.user:
                 blog.delete()
 
-        return super(UserBlogsView, self).get(request, *args, **kwargs)
+        return super(UserBlogsView, self).post(request, *args, **kwargs)
 
 
-class UserQuotesView(GetMixin, LikeMixin, CommentMixin, LoginRequiredMixin, FormView, ListView):
+class UserQuotesView(GetMixin, LikeMixin, CommentMixin, LoginRequiredMixin, ListView):
     model = QuoteModel
     template_name = 'users/profile-quotes.html'
-    form_class = AddCommentForm
 
     def get_context_data(self, **kwargs):
         context = super(UserQuotesView, self).get_context_data(**kwargs)
-        user = UserModel.objects.get(slug=self.kwargs['user_slug'])
+        user = get_object_or_404(UserModel, slug=self.kwargs['user_slug'])
         context['flag'] = 'user_quotes'
         context['user'] = UserModel.objects.get(slug=self.kwargs['user_slug'])
         context['title'] = f'Simpy - {context["user"]} - цитаты'
         context['quotes'] = QuoteModel.objects.filter(user=user).order_by('-create_date')
         context['form_add_quote'] = UserAddQuoteForm
+        context['form'] = AddCommentForm
         return context
 
     def get_success_url(self):
         return reverse_lazy('user-quotes', args=(self.kwargs['user_slug'],))
 
-    def get(self, request, *args, **kwargs):
-        if 'delete-quote' in request.GET:
-            quote = QuoteModel.objects.get(pk=request.GET['delete-quote'])
-
-            if self.request.user == quote.user:
-                quote.delete()
-
-        return super(UserQuotesView, self).get(request, *args, **kwargs)
-
     def post(self, request, *args, **kwargs):
         if 'quote' in request.POST:
-            form = AddCommentForm()
-            book = BookModel.objects.get(pk=request.POST['book'])
+            book = get_object_or_404(BookModel, pk=request.POST['book'])
             user = request.user
             quote = QuoteModel(book=book, user=user, quote=request.POST['quote'])
             quote.save()
@@ -198,6 +218,10 @@ class UserQuotesView(GetMixin, LikeMixin, CommentMixin, LoginRequiredMixin, Form
                                               f'Для просмотра перейдите по ссылке:\n'
                                               f'http://127.0.0.1:8000/book/{book.slug}/quotes/')
 
-            return super(UserQuotesView, self).form_valid(form)
+        elif 'delete-quote' in request.POST:
+            quote = get_object_or_404(QuoteModel, pk=request.POST['delete-quote'])
+
+            if self.request.user == quote.user:
+                quote.delete()
 
         return super(UserQuotesView, self).post(request, *args, **kwargs)

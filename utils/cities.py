@@ -1,7 +1,11 @@
 import json
 
 
-with open('russian-cities.json', encoding='utf-8') as file:
+CITIES_SOURCE_JSON = 'russian-cities.json'
+CITIES_JSON = 'cities.json'
+
+
+with open(CITIES_SOURCE_JSON, encoding='utf-8') as file:
     json_data = json.load(file)
 
 
@@ -25,6 +29,6 @@ for i, data in enumerate(json_data):
 cities_json = json.dumps(cities, indent=4, ensure_ascii=False)
 
 
-with open('cities.json', 'w', encoding='utf-8') as file:
+with open(CITIES_JSON, 'w', encoding='utf-8') as file:
     file.write(cities_json)
 

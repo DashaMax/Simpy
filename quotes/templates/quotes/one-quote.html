@@ -1,6 +1,7 @@
 <div class="quote">
     {% if flag == 'user_quotes' and request.user == quote.user %}
-        <form method="get" class="but-delete">
+        <form method="post" class="but-delete">
+            {% csrf_token %}
             <input type="hidden" name="delete-quote" value="{{ quote.pk }}">
             <input type="submit" value="X" title="Удалить цитату" class="quote-delete">
         </form>

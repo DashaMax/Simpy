@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, FormView
 
@@ -13,7 +13,7 @@ from feedback.models import FeedbackModel
 from quotes.forms import AddQuoteForm
 from quotes.models import QuoteModel
 from simpy.settings import TITLE, MESSAGE, EMAIL_HOST_USER
-from utils.utils import GetMixin, CommentMixin, send_message, LikeMixin
+from utils.utils import GetMixin, CommentMixin, send_message, LikeMixin, PostMixin
 
 
 def error_404_view(request, exception):
@@ -34,20 +34,22 @@ class MainView(GetMixin, LikeMixin, FormView):
         return context
 
     def post(self, request, *args, **kwargs):
-        email = request.POST['email']
-        feedbacks = FeedbackModel.objects.first()
-        pk = feedbacks.pk + 1 if feedbacks else 1
-        feedback = FeedbackModel(title=request.POST['title'], email=email, feedback=request.POST['feedback'])
-        feedback.save()
-        title = 'Simpy - новое сообщение'
-        message = f'Новое сообщение >>>\n\nТема обращения: {request.POST["title"]}\nПочта для связи: {email}\n\nПрочитать сообщение ' \
+        if 'email' in request.POST:
+            email = request.POST['email']
+            feedbacks = FeedbackModel.objects.first()
+            pk = feedbacks.pk + 1 if feedbacks else 1
+            feedback = FeedbackModel(title=request.POST['title'], email=email, feedback=request.POST['feedback'])
+            feedback.save()
+            title = 'Simpy - новое сообщение'
+            message = f'Новое сообщение >>>\n\nТема обращения: {request.POST["title"]}\nПочта для связи: {email}\n\nПрочитать сообщение ' \
                   f'целиком можно по ссылке:\nhttp://127.0.0.1:8000/admin/feedback/feedbackmodel/{pk}/change/'
-        send_message(TITLE, MESSAGE, email)
-        send_message(title, message, EMAIL_HOST_USER)
+            send_message(TITLE, MESSAGE, email)
+            send_message(title, message, EMAIL_HOST_USER)
+
         return super(MainView, self).post(request, *args, **kwargs)
 
 
-class BooksView(GetMixin, ListView):
+class BooksView(PostMixin, GetMixin, ListView):
     model = BookModel
     template_name = 'books/books.html'
     context_object_name = 'books'
@@ -59,21 +61,21 @@ class BooksView(GetMixin, ListView):
         return context
 
 
-class BooksCategoryView(GetMixin, ListView):
+class BooksCategoryView(PostMixin, GetMixin, ListView):
     model = BookModel
     template_name = 'books/books.html'
     context_object_name = 'books'
 
     def get_context_data(self, **kwargs):
         context = super(BooksCategoryView, self).get_context_data(**kwargs)
-        active_category = CategoryModel.objects.get(slug=self.kwargs["category_slug"])
+        active_category = get_object_or_404(CategoryModel, slug=self.kwargs["category_slug"])
         context['title'] = f'Simpy - {active_category}'
         context['categories'] = CategoryModel.objects.all()
         context['active'] = active_category
         return context
 
 
-class BookView(GetMixin, DetailView):
+class BookView(PostMixin, GetMixin, DetailView):
     model = BookModel
     template_name = 'books/book.html'
     context_object_name = 'book'
@@ -107,14 +109,16 @@ class BookReviewsView(GetMixin, CommentMixin, FormView, ListView):
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super(BookReviewsView, self).get_context_data(object_list=None, **kwargs)
-        context['book'] = BookModel.objects.get(slug=self.kwargs['book_slug'])
+        book = get_object_or_404(BookModel, slug=self.kwargs['book_slug'])
+        context['book'] = book
         context['title'] = f'Simpy - {context["book"]}'
         context['flag'] = 'reviews'
         context['form_add_review'] = AddReviewForm
         return context
 
     def get_queryset(self):
-        return BookModel.objects.get(slug=self.kwargs['book_slug']).reviewmodel_set.all().order_by('-create_date')
+        book = get_object_or_404(BookModel, slug=self.kwargs['book_slug'])
+        return book.reviewmodel_set.all().order_by('-create_date')
 
     def get_success_url(self):
         return reverse_lazy('reviews', args=(self.kwargs['book_slug'],))
@@ -122,7 +126,7 @@ class BookReviewsView(GetMixin, CommentMixin, FormView, ListView):
     def post(self, request, *args, **kwargs):
         if 'review' in request.POST:
             form = AddCommentForm()
-            book = BookModel.objects.get(slug=self.kwargs['book_slug'])
+            book = get_object_or_404(BookModel, slug=self.kwargs['book_slug'])
             user = request.user
             review = ReviewModel(book=book, user=user, review=request.POST['review'])
             review.save()
@@ -153,12 +157,12 @@ class BookQuotesView(GetMixin, LikeMixin, CommentMixin, FormView, ListView):
     form_class = AddCommentForm
 
     def get_queryset(self):
-        book = BookModel.objects.get(slug=self.kwargs['book_slug'])
+        book = get_object_or_404(BookModel, slug=self.kwargs['book_slug'])
         return QuoteModel.objects.filter(book=book).order_by('-create_date')
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super(BookQuotesView, self).get_context_data(object_list=None, **kwargs)
-        book = BookModel.objects.get(slug=self.kwargs['book_slug'])
+        book = get_object_or_404(BookModel, slug=self.kwargs['book_slug'])
         context['book'] = book
         context['title'] = f'Simpy - {context["book"]}'
         context['flag'] = 'quotes'
@@ -171,7 +175,7 @@ class BookQuotesView(GetMixin, LikeMixin, CommentMixin, FormView, ListView):
     def post(self, request, *args, **kwargs):
         if 'quote' in request.POST:
             form = AddCommentForm()
-            book = BookModel.objects.get(slug=self.kwargs['book_slug'])
+            book = get_object_or_404(BookModel, slug=self.kwargs['book_slug'])
             user = request.user
             quote = QuoteModel(book=book, user=user, quote=request.POST['quote'])
             quote.save()

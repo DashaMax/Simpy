@@ -1,7 +1,8 @@
 {% load like %}
 
 <div class="add-like">
-    <form method="get">
+    <form method="post">
+        {% csrf_token %}
         <input type="hidden" name="like" value="{{ name_object.pk }}">
         <span class="like-count">{{ name_object.get_count_likes }}</span>
 

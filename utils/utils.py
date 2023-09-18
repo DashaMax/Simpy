@@ -1,6 +1,6 @@
 from django.core.mail import send_mail
 from django.db.models import Q, Sum
-from django.shortcuts import redirect
+from django.shortcuts import redirect, get_object_or_404
 
 from books.models import BookModel
 from bot.bot import bot
@@ -16,6 +16,15 @@ MODEL = {
 }
 
 
+def send_message(title, message, email_to):
+    send_mail(
+        title,
+        message,
+        EMAIL_HOST_USER,
+        [email_to]
+    )
+
+
 class GetMixin:
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -26,21 +35,6 @@ class GetMixin:
             context['count_messages'] = len(messages)
 
         return context
-
-    def get(self, request, *args, **kwargs):
-        if self.request.user.is_authenticated:
-            if 'delete' in request.GET:
-                book_delete = BookModel.objects.get(slug=request.GET['delete'])
-                self.request.user.book.remove(book_delete)
-
-            elif 'add' in request.GET:
-                book_delete = BookModel.objects.get(slug=request.GET['add'])
-                self.request.user.book.add(book_delete)
-
-        elif 'add' in request.GET:
-            return redirect('login')
-
-        return super().get(request, *args, **kwargs)
 
     def get_queryset(self):
         if 'category_slug' in self.kwargs:
@@ -59,11 +53,28 @@ class GetMixin:
         return obj
 
 
+class PostMixin:
+    def post(self, request, *args, **kwargs):
+        if self.request.user.is_authenticated:
+            if 'delete' in request.POST:
+                book_delete = get_object_or_404(BookModel, slug=request.POST['delete'])
+                self.request.user.book.remove(book_delete)
+
+            elif 'add' in request.POST:
+                book_delete = get_object_or_404(BookModel, slug=request.POST['add'])
+                self.request.user.book.add(book_delete)
+
+        elif 'delete' in request.POST or 'add' in request.POST:
+            return redirect('login')
+
+        return super().get(request, *args, **kwargs)
+
+
 class CommentMixin:
     def post(self, request, *args, **kwargs):
         if 'comment' in request.POST:
             user = request.user
-            object_name = self.model.objects.get(pk=request.POST['pk'])
+            object_name = get_object_or_404(self.model, pk=request.POST['pk'])
             comment = request.POST['comment']
             object_name.comments.create(user=user, comment=comment)
 
@@ -77,14 +88,14 @@ class CommentMixin:
                                           f'оставлен новый комментарий:\n\n'
                                           f'{comment}')
 
-            return super(CommentMixin, self).post(request, *args, **kwargs)
+        return super(CommentMixin, self).get(request, *args, **kwargs)
 
 
 class LikeMixin:
-    def get(self, request, *args, **kwargs):
-        if 'like' in request.GET and request.user.is_authenticated:
+    def post(self, request, *args, **kwargs):
+        if 'like' in request.POST and request.user.is_authenticated:
             user = request.user
-            object_name = self.model.objects.get(pk=request.GET['like'])
+            object_name = get_object_or_404(self.model, pk=request.POST['like'])
             like = object_name.likes.filter(user=user)
 
             if not like or not like[0].is_like:
@@ -107,10 +118,12 @@ class LikeMixin:
             else:
                 object_name.likes.create(user=user, is_like=True)
 
-        elif 'like' in request.GET and not request.user.is_authenticated:
+            return super(LikeMixin, self).get(request, *args, **kwargs)
+
+        elif 'like' in request.POST and not request.user.is_authenticated:
             return redirect('login')
 
-        return super(LikeMixin, self).get(request, *args, **kwargs)
+        return super(LikeMixin, self).post(request, *args, **kwargs)
 
 
 class SortedMixin:
@@ -126,12 +139,3 @@ class SortedMixin:
                 return self.model.objects.annotate(sum=Sum('likes')).order_by('-sum')
 
         return self.model.objects.order_by('-create_date')
-
-
-def send_message(title, message, email_to):
-    send_mail(
-        title,
-        message,
-        EMAIL_HOST_USER,
-        [email_to]
-    )

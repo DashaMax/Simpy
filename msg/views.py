@@ -1,6 +1,6 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db.models import Count
-from django.shortcuts import redirect
+from django.shortcuts import redirect, get_object_or_404
 from django.urls import reverse_lazy
 from django.views import View
 from django.views.generic import ListView, FormView, DetailView
@@ -31,7 +31,7 @@ class GetChatView(GetMixin, LoginRequiredMixin, View):
 
     def get(self, request, user_slug):
         user1 = request.user
-        user2 = UserModel.objects.get(slug=user_slug)
+        user2 = get_object_or_404(UserModel, slug=user_slug)
         chat = ChatModel.objects.filter(members__in=[user1, user2]).annotate(c=Count('members')).filter(c=2)
 
         if not chat:
@@ -54,7 +54,7 @@ class ChatMessagesView(GetMixin, LoginRequiredMixin, DetailView, FormView):
     form_class = MessageForm
 
     def get_context_data(self, **kwargs):
-        chat = ChatModel.objects.get(pk=self.kwargs['chat_pk'])
+        chat = get_object_or_404(ChatModel, pk=self.kwargs['chat_pk'])
         user1 = chat.members.first()
         user2 = chat.members.last()
         member_chat = user1 if user2 == self.request.user else user2
@@ -65,7 +65,7 @@ class ChatMessagesView(GetMixin, LoginRequiredMixin, DetailView, FormView):
         return context
 
     def get(self, request, *args, **kwargs):
-        chat = ChatModel.objects.get(pk=self.kwargs['chat_pk'])
+        chat = get_object_or_404(ChatModel, pk=self.kwargs['chat_pk'])
         user1 = chat.members.first()
         user2 = chat.members.last()
 
@@ -88,7 +88,7 @@ class ChatMessagesView(GetMixin, LoginRequiredMixin, DetailView, FormView):
         return reverse_lazy('chat-messages', args=(self.kwargs['chat_pk'],))
 
     def form_valid(self, form):
-        chat = ChatModel.objects.get(pk=self.kwargs['chat_pk'])
+        chat = get_object_or_404(ChatModel, pk=self.kwargs['chat_pk'])
         user1 = chat.members.first()
         user2 = chat.members.last()
         member_chat = user1 if user2 == self.request.user else user2

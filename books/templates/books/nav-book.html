@@ -21,7 +21,8 @@
         </li>
     </ul>
     {% if user.is_authenticated %}
-        <form method="get">
+        <form method="post">
+            {% csrf_token %}
             {% if flag == 'book' %}
                 {% if book not in user_books %}
                     <input type="hidden" name="add" value="{{ book.slug }}">

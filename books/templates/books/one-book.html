@@ -12,7 +12,8 @@
         {% endfor %}
     </p>
     {% if user.is_authenticated %}
-        <form method="get" class="but">
+        <form method="post" class="but">
+            {% csrf_token %}
             {% if book not in user_books %}
                 <input type="hidden" name="add" value="{{ book.slug }}">
                 <input type="submit" class="book-add" value="✚&#160;&#160;Добавить">
@@ -22,7 +23,8 @@
             {% endif %}
         </form>
     {% else %}
-        <form method="get" class="but">
+        <form method="post" class="but">
+            {% csrf_token %}
             <input type="hidden" name="add" value="{{ book.slug }}">
             <input type="submit" class="book-add" value="✚&#160;&#160;Добавить">
         </form>

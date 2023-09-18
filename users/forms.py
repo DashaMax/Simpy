@@ -38,6 +38,13 @@ class UserRegisterForm(UserCreationForm):
             'class': 'input-field'
         })
     )
+    first_name = forms.CharField(
+        max_length=150,
+        widget=forms.TextInput(attrs={
+            'placeholder': 'Имя',
+            'class': 'input-field'
+        })
+    )
     email = forms.CharField(
         max_length=150,
         required=False,
@@ -65,6 +72,7 @@ class UserRegisterForm(UserCreationForm):
         model = UserModel
         fields = (
             'username',
+            'first_name',
             'email',
             'password1',
             'password2'

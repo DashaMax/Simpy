@@ -2,7 +2,8 @@
     <div class="date-delete">
         <p class="date">{{ blog.create_date|date:'d.m.Y H:i' }}</p>
         {% if flag == 'user_blogs' and request.user == blog.user %}
-            <form method="get" class="but-delete">
+            <form method="post" class="but-delete">
+                {% csrf_token %}
                 <input type="hidden" name="delete-blog" value="{{ blog.pk }}">
                 <input type="submit" value="X" title="Удалить блог" class="blog-delete">
             </form>

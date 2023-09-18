@@ -6,8 +6,9 @@ from pytils.translit import slugify
 
 class UserModel(AbstractUser):
     slug = models.SlugField(max_length=150, verbose_name='URL', unique=True, blank=True)
+    first_name = models.CharField(max_length=150, verbose_name='Имя')
     email = models.EmailField(max_length=150, unique=True, verbose_name='E-mail')
-    sex = models.CharField(max_length=50, choices=settings.SEX, verbose_name='Пол')
+    sex = models.CharField(max_length=50, choices=settings.SEX, verbose_name='Пол', blank=True, null=True)
     city = models.ForeignKey(to='CityModel', on_delete=models.CASCADE, verbose_name='Город', blank=True, null=True)
     image = models.ImageField(upload_to='users/%Y/%m/%d/', verbose_name='Фото', default='profile-default.jpg')
     date_of_birth = models.DateField(verbose_name='Дата рождения', blank=True, null=True)

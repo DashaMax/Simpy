@@ -29,20 +29,6 @@
         </div>
         <div class="container">
             {% include 'users/nav-profile.html' %}
-            <div class="block-message">
-                {% if form.errors %}
-                    <p class="text-error">
-                        Ошибка! Статья с таким названием уже существует
-                    </p>
-                {% endif %}
-                {% if messages %}
-                    {% for message in messages %}
-                        <p class="text-success">
-                            {{ message }}
-                        </p>
-                    {% endfor %}
-                {% endif %}
-            </div>
             {% if user_blogs %}
                 <div class="blogs">
                     {% for blog in user_blogs %}
