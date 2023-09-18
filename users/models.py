@@ -1,3 +1,4 @@
+from PIL import Image
 from django.conf import settings
 from django.contrib.auth.models import AbstractUser
 from django.db import models
@@ -22,6 +23,13 @@ class UserModel(AbstractUser):
     def save(self, *args, **kwargs):
         self.slug = slugify(self.first_name)
         super(UserModel, self).save(*args, **kwargs)
+
+        img = Image.open(self.image.path)
+
+        if img.width > 300:
+            size = (300, int(img.height / img.width * 300))
+            img.thumbnail(size)
+            img.save(self.image.path)
 
     class Meta:
         verbose_name = 'Пользователь'
