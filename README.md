@@ -1,11 +1,7 @@
 <h1 align="center">Simpy - удобный книжный сервис:</h1>
 
 <p align="left">
-Структура сайта (предварительно):<br>[ documents/simpy.html ]
-</p>
-
-<p align="left">
-База данных сайта (предварительно):<br>[ documents/db_simpy.html ]
+База данных сайта:<br>[ documents/db_simpy.html ]
 </p>
 
 <h3 align="left">Стек используемых технологий:</h3>
