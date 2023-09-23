@@ -28,8 +28,10 @@
                     </div>
                     <div class="data">
                         <div class="block-message">
-                            {% if form.errors %}
-                                {{ form.username.errors }}
+                            {% if form.username.errors %}
+                                <p class="errorlist">Логин должен быть уникальным для каждого пользователя</p>
+                            {% elif form.email.errors %}
+                                {{ form.email.errors }}
                             {% endif %}
                         </div>
                         {% for field in form %}

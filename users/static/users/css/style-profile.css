@@ -92,10 +92,10 @@ main .container{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 30px;
 }
 
 .profile-block .profile-img{
-    margin-top: 30px;
     width: 200px;
 }
 

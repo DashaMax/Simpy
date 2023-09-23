@@ -13,10 +13,9 @@
             {% include 'users/nav-profile.html' %}
             <div class="profile-block">
                 <div>
-                    <img src="{{ user.image.url }}" alt="Фото" class="profile-img">
-                    <p class="status">Статус:
-                        <span class="inweb">в сети</span>
-                    </p>
+                    <a href="{{ user.image.url }}" target="_blank">
+                        <img src="{{ user.image.url }}" alt="Фото" class="profile-img">
+                    </a>
                 </div>
                 <div class="block-info">
                     <h2>Анкета</h2>

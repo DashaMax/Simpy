@@ -4,7 +4,8 @@ from django.contrib.auth.views import LoginView, PasswordResetView, PasswordRese
 from django.contrib.messages.views import SuccessMessageMixin
 from django.shortcuts import redirect, get_object_or_404
 from django.urls import reverse_lazy
-from django.views.generic import CreateView, UpdateView, DetailView, ListView
+from django.views import View
+from django.views.generic import CreateView, UpdateView, DetailView, ListView, FormView, TemplateView
 
 from blogs.models import BlogModel
 from books.models import BookModel
@@ -179,19 +180,19 @@ class UserBlogsView(GetMixin, LikeMixin, LoginRequiredMixin, CreateView):
         return super(UserBlogsView, self).post(request, *args, **kwargs)
 
 
-class UserQuotesView(GetMixin, LikeMixin, CommentMixin, LoginRequiredMixin, ListView):
+class UserQuotesView(GetMixin, LikeMixin, CommentMixin, LoginRequiredMixin, FormView, ListView):
     model = QuoteModel
     template_name = 'users/profile-quotes.html'
+    form_class = AddCommentForm
 
     def get_context_data(self, **kwargs):
         context = super(UserQuotesView, self).get_context_data(**kwargs)
         user = get_object_or_404(UserModel, slug=self.kwargs['user_slug'])
         context['flag'] = 'user_quotes'
-        context['user'] = UserModel.objects.get(slug=self.kwargs['user_slug'])
+        context['user'] = user
         context['title'] = f'Simpy - {context["user"]} - цитаты'
         context['quotes'] = QuoteModel.objects.filter(user=user).order_by('-create_date')
         context['form_add_quote'] = UserAddQuoteForm
-        context['form'] = AddCommentForm
         return context
 
     def get_success_url(self):
@@ -199,6 +200,7 @@ class UserQuotesView(GetMixin, LikeMixin, CommentMixin, LoginRequiredMixin, List
 
     def post(self, request, *args, **kwargs):
         if 'quote' in request.POST:
+            form = AddCommentForm()
             book = get_object_or_404(BookModel, pk=request.POST['book'])
             user = request.user
             quote = QuoteModel(book=book, user=user, quote=request.POST['quote'])
@@ -218,10 +220,15 @@ class UserQuotesView(GetMixin, LikeMixin, CommentMixin, LoginRequiredMixin, List
                                               f'Для просмотра перейдите по ссылке:\n'
                                               f'http://127.0.0.1:8000/book/{book.slug}/quotes/')
 
+            return super(UserQuotesView, self).form_valid(form)
+
         elif 'delete-quote' in request.POST:
+            form = AddCommentForm()
             quote = get_object_or_404(QuoteModel, pk=request.POST['delete-quote'])
 
             if self.request.user == quote.user:
                 quote.delete()
+
+            return super(UserQuotesView, self).form_valid(form)
 
         return super(UserQuotesView, self).post(request, *args, **kwargs)

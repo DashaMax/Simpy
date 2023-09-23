@@ -6530,7 +6530,7 @@
         "model": "books.bookmodel",
         "pk": 272,
         "fields": {
-            "title": "\"Коасная книга России: Чудеса природы / Словарик-справочник школьника\"",
+            "title": "\"Красная книга России: Чудеса природы / Словарик-справочник школьника\"",
             "slug": "koasnaya-kniga-rossii-chudesa-prirody-slovarik-spravochnik-shkolnika",
             "description": "",
             "language": "ru",

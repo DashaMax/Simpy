@@ -1,6 +1,7 @@
 from django.core.mail import send_mail
 from django.db.models import Q, Sum
 from django.shortcuts import redirect, get_object_or_404
+from djantimat.helpers import RegexpProc
 
 from books.models import BookModel
 from bot.bot import bot
@@ -76,6 +77,11 @@ class CommentMixin:
             user = request.user
             object_name = get_object_or_404(self.model, pk=request.POST['pk'])
             comment = request.POST['comment']
+            slang_detected = RegexpProc.test(comment)
+
+            if slang_detected:
+                comment = RegexpProc.replace(comment, repl='***')
+
             object_name.comments.create(user=user, comment=comment)
 
             user_object = object_name.user
@@ -88,7 +94,7 @@ class CommentMixin:
                                           f'оставлен новый комментарий:\n\n'
                                           f'{comment}')
 
-        return super(CommentMixin, self).get(request, *args, **kwargs)
+        return super(CommentMixin, self).post(request, *args, **kwargs)
 
 
 class LikeMixin:

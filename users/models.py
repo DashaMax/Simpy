@@ -21,15 +21,23 @@ class UserModel(AbstractUser):
         return self.first_name
 
     def save(self, *args, **kwargs):
-        self.slug = slugify(self.first_name)
+        if not self.pk:
+            user_pk = UserModel.objects.last().pk + 1
+            self.slug = slugify(f'{self.first_name}-{user_pk}')
+
+        else:
+            self.slug = slugify(f'{self.first_name}-{self.slug.split("-")[1]}')
+
         super(UserModel, self).save(*args, **kwargs)
 
-        img = Image.open(self.image.path)
+        if self.image != 'profile-default.jpg':
+            img = Image.open(self.image.path)
+            max_width = 500
 
-        if img.width > 300:
-            size = (300, int(img.height / img.width * 300))
-            img.thumbnail(size)
-            img.save(self.image.path)
+            if img.width > max_width:
+                size = (max_width, int(img.height / img.width * max_width))
+                img.thumbnail(size)
+                img.save(self.image.path)
 
     class Meta:
         verbose_name = 'Пользователь'
