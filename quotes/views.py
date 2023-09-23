@@ -1,9 +1,9 @@
 from django.urls import reverse_lazy
-from django.views.generic import ListView, FormView
+from django.views.generic import FormView, ListView
 
 from comments.forms import AddCommentForm
 from quotes.models import QuoteModel
-from utils.utils import CommentMixin, LikeMixin, SortedMixin, GetMixin
+from utils.utils import CommentMixin, GetMixin, LikeMixin, SortedMixin
 
 
 class QuotesView(GetMixin, SortedMixin, LikeMixin, CommentMixin, FormView, ListView):

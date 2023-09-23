@@ -3,7 +3,6 @@ from django.contrib.contenttypes.models import ContentType
 
 from likes.models import LikeModel
 
-
 MODEL = {
     'quote': 'quotemodel',
     'blog': 'blogmodel',

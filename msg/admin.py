@@ -1,7 +1,6 @@
 from django.contrib import admin
 
-
-from msg.models import MsgModel, ChatModel
+from msg.models import ChatModel, MsgModel
 from utils.admin import MyAdmin
 
 

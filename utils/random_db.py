@@ -1,8 +1,8 @@
-import os
-import randominfo
 import json
-
+import os
 from random import choice, randint
+
+import randominfo
 
 
 FIXTURE_DIR = os.path.normpath('fixtures')

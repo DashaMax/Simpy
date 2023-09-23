@@ -1,6 +1,6 @@
 from django.core.mail import send_mail
 from django.db.models import Q, Sum
-from django.shortcuts import redirect, get_object_or_404
+from django.shortcuts import get_object_or_404, redirect
 from djantimat.helpers import RegexpProc
 
 from books.models import BookModel

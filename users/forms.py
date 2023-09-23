@@ -1,6 +1,7 @@
-from django.contrib.auth.forms import AuthenticationForm, UserCreationForm, UserChangeForm, PasswordResetForm, \
-    SetPasswordForm
 from django import forms
+from django.contrib.auth.forms import (AuthenticationForm, PasswordResetForm,
+                                       SetPasswordForm, UserChangeForm,
+                                       UserCreationForm)
 
 from blogs.models import BlogModel
 from users.models import UserModel

@@ -1,6 +1,6 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import get_object_or_404, render
 from django.urls import reverse_lazy
-from django.views.generic import ListView, DetailView, FormView
+from django.views.generic import DetailView, FormView, ListView
 
 from blogs.models import BlogModel
 from books.forms import AddReviewForm
@@ -12,8 +12,9 @@ from feedback.forms import FeedbackForm
 from feedback.models import FeedbackModel
 from quotes.forms import AddQuoteForm
 from quotes.models import QuoteModel
-from simpy.settings import TITLE, MESSAGE, EMAIL_HOST_USER
-from utils.utils import GetMixin, CommentMixin, send_message, LikeMixin, PostMixin
+from simpy.settings import EMAIL_HOST_USER, MESSAGE, TITLE
+from utils.utils import (CommentMixin, GetMixin, LikeMixin, PostMixin,
+                         send_message)
 
 
 def error_404_view(request, exception):

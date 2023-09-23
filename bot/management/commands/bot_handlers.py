@@ -1,8 +1,10 @@
 from django.core.management import BaseCommand
 
 from bot.bot import bot
-from bot.messages import START_MESSAGE, ADD_CHAT_FOR_USER_MESSAGE, ALREADY_KNOWN_MESSAGE, NOT_FOUND_MESSAGE, \
-    OTHER_LOGIN_MESSAGE, ERROR_MESSAGE, START_EXIST_CHAT_MESSAGE
+from bot.messages import (ADD_CHAT_FOR_USER_MESSAGE, ALREADY_KNOWN_MESSAGE,
+                          ERROR_MESSAGE, NOT_FOUND_MESSAGE,
+                          OTHER_LOGIN_MESSAGE, START_EXIST_CHAT_MESSAGE,
+                          START_MESSAGE)
 from bot.models import BotChatModel
 from users.models import UserModel
 

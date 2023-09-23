@@ -1,10 +1,10 @@
-from django.shortcuts import redirect, get_object_or_404
+from django.shortcuts import get_object_or_404, redirect
 from django.urls import reverse_lazy
-from django.views.generic import ListView, DetailView, FormView
+from django.views.generic import DetailView, FormView, ListView
 
 from blogs.models import BlogModel
 from comments.forms import AddCommentForm
-from utils.utils import CommentMixin, LikeMixin, SortedMixin, GetMixin
+from utils.utils import CommentMixin, GetMixin, LikeMixin, SortedMixin
 
 
 class BlogsView(GetMixin, SortedMixin, LikeMixin, ListView):

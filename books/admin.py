@@ -1,6 +1,7 @@
 from django.contrib import admin
 
-from books.models import BookModel, CategoryModel, AuthorModel, PublishingModel, ReviewModel
+from books.models import (AuthorModel, BookModel, CategoryModel,
+                          PublishingModel, ReviewModel)
 from utils.admin import MyAdmin
 
 

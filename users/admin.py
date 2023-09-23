@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from users.models import UserModel, CityModel
+from users.models import CityModel, UserModel
 from utils.admin import MyAdmin
 
 

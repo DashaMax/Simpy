@@ -1,11 +1,12 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.contrib.auth.views import LoginView, PasswordResetView, PasswordResetDoneView, PasswordResetConfirmView, \
-    PasswordResetCompleteView
+from django.contrib.auth.views import (LoginView, PasswordResetCompleteView,
+                                       PasswordResetConfirmView,
+                                       PasswordResetDoneView,
+                                       PasswordResetView)
 from django.contrib.messages.views import SuccessMessageMixin
-from django.shortcuts import redirect, get_object_or_404
+from django.shortcuts import get_object_or_404, redirect
 from django.urls import reverse_lazy
-from django.views import View
-from django.views.generic import CreateView, UpdateView, DetailView, ListView, FormView, TemplateView
+from django.views.generic import (CreateView, DetailView, FormView, ListView, UpdateView)
 
 from blogs.models import BlogModel
 from books.models import BookModel
@@ -14,10 +15,10 @@ from bot.models import BotChatModel
 from comments.forms import AddCommentForm
 from quotes.forms import UserAddQuoteForm
 from quotes.models import QuoteModel
-from users.forms import UserLoginForm, UserRegisterForm, UserUpdateForm, AddBlogForm, UserPasswordResetForm, \
-    UserSetPasswordForm
+from users.forms import (AddBlogForm, UserLoginForm, UserPasswordResetForm,
+                         UserRegisterForm, UserSetPasswordForm, UserUpdateForm)
 from users.models import UserModel
-from utils.utils import GetMixin, CommentMixin, LikeMixin, PostMixin
+from utils.utils import CommentMixin, GetMixin, LikeMixin, PostMixin
 
 
 class UserLoginView(LoginView):

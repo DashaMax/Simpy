@@ -1,9 +1,10 @@
-from bs4 import BeautifulSoup
-import os
-from datetime import datetime, date
-import requests
 import json
+import os
+from datetime import date, datetime
 from random import choice, randint
+
+import requests
+from bs4 import BeautifulSoup
 
 
 YEAR_TODAY = date.today().year
